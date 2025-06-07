@@ -1,5 +1,5 @@
 # exegesis
-A handbook for computational exegetics.
+A handbook for computational theology.
 
 ## Overview
 
