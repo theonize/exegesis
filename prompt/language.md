@@ -1,5 +1,5 @@
 What was the original language & dialect of the passage?
-What are the medical semantics and range of the passage?
+What are the lexical semantics and range of the passage?
 What are some notable morphological and grammatical features of the passage?
 What are the syntactical features of the passage? 
 What are discourse features in the text?
