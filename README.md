@@ -11,6 +11,16 @@ It may be straightforward but arduous.
 Exegesis is the art of uncovering this truth that the author laid down.
 Computation is the means by which we accelerate this spelunking.
 
+Discovering the meaning, i.e. the author's intent, requires multiple analyses:
+- contextual
+- historical/cultural
+- literary
+- linguistic
+- theological
+
+The meaning of a text cannot contradict any of these analyses but must yield to all of them.
+
+
 
 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">
   <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-nd.png" />
