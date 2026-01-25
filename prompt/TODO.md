@@ -2,14 +2,12 @@
 
 ## Genesis (GEN)
 
-- [ ] GEN 01:1-25 - Creation of the world
 - [ ] GEN 01:26-31 - Creation of humanity
 - [ ] GEN 02:1-3 - The seventh day rest
 - [ ] GEN 02:4-17 - Man placed in Eden
 - [ ] GEN 02:18-25 - Creation of woman
 - [ ] GEN 03:1-7 - The temptation and fall
 - [ ] GEN 03:8-13 - God confronts Adam and Eve
-- [ ] GEN 03:14-19 - The curses pronounced
 - [ ] GEN 03:20-24 - Expulsion from Eden
 - [ ] GEN 04:1-16 - Cain and Abel
 - [ ] GEN 04:17-24 - Line of Cain
@@ -48,7 +46,6 @@
 - [ ] GEN 21:1-7 - Birth of Isaac
 - [ ] GEN 21:8-21 - Hagar and Ishmael sent away
 - [ ] GEN 21:22-34 - Treaty with Abimelech
-- [ ] GEN 22:1-19 - The binding of Isaac
 - [ ] GEN 22:20-24 - Nahor's descendants
 - [ ] GEN 23:1-20 - Death and burial of Sarah
 - [ ] GEN 24:1-27 - Servant's journey for a bride
