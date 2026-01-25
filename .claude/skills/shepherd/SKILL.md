@@ -7,9 +7,6 @@ description: Develop practical, real-life applications from Bible passages. Use 
 
 Research and determine the context of a Biblical passage by answering the following questions:
 * Clarify the original meaning for a modern audience
-* Who? my audience is contemporary people of all ages
-* What attributes or actions, of theirs, must change according to this Word?
-* When would we do these things?
-* Where might we do these things?
-* How would the current audience implement these changes?
+* What attributes or actions, of the modern audience, must change according to this Word?
+* When, where and how might we implement these changes?
 * Meaning versus method: how might I accomplish these things?

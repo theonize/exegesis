@@ -12,6 +12,6 @@ Research and determine the historical and cultural context of a Biblical passage
 * When did the events take place?
 * What are some notable practices of the day?
 * What archaeology and external histories are associated with the passage?
-* What was the political-socio-economic milieu of that time? social structures?
+* What was the political-socio-economic milieu of that time?  social structures?
 * What were the circumstantial social norms, practices and issues of the day?
 * What geography is associated with the passage?
