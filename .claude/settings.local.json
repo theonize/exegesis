@@ -3,7 +3,15 @@
     "allow": [
       "Bash(ls:*)",
       "Bash(python3:*)",
-      "Bash(python -c:*)"
+      "Bash(python -c:*)",
+      "Bash(mkdir:*)",
+      "Write",
+      "Edit",
+      "Bash(pip install:*)",
+      "Bash(python -m exegesis_tool:*)",
+      "Bash(python -m pytest:*)",
+      "WebFetch(domain:enduringword.com)",
+      "WebFetch(domain:www.thegospelcoalition.org)"
     ]
   }
 }

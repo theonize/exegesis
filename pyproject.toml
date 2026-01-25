@@ -1,0 +1,27 @@
+[project]
+name = "exegesis-tool"
+version = "0.1.0"
+description = "Automated exegesis research tool using Claude API"
+requires-python = ">=3.10"
+dependencies = [
+    "anthropic>=0.40.0",
+    "click>=8.0.0",
+    "aiosqlite>=0.19.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+]
+
+[project.scripts]
+exegesis = "exegesis_tool.cli:cli"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]

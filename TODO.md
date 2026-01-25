@@ -1,23 +1,26 @@
 # Exegesis TODO - Biblical Text Sections
 
+❌  failed
+🔄  in progress
+✅  completed
+
 ## Genesis (GEN)
 
-- [x] GEN 01:1-25 - Creation of the world
-- [x] GEN 03:14-19 - The curses pronounced
-- [x] GEN 22:1-19 - The binding of Isaac
-- [ ] GEN 01:26-31 - Creation of humanity
+- [✅] GEN 01:1-25 - Creation of the world
+- [✅] GEN 01:26-31 - Creation of humanity
 - [ ] GEN 02:1-3 - The seventh day rest
-- [ ] GEN 02:4-17 - Man placed in Eden
+- [✅] GEN 02:4-17 - Man placed in Eden
 - [ ] GEN 02:18-25 - Creation of woman
-- [ ] GEN 03:1-7 - The temptation and fall
+- [✅] GEN 03:1-7 - The temptation and fall
 - [ ] GEN 03:8-13 - God confronts Adam and Eve
+- [✅] GEN 03:14-19 - The curses pronounced
 - [ ] GEN 03:20-24 - Expulsion from Eden
-- [x] GEN 04:1-16 - Cain and Abel
+- [✅] GEN 04:1-16 - Cain and Abel
 - [ ] GEN 04:17-24 - Line of Cain
 - [ ] GEN 04:25-26 - Seth and Enosh
 - [ ] GEN 05:1-32 - Genealogy from Adam to Noah
 - [ ] GEN 06:1-8 - Wickedness and Noah's favor
-- [x] GEN 06:9-22 - Noah builds the ark
+- [✅] GEN 06:9-22 - Noah builds the ark
 - [ ] GEN 07:1-16 - Entering the ark
 - [ ] GEN 07:17-24 - The flood waters
 - [ ] GEN 08:1-14 - The waters recede
@@ -26,7 +29,7 @@
 - [ ] GEN 09:8-17 - The rainbow covenant
 - [ ] GEN 09:18-29 - Noah and his sons
 - [ ] GEN 10:1-32 - Table of nations
-- [x] GEN 11:1-9 - Tower of Babel
+- [✅] GEN 11:1-9 - Tower of Babel
 - [ ] GEN 11:10-26 - Genealogy from Shem to Abram
 - [ ] GEN 11:27-32 - Terah's family and departure
 - [ ] GEN 12:1-9 - Call of Abram
@@ -49,6 +52,7 @@
 - [ ] GEN 21:1-7 - Birth of Isaac
 - [ ] GEN 21:8-21 - Hagar and Ishmael sent away
 - [ ] GEN 21:22-34 - Treaty with Abimelech
+- [✅] GEN 22:1-19 - The binding of Isaac
 - [ ] GEN 22:20-24 - Nahor's descendants
 - [ ] GEN 23:1-20 - Death and burial of Sarah
 - [ ] GEN 24:1-27 - Servant's journey for a bride
@@ -76,7 +80,7 @@
 - [ ] GEN 31:22-42 - Laban pursues Jacob
 - [ ] GEN 31:43-55 - Covenant between Jacob and Laban
 - [ ] GEN 32:1-21 - Jacob prepares to meet Esau
-- [ ] GEN 32:22-32 - Jacob wrestles at Peniel
+- [✅] GEN 32:22-32 - Jacob wrestles at Peniel
 - [ ] GEN 33:1-17 - Jacob meets Esau
 - [ ] GEN 33:18-20 - Jacob at Shechem
 - [ ] GEN 34:1-31 - Dinah and the Shechemites
@@ -120,7 +124,7 @@
 - [ ] EXO 02:1-10 - Birth and rescue of Moses
 - [ ] EXO 02:11-22 - Moses flees to Midian
 - [ ] EXO 02:23-25 - God hears Israel's groaning
-- [ ] EXO 03:1-12 - The burning bush
+- [✅] EXO 03:1-12 - The burning bush
 - [ ] EXO 03:13-22 - God reveals his name
 - [ ] EXO 04:1-17 - Signs for Moses
 - [ ] EXO 04:18-31 - Moses returns to Egypt
@@ -1842,8 +1846,8 @@
 
 ## Haggai (HAG)
 
-- [ ] HAG 01:1-11 - Call to rebuild the temple
-- [ ] HAG 01:12-15 - The people obey
+- [✅] HAG 01:1-11 - Call to rebuild the temple
+- [🔄] HAG 01:12-15 - The people obey
 - [ ] HAG 02:1-9 - The glory of the new temple
 - [ ] HAG 02:10-19 - Blessings for a defiled people
 - [ ] HAG 02:20-23 - Promise to Zerubbabel
@@ -2689,3 +2693,9 @@
 - [ ] REV 21:9-27 - The new Jerusalem
 - [ ] REV 22:1-5 - The river of life
 - [ ] REV 22:6-21 - Jesus is coming
+
+## Topics
+- [ ] Shoes
+- [ ] Armor
+- [ ] Clothing, vestments, robes, etc.
+- [ ] Angels
