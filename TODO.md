@@ -1848,8 +1848,8 @@
 
 - [✅] HAG 01:1-11 - Call to rebuild the temple
 - [✅] HAG 01:12-15 - The people obey
-- [ ] HAG 02:1-9 - The glory of the new temple
-- [ ] HAG 02:10-19 - Blessings for a defiled people
+- [✅] HAG 02:1-9 - The glory of the new temple
+- [✅] HAG 02:10-19 - Blessings for a defiled people
 - [ ] HAG 02:20-23 - Promise to Zerubbabel
 
 ## Zechariah (ZEC)
