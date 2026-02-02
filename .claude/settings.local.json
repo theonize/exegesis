@@ -11,7 +11,10 @@
       "Bash(python -m exegesis_tool:*)",
       "Bash(python -m pytest:*)",
       "WebFetch(domain:enduringword.com)",
-      "WebFetch(domain:www.thegospelcoalition.org)"
+      "WebFetch(domain:www.thegospelcoalition.org)",
+      "WebFetch(domain:www.stepbible.org)",
+      "WebFetch(domain:www.biblegateway.com)",
+      "Bash(git rm:*)"
     ]
   }
 }

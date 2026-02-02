@@ -13,3 +13,39 @@ Research and determine the context of a Biblical passage by answering the follow
 * What is the etymology of key terms?
 * What are some notable translation decisions associated with this passage?
 * What notable textual variants are there?
+
+## Output Format
+
+Produce content under the heading `## Linguistic Analysis`.
+
+Organize answers as `### ` subsections:
+
+### 1. Original Language
+Language classification, period, distinctive features of this text's language.
+
+### 2. Lexical Semantics
+Key terms with Strong's numbers, roots, semantic ranges, and intertextual connections. Use vocabulary tables:
+| Term | Root | Meaning | Occurrences | Key Usage |
+
+### 3. Morphological and Grammatical Features
+Verb forms, construct chains, notable syntax, parsing of significant words.
+
+### 4. Discourse Structure
+Progression markers, rhetorical flow, discourse-level features.
+
+### 5. Etymology of Key Terms
+Word origins, development across biblical usage, cognates.
+
+### 6. Translation Decisions
+Compare major versions. Use a translation comparison table:
+| Version | Rendering | Notes |
+
+### 7. Textual Variants
+Manuscript evidence, critical apparatus notes, impact on interpretation.
+
+### Formatting
+- Hebrew/Greek: **term** (Hebrew: script, *transliteration*)
+- Strong's numbers: H1234 / G5678
+- Vocabulary tables for key terms with semantic ranges
+- Morphological notation where relevant
+- Translation comparison tables across ESV, NASB, NIV, KJV

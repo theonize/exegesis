@@ -1307,8 +1307,8 @@
 
 ## Proverbs (PRO)
 
-- [ ] PRO 01:1-7 - Purpose of Proverbs
-- [ ] PRO 01:8-19 - Warning against sinners
+- [✅] PRO 01:1-7 - Purpose of Proverbs
+- [✅] PRO 01:8-19 - Warning against sinners
 - [ ] PRO 01:20-33 - Wisdom's call
 - [ ] PRO 02:1-22 - Benefits of wisdom
 - [ ] PRO 03:1-12 - Trust in the Lord
@@ -1850,7 +1850,7 @@
 - [✅] HAG 01:12-15 - The people obey
 - [✅] HAG 02:1-9 - The glory of the new temple
 - [✅] HAG 02:10-19 - Blessings for a defiled people
-- [ ] HAG 02:20-23 - Promise to Zerubbabel
+- [✅] HAG 02:20-23 - Promise to Zerubbabel
 
 ## Zechariah (ZEC)
 
@@ -2693,6 +2693,82 @@
 - [ ] REV 21:9-27 - The new Jerusalem
 - [ ] REV 22:1-5 - The river of life
 - [ ] REV 22:6-21 - Jesus is coming
+
+## Books
+- [ ] Genesis
+- [ ] Exodus
+- [ ] Leviticus
+- [ ] Numbers
+- [ ] Deuteronomy
+- [ ] Joshua
+- [ ] Judges
+- [ ] 1 Samuel
+- [ ] 2 Samuel
+- [ ] 1 Kings
+- [ ] 2 Kings
+- [ ] Isaiah
+- [ ] Jeremiah
+- [ ] Ezekiel
+- [ ] Hosea
+- [ ] Joel
+- [ ] Amos
+- [ ] Obadiah
+- [ ] Jonah
+- [ ] Micah
+- [ ] Nahum
+- [ ] Habakkuk
+- [ ] Zephaniah
+- [ ] Haggai
+- [ ] Zechariah
+- [ ] Malachi
+- [ ] Psalms
+- [ ] Proverbs
+- [ ] Job
+- [ ] Song of Solomon
+- [ ] Ruth
+- [ ] Lamentations
+- [ ] Ecclesiastes
+- [ ] Esther
+- [ ] Daniel
+- [ ] Ezra
+- [ ] Nehemiah
+- [ ] 1 Chronicles
+- [ ] 2 Chronicles
+- [ ] Matthew
+- [ ] Mark
+- [ ] Luke
+- [ ] John
+- [ ] Acts
+- [ ] Romans
+- [ ] 1 Corinthians
+- [ ] 2 Corinthians
+- [ ] Galatians
+- [ ] Ephesians
+- [ ] Philippians
+- [ ] Colossians
+- [ ] 1 Thessalonians
+- [ ] 2 Thessalonians
+- [ ] 1 Timothy
+- [ ] 2 Timothy
+- [ ] Titus
+- [ ] Philemon
+- [ ] Hebrews
+- [ ] James
+- [ ] 1 Peter
+- [ ] 2 Peter
+- [ ] 1 John
+- [ ] 2 John
+- [ ] 3 John
+- [ ] Jude
+- [ ] Revelation
+
+- [ ] Torah
+- [ ] Nevi'im
+- [ ] Ketuvim
+- [ ] Apocrypha
+- [ ] Gospels
+- [ ] Epistles
+- [ ] Apocalypse
 
 ## Topics
 - [✅] Shoes
