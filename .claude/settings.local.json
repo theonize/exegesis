@@ -14,7 +14,8 @@
       "WebFetch(domain:www.thegospelcoalition.org)",
       "WebFetch(domain:www.stepbible.org)",
       "WebFetch(domain:www.biblegateway.com)",
-      "Bash(git rm:*)"
+      "Bash(git rm:*)",
+      "mcp__plugin_dude_dude__upsert_record"
     ]
   }
 }

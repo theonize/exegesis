@@ -2495,7 +2495,8 @@
 - [ ] COL 01:15-23 - Preeminence of Christ
 - [ ] COL 01:24-2:5 - Paul's ministry
 - [ ] COL 02:6-23 - Alive in Christ
-- [ ] COL 03:1-17 - Put on the new self
+- [ ] COL 03:1-11 - 
+- [✅] COL 03:12-17 - Putting On the New Self
 - [ ] COL 03:18-4:1 - Rules for households
 - [ ] COL 04:2-18 - Final instructions
 
