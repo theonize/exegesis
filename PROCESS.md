@@ -86,13 +86,6 @@ Compare major versions. Use a translation comparison table:
 #### 7. Textual Variants
 Manuscript evidence, critical apparatus notes, impact on interpretation.
 
-#### Formatting
-- Hebrew/Greek: **term** (Hebrew: script, *transliteration*)
-- Strong's numbers: H1234 / G5678
-- Vocabulary tables for key terms with semantic ranges
-- Morphological notation where relevant
-- Translation comparison tables across ESV, NASB, NIV, KJV
-
 ---
 
 ## Author — Literary Analysis
@@ -146,13 +139,6 @@ Number significance, word counts, repeated patterns, numerical word values, macr
 Symbolic objects, colors, and their biblical precedent. Use catalog tables:
 | Symbol | Meaning | Biblical Precedent |
 
-#### Formatting
-- ASCII structural diagrams with indentation
-- Chiastic notation: A/B/C/B'/A'
-- Symbol catalog tables
-- Hebrew/Greek terms: **term** (Hebrew: script, *transliteration*)
-- Cross-references for pattern identification
-
 ---
 
 ## Theologian — Theological Analysis
@@ -175,12 +161,6 @@ Doctrinal truths that transcend the original setting.
 
 #### 4. Key Theological Themes
 Expanded sub-themes with cross-references where the passage connects to broader biblical theology.
-
-#### Formatting
-- Hebrew/Greek terms: **term** (Hebrew: script, *transliteration*)
-- Cross-reference tables: `| Theme | OT Foundation | NT Development |`
-- Biblical citations throughout
-- Connect to systematic theology categories where natural
 
 ---
 
