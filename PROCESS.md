@@ -58,6 +58,8 @@ Research and determine the context of a Biblical passage by answering the follow
 * What are some notable morphological and grammatical features of the passage?
 * What are the lexical-syntactical and discourse features of the passage?
 * What is the etymology of key terms?
+* What wordplay and/or idioms or in use?
+* What are the dominant ideas and words in the passage?
 * What are some notable translation decisions associated with this passage?
 * What notable textual variants are there?
 
@@ -92,14 +94,15 @@ Manuscript evidence, critical apparatus notes, impact on interpretation.
 
 Research and determine the context of a Biblical passage by answering the following questions:
 * What is the genre (and sub-genres) of the passage?
+  * What are the rules of interpretation for these?
 * What is the literary structure of the immediate and surrounding?
 * What is the voice, mood and style of the passage?
 * What rhetorical devices are used in the text?
+  * What overt symbols are present and what is their significance?
+  * What numerology is in play here?
+  * What colors, items, et cetera have significance?
 * What literary devices are used in the text?
 * What are the characters and images in use?  and their purpose in the passage?
-* What numerology is in play here?
-* What colors, items, et cetera have significance?
-* What overt symbols are present and what is their significance?
 * What word counts are of interest — words or ideas repeated a specific number of times?
 * What numerical word values are important in the original language?
 * What canonical macro-patterns are established or reiterated in the text?
@@ -141,12 +144,15 @@ Symbolic objects, colors, and their biblical precedent. Use catalog tables:
 
 ---
 
-## Theologian — Theological Analysis
+## Teacher — Theological Analysis
 
 Research and determine the context of a Biblical passage by answering the following questions:
+* Who is God in this passage? the Christ? the Spirit?
+  * attributes, actions, promises
 * What would the original audience have drawn from the passage?
-* What spiritual disciplines are in play in the passage?
+* What spiritual disciplines, or formations, are in play in the passage?
 * What timeless principles are in view in the passage?
+  * How is it progressing the revelation? connecting past and future?
 
 ### Output: `## Theological Analysis`
 
@@ -168,10 +174,9 @@ Expanded sub-themes with cross-references where the passage connects to broader 
 
 Research and determine the context of a Biblical passage by answering the following questions:
 * How does this passage fit within over-arching canonical threads and themes?
-* What wordplay and/or idioms or in use?
-* What are some notable micro and macro-structures in the passage?
 * What are the human image-bearer elements of the passage?  wisdom elements?
 * What is the plenary authorship intent in composing this text?
+  * Why is this passage where it is?
 
 ### Output: `## Hermeneutic`
 
