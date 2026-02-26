@@ -20,6 +20,7 @@ Research and determine the historical and cultural context of a Biblical passage
 * What was the family structure of the times?
 * What notable iconography is associated with those people?
 * What intercultural issues were at play?
+* Where does this passage fit in the canonical narrative?
 
 ### Output: `## Historical & Cultural Analysis`
 
@@ -62,31 +63,7 @@ Research and determine the context of a Biblical passage by answering the follow
 * What are the dominant ideas and words in the passage?
 * What are some notable translation decisions associated with this passage?
 * What notable textual variants are there?
-
-### Output: `## Linguistic Analysis`
-
-#### 1. Original Language
-Language classification, period, distinctive features of this text's language.
-
-#### 2. Lexical Semantics
-Key terms with Strong's numbers, roots, semantic ranges, and intertextual connections. Use vocabulary tables:
-| Term | Root | Meaning | Occurrences | Key Usage |
-
-#### 3. Morphological and Grammatical Features
-Verb forms, construct chains, notable syntax, parsing of significant words.
-
-#### 4. Discourse Structure
-Progression markers, rhetorical flow, discourse-level features.
-
-#### 5. Etymology of Key Terms
-Word origins, development across biblical usage, cognates.
-
-#### 6. Translation Decisions
-Compare major versions. Use a translation comparison table:
-| Version | Rendering | Notes |
-
-#### 7. Textual Variants
-Manuscript evidence, critical apparatus notes, impact on interpretation.
+  * Do they change the teaching?
 
 ---
 
