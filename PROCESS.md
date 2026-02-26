@@ -48,14 +48,6 @@ Family structure, worldview, cosmology, intercultural dynamics, iconography.
 #### 8. Geography
 Physical setting, significance of locations, expanding/contracting scope where applicable.
 
-#### Formatting
-- Hebrew/Greek terms: **term** (Hebrew: script, *transliteration*)
-- Timeline tables: `| Date | Event | Reference |`
-- Comparison tables for cultural parallels
-- Verse references: (v.1), (vv.1-5)
-- Biblical citations: Book Chapter:Verses
-- Depth: scholarly content for an amateur audience
-
 ---
 
 ## Linguist — Linguistic Analysis
