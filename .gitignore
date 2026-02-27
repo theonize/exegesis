@@ -43,3 +43,6 @@ ENV/
 htmlcov/
 
 .env
+
+.claude
+.playwright-mcp

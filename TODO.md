@@ -2032,7 +2032,7 @@
 - [ ] MRK 03:7-12 - Crowds follow Jesus
 - [ ] MRK 03:13-19 - Appointing the twelve
 - [ ] MRK 03:20-30 - Blasphemy against the Spirit
-- [ ] MRK 03:31-35 - Jesus' true family
+- [✅] MRK 03:31-35 - Jesus' true family
 - [ ] MRK 04:1-20 - Parable of the sower
 - [ ] MRK 04:21-25 - Lamp under a basket
 - [ ] MRK 04:26-34 - Growing seed and mustard seed
@@ -2471,7 +2471,7 @@
 - [ ] EPH 04:1-16 - Unity in the body
 - [ ] EPH 04:17-32 - The new self
 - [ ] EPH 05:1-21 - Walk in love and light
-- [ ] EPH 05:22-33 - Husbands and wives
+- [✅] EPH 05:22-33 - Husbands and wives
 - [ ] EPH 06:1-9 - Children, parents, servants, masters
 - [ ] EPH 06:10-20 - Armor of God
 - [ ] EPH 06:21-24 - Final greetings

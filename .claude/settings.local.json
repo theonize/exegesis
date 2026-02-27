@@ -15,7 +15,18 @@
       "WebFetch(domain:www.stepbible.org)",
       "WebFetch(domain:www.biblegateway.com)",
       "Bash(git rm:*)",
-      "mcp__plugin_dude_dude__upsert_record"
+      "mcp__plugin_dude_dude__upsert_record",
+      "Bash(pandoc:*)",
+      "mcp__plugin_playwright_playwright__browser_navigate",
+      "mcp__plugin_playwright_playwright__browser_run_code",
+      "Bash(where:*)",
+      "Bash(curl:*)",
+      "Bash(dude:get_project_context { \"directory\": \"c:\\\\writ\\\\exegesis\" })",
+      "WebFetch(domain:jbburnett.com)",
+      "WebFetch(domain:www.9marks.org)",
+      "WebFetch(domain:www.drtimwhite.net)",
+      "Bash(wkhtmltopdf --version)",
+      "Bash(node --version)"
     ]
   }
 }
