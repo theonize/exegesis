@@ -44,5 +44,6 @@ htmlcov/
 
 .env
 
-.claude
+.claude/*
+!.claude/skills/
 .playwright-mcp
