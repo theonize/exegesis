@@ -995,8 +995,8 @@
 ## Nehemiah (NEH)
 
 - [✅] NEH 01:1-11 - Nehemiah's prayer
-- [ ] NEH 02:1-10 - Nehemiah sent to Jerusalem
-- [ ] NEH 02:11-20 - Inspecting the walls
+- [✅] NEH 02:1-10 - Nehemiah sent to Jerusalem
+- [✅] NEH 02:11-20 - Inspecting the walls
 - [ ] NEH 03:1-32 - Builders of the wall
 - [ ] NEH 04:1-14 - Opposition to rebuilding
 - [ ] NEH 04:15-23 - Armed builders
