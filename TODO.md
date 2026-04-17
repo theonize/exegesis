@@ -2414,8 +2414,8 @@
 - [ ] 1CO 13:1-13 - The way of love
 - [ ] 1CO 14:1-25 - Prophecy and tongues
 - [ ] 1CO 14:26-40 - Orderly worship
-- [🔄] 1CO 15:1-11 - The resurrection of Christ
-- [ ] 1CO 15:12-34 - The resurrection of the dead
+- [✅] 1CO 15:1-11 - The resurrection of Christ
+- [✅] 1CO 15:12-34 - The resurrection of the dead
 - [ ] 1CO 15:35-58 - The resurrection body
 - [ ] 1CO 16:1-12 - Collection and plans
 - [ ] 1CO 16:13-24 - Final exhortations
