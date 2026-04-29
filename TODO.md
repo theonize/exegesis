@@ -120,7 +120,7 @@
 ## Exodus (EXO)
 
 - [ ] EXO 01:1-14 - Israel oppressed in Egypt
-- [ ] EXO 01:15-22 - Pharaoh orders male babies killed
+- [✅] EXO 01:15-22 - Pharaoh orders male babies killed
 - [ ] EXO 02:1-10 - Birth and rescue of Moses
 - [ ] EXO 02:11-22 - Moses flees to Midian
 - [ ] EXO 02:23-25 - God hears Israel's groaning
@@ -1859,7 +1859,7 @@
 - [ ] ZEC 01:18-21 - Vision of the horns and craftsmen
 - [ ] ZEC 02:1-13 - Vision of the measuring line
 - [ ] ZEC 03:1-10 - Vision of Joshua the high priest
-- [ ] ZEC 04:1-14 - Vision of the lampstand
+- [✅] ZEC 04:1-14 - Vision of the lampstand
 - [ ] ZEC 05:1-4 - Vision of the flying scroll
 - [ ] ZEC 05:5-11 - Vision of the woman in a basket
 - [ ] ZEC 06:1-8 - Vision of the four chariots
@@ -2054,7 +2054,7 @@
 - [ ] MRK 08:14-21 - Leaven of the Pharisees
 - [ ] MRK 08:22-26 - Blind man at Bethsaida
 - [ ] MRK 08:27-30 - Peter's confession
-- [ ] MRK 08:31-9:1 - Jesus predicts his death
+- [✅] MRK 08:31-9:1 - Jesus predicts his death
 - [ ] MRK 09:2-13 - The transfiguration
 - [ ] MRK 09:14-29 - Healing the boy with a demon
 - [ ] MRK 09:30-32 - Second prediction of death
