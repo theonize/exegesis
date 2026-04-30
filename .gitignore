@@ -44,15 +44,11 @@ htmlcov/
 
 .env
 
-<<<<<<< HEAD
-.claude/*
-!.claude/skills/
-=======
 # Claude Code
 .claude/*
-!.claude/settings.json
 !.claude/skills/
 !.claude/hooks/
-
->>>>>>> 75c5c7c13ebbe2b8141283132407044feb4af211
 .playwright-mcp
+
+# Local data
+content/data/
