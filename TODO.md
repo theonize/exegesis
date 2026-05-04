@@ -404,7 +404,7 @@
 - [ ] DEU 04:44-49 - Introduction to the law
 - [ ] DEU 05:1-21 - The Ten Commandments restated
 - [ ] DEU 05:22-33 - Moses as mediator
-- [ ] DEU 06:1-9 - The great commandment
+- [✅] DEU 06:1-9 - The great commandment
 - [ ] DEU 06:10-19 - Warning against forgetting God
 - [ ] DEU 06:20-25 - Teaching children
 - [ ] DEU 07:1-11 - Driving out the nations
