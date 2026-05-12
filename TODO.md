@@ -2533,7 +2533,7 @@
 
 ## 2 Timothy (2TI)
 
-- [ ] 2TI 01:1-14 - Guard the good deposit
+- [✅] 2TI 01:1-14 - Guard the good deposit
 - [ ] 2TI 01:15-18 - Onesiphorus
 - [ ] 2TI 02:1-13 - A good soldier
 - [ ] 2TI 02:14-26 - An approved worker
