@@ -2696,6 +2696,7 @@
 - [ ] REV 22:6-21 - Jesus is coming
 
 ## Books
+**Overview of a Biblical book**
 - [ ] Genesis
 - [ ] Exodus
 - [ ] Leviticus
@@ -2772,8 +2773,13 @@
 - [ ] Apocalypse
 
 ## Topics
+**Research on a particular Biblical topic**
 - [✅] Shoes
 - [ ] Armor
 - [ ] Clothing, vestments, robes, etc.
 - [ ] Angels
 - [✅] Wings
+
+
+## Characters
+**Research on particular characters**

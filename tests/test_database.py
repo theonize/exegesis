@@ -111,11 +111,11 @@ class TestDatabase:
         )
         passage_id = self.db.upsert_passage(passage)
 
-        self.db.update_passage_status(passage_id, PassageStatus.COMPLETED, "content/GEN/01/GEN_01_1-25.md")
+        self.db.update_passage_status(passage_id, PassageStatus.COMPLETED, "content/Books/OT/GEN/01/GEN_01_1-25.md")
 
         retrieved = self.db.get_passage(passage_id)
         assert retrieved.status == PassageStatus.COMPLETED
-        assert retrieved.output_path == "content/GEN/01/GEN_01_1-25.md"
+        assert retrieved.output_path == "content/Books/OT/GEN/01/GEN_01_1-25.md"
 
     def test_claim_passages(self):
         """Test atomic claiming of passages."""

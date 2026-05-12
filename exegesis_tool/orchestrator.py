@@ -210,7 +210,7 @@ class ExegesisOrchestrator:
 
     def _write_output(self, passage: Passage, content: str) -> str:
         """Write compiled content to output file."""
-        output_dir = Path(self.config.content_dir) / passage.book / f"{passage.chapter:02d}"
+        output_dir = Path(self.config.content_dir) / "Books" / passage.testament / passage.book / passage._chapter_str
         output_dir.mkdir(parents=True, exist_ok=True)
 
         output_path = output_dir / passage.filename

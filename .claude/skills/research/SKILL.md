@@ -55,10 +55,14 @@ Assemble the outputs into a single markdown document following the format in CLA
 
 ## Step 4: Write the Output
 
-1. Create directory `content/<BOOK_CODE>/<CHAPTER>/` if it does not exist
-   - CHAPTER is zero-padded: 01, 02, etc.
-2. Write to `content/<BOOK_CODE>/<CHAPTER>/<BOOK_CODE>_<CHAPTER>_<VERSES>.md`
-   - Example: HAG 02:20-23 → `content/HAG/02/HAG_02_20-23.md`
+1. Determine the testament folder:
+   - `OT` for Genesis through Malachi
+   - `NT` for Matthew through Revelation
+2. Create directory `content/Books/<TESTAMENT>/<BOOK_CODE>/<CHAPTER>/` if it does not exist
+   - CHAPTER is zero-padded to match the existing tree: 01, 02, etc.
+   - Psalms use three digits: 001 through 150.
+3. Write to `content/Books/<TESTAMENT>/<BOOK_CODE>/<CHAPTER>/<BOOK_CODE>_<CHAPTER>_<VERSES>.md`
+   - Example: HAG 02:20-23 -> `content/Books/OT/HAG/02/HAG_02_20-23.md`
 
 ## Step 5: Mark Complete
 
@@ -77,7 +81,7 @@ Change `[🔄]` to `[✅]` in `TODO.md` for the passage.
 | EST | Esther | 2KI | 2 Kings | LAM | Lamentations |
 | EZR | Ezra | 1CH | 1 Chronicles | EZK | Ezekiel |
 | NEH | Nehemiah | 2CH | 2 Chronicles | DAN | Daniel |
-| HOS | Hosea | JOE | Joel | AMO | Amos |
+| HOS | Hosea | JOL | Joel | AMO | Amos |
 | OBA | Obadiah | JON | Jonah | MIC | Micah |
 | NAH | Nahum | HAB | Habakkuk | ZEP | Zephaniah |
 | HAG | Haggai | ZEC | Zechariah | MAL | Malachi |
@@ -89,4 +93,4 @@ Change `[🔄]` to `[✅]` in `TODO.md` for the passage.
 | 2TI | 2 Timothy | TIT | Titus | PHM | Philemon |
 | HEB | Hebrews | JAS | James | 1PE | 1 Peter |
 | 2PE | 2 Peter | 1JN | 1 John | 2JN | 2 John |
-| 3JN | 3 John | JDE | Jude | REV | Revelation |
+| 3JN | 3 John | JUD | Jude | REV | Revelation |

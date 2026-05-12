@@ -1,47 +1,54 @@
 # Exegetical Analysis Project
 
-This project produces comprehensive exegetical analyses of Biblical passages and documents the methodology. AI serves as a research assistant — treat output like a calculator: always verify claims, cross-reference sources, and probe answers critically.
+This project produces exegetical studies of biblical passages and related topics. Claude is a research assistant, not an authority: verify claims, cross-check sources, and preserve only what survives scrutiny.
 
 ## Workflow
 
 To analyze a passage, use the `/research` skill:
 
-```
+```text
 /research <BOOK_CODE> <CHAPTER>:<VERSES>
 ```
 
 Example: `/research HAG 02:20-23`
 
-This orchestrates all six analysis skills in parallel, compiles the output, and writes the file.
+The skill runs the six analysis skills, compiles the output, writes the file, and updates `TODO.md`.
+
+## Research Posture
+
+Begin with authorial intent in historical, cultural, linguistic, literary, and canonical context. Distinguish observation, inference, tradition, and application. Keep conclusions proportional to the evidence. Write for serious non-specialists in a clear confessional/evangelical voice without narrowing to one tradition.
 
 ## File Organization
 
-- Content: `content/<BOOK_CODE>/<CHAPTER>/<BOOK_CODE>_<CHAPTER>_<VERSES>.md`
-- Example: `HAG 02:20-23` → `content/HAG/02/HAG_02_20-23.md`
+- Passage studies: `content/Books/<TESTAMENT>/<BOOK_CODE>/<CHAPTER>/<BOOK_CODE>_<CHAPTER>_<VERSES>.md`
+- `TESTAMENT`: `OT` or `NT`.
+- `BOOK_CODE`: uppercase code from `TODO.md`; use `JOL` for Joel and `JUD` for Jude.
+- `CHAPTER`: zero-padded to match the existing tree (`01`, `02`, etc.; Psalms use `001` through `150`).
+- `VERSES`: hyphenated range; preserve cross-chapter notation when present, e.g. `MRK_08_31-9_1.md`.
+- Examples: `HAG 02:20-23` -> `content/Books/OT/HAG/02/HAG_02_20-23.md`; `COL 03:12-17` -> `content/Books/NT/COL/03/COL_03_12-17.md`.
+- Topic studies: `content/Topics/<Topic>.md`; grouped topics may use subfolders, e.g. `content/Topics/Chroma/Gold.md`.
+- Character studies: `content/Characters/<Name>.md`.
 
-**Book codes** (3-letter uppercase):
-GEN EXO LEV NUM DEU JOS JDG RUT 1SA 2SA 1KI 2KI 1CH 2CH EZR NEH EST JOB PSA PRO ECC SNG ISA JER LAM EZK DAN HOS JOE AMO OBA JON MIC NAH HAB ZEP HAG ZEC MAL MAT MRK LUK JHN ACT ROM 1CO 2CO GAL EPH PHP COL 1TH 2TH 1TI 2TI TIT PHM HEB JAS 1PE 2PE 1JN 2JN 3JN JDE REV
+Use `TODO.md` for the active queue and passage descriptions. Preserve its existing status markers exactly.
 
-**Chapters**: zero-padded two digits (01, 02, ...)
-**Verses**: hyphenated ranges (1-25, 26-31)
+## Book Codes
 
-**Progress tracking** in `TODO.md`:
-- `[ ]` pending
-- `[🔄]` in-progress
-- `[✅]` complete
+Use `TODO.md` as the source of truth.
 
-## Output Format Specification
+OT: GEN EXO LEV NUM DEU JOS JDG RUT 1SA 2SA 1KI 2KI 1CH 2CH EZR NEH EST JOB PSA PRO ECC SNG ISA JER LAM EZK DAN HOS JOL AMO OBA JON MIC NAH HAB ZEP HAG ZEC MAL
 
-### Document Structure
+NT: MAT MRK LUK JHN ACT ROM 1CO 2CO GAL EPH PHP COL 1TH 2TH 1TI 2TI TIT PHM HEB JAS 1PE 2PE 1JN 2JN 3JN JUD REV
 
-```
+## Output Format
+
+```markdown
 # Exegetical Analysis of {Full Book Name} {Chapter}:{Verses} - {Description}
 
 > **1** First verse text...
 >
 > **2** Second verse text...
 >
-> — *English Standard Version (ESV)*
+> -- *English Standard Version (ESV)*
 
 ---
 
@@ -74,24 +81,22 @@ GEN EXO LEV NUM DEU JOS JDG RUT 1SA 2SA 1KI 2KI 1CH 2CH EZR NEH EST JOB PSA PRO 
 ### [subsections per shepherd skill]
 ```
 
-## Formatting Conventions
+## Formatting
 
-- **Hebrew/Greek/Aramaic terms**: `**term** (Hebrew: script, *transliteration*)`
-  Example: **chotam** (Hebrew: חוֹתָם, *ḥôṯām*)
-- **Biblical citations**: Book Chapter:Verses (e.g., Genesis 41:42)
-- **Verse references within passage**: (v.1), (vv.1-5)
-- **Strong's numbers**: H1234 or G5678 where relevant
-- **Section separators**: `---` between each `## ` section
-- **Subsections**: `### ` headings within each `## ` section
-- **Tables**: markdown tables for comparisons, timelines, vocabulary, semantic ranges
-- **Structural diagrams**: ASCII art for chiastic patterns, literary structures
-- **Tone**: scholar addressing an amateur audience; confessional/evangelical, no particular tradition
+- Original-language terms: `**term** (Hebrew/Greek/Aramaic: original script, *transliteration*)`
+- Biblical citations: `Book Chapter:Verses`, e.g. `Genesis 41:42`
+- Verse references inside the target passage: `(v.1)`, `(vv.1-5)`
+- Strong's numbers: `H1234` or `G5678` where useful
+- Top-level sections: `##`; subsections: `###`
+- Separators: `---` between each `##` section
+- Tables: comparisons, timelines, vocabulary, semantic ranges
+- Diagrams: ASCII for chiastic patterns and literary structures
+- Tone: scholar addressing an amateur audience; confessional/evangelical, no particular tradition
 
 ## Exemplar
 
-See `content/HAG/01/HAG_01_1-11.md` for a well-formed reference example.
+See `content/Books/OT/HAG/01/HAG_01_1-11.md` for a well-formed passage study.
 
 ## Resources
 
 Study tools and references are listed in `RESOURCES.md`.
-Permitted web domains: enduringword.com, www.thegospelcoalition.org

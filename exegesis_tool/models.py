@@ -6,6 +6,22 @@ from typing import Optional, List
 from enum import Enum
 
 
+OT_BOOKS = frozenset({
+    "GEN", "EXO", "LEV", "NUM", "DEU", "JOS", "JDG", "RUT",
+    "1SA", "2SA", "1KI", "2KI", "1CH", "2CH", "EZR", "NEH", "EST",
+    "JOB", "PSA", "PRO", "ECC", "SNG",
+    "ISA", "JER", "LAM", "EZK", "DAN",
+    "HOS", "JOL", "AMO", "OBA", "JON", "MIC", "NAH", "HAB", "ZEP", "HAG", "ZEC", "MAL",
+})
+
+NT_BOOKS = frozenset({
+    "MAT", "MRK", "LUK", "JHN", "ACT",
+    "ROM", "1CO", "2CO", "GAL", "EPH", "PHP", "COL",
+    "1TH", "2TH", "1TI", "2TI", "TIT", "PHM",
+    "HEB", "JAS", "1PE", "2PE", "1JN", "2JN", "3JN", "JUD", "REV",
+})
+
+
 class PassageStatus(str, Enum):
     """Status of a passage in the processing pipeline."""
     PENDING = "pending"
@@ -37,19 +53,33 @@ class Passage:
     updated_at: Optional[datetime] = None
 
     @property
+    def _chapter_str(self) -> str:
+        width = 3 if self.book == "PSA" else 2
+        return f"{self.chapter:0{width}d}"
+
+    @property
     def reference(self) -> str:
         """Get the passage reference string (e.g., 'GEN 01:26-31')."""
-        return f"{self.book} {self.chapter:02d}:{self.verse_start}-{self.verse_end}"
+        return f"{self.book} {self._chapter_str}:{self.verse_start}-{self.verse_end}"
 
     @property
     def filename(self) -> str:
         """Get the output filename (e.g., 'GEN_01_26-31.md')."""
-        return f"{self.book}_{self.chapter:02d}_{self.verse_start}-{self.verse_end}.md"
+        return f"{self.book}_{self._chapter_str}_{self.verse_start}-{self.verse_end}.md"
+
+    @property
+    def testament(self) -> str:
+        """Return 'OT' or 'NT' for this passage's book."""
+        if self.book in OT_BOOKS:
+            return "OT"
+        if self.book in NT_BOOKS:
+            return "NT"
+        raise ValueError(f"Unknown book code: {self.book}")
 
     @property
     def output_dir(self) -> str:
-        """Get the output directory path (e.g., 'content/GEN/01')."""
-        return f"content/{self.book}/{self.chapter:02d}"
+        """Get the output directory path (e.g., 'content/Books/OT/GEN/01')."""
+        return f"content/Books/{self.testament}/{self.book}/{self._chapter_str}"
 
     @classmethod
     def from_reference(cls, reference: str, description: str = "") -> "Passage":
