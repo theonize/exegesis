@@ -387,7 +387,7 @@
 
 ## Deuteronomy (DEU)
 
-- [ ] DEU 01:1-8 - Introduction to Moses' speech
+- [✅] DEU 01:1-8 - Introduction to Moses' speech
 - [ ] DEU 01:9-18 - Appointment of leaders
 - [ ] DEU 01:19-33 - Rebellion at Kadesh recalled
 - [ ] DEU 01:34-46 - Judgment on that generation
@@ -1908,7 +1908,7 @@
 - [ ] MAT 05:33-37 - Teaching on oaths
 - [ ] MAT 05:38-48 - Teaching on retaliation and love
 - [ ] MAT 06:1-4 - Teaching on giving
-- [ ] MAT 06:5-15 - Teaching on prayer
+- [✅] MAT 06:5-15 - Teaching on prayer
 - [ ] MAT 06:16-18 - Teaching on fasting
 - [ ] MAT 06:19-24 - Treasures and masters
 - [ ] MAT 06:25-34 - Do not be anxious
@@ -2146,7 +2146,7 @@
 - [ ] LUK 10:17-24 - Return of the seventy-two
 - [ ] LUK 10:25-37 - Parable of the good Samaritan
 - [ ] LUK 10:38-42 - Mary and Martha
-- [ ] LUK 11:1-13 - Teaching on prayer
+- [✅] LUK 11:1-13 - Teaching on prayer
 - [ ] LUK 11:14-28 - Jesus and Beelzebul
 - [ ] LUK 11:29-36 - Sign of Jonah
 - [ ] LUK 11:37-54 - Woes to Pharisees and lawyers
