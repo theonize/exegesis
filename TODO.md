@@ -1309,72 +1309,72 @@
 
 - [✅] PRO 01:1-7 - Purpose of Proverbs
 - [✅] PRO 01:8-19 - Warning against sinners
-- [ ] PRO 01:20-33 - Wisdom's call
-- [ ] PRO 02:1-22 - Benefits of wisdom
-- [ ] PRO 03:1-12 - Trust in the Lord
-- [ ] PRO 03:13-26 - Blessed is the one who finds wisdom
-- [ ] PRO 03:27-35 - Do not withhold good
-- [ ] PRO 04:1-9 - Get wisdom
-- [ ] PRO 04:10-19 - Two paths
-- [ ] PRO 04:20-27 - Guard your heart
-- [ ] PRO 05:1-14 - Warning against adultery
-- [ ] PRO 05:15-23 - Rejoice in the wife of your youth
-- [ ] PRO 06:1-5 - Warning against surety
-- [ ] PRO 06:6-11 - The sluggard and the ant
-- [ ] PRO 06:12-19 - Seven things God hates
-- [ ] PRO 06:20-35 - Warning against adultery
-- [ ] PRO 07:1-27 - The seductress
-- [ ] PRO 08:1-21 - Wisdom's call
-- [ ] PRO 08:22-36 - Wisdom in creation
-- [ ] PRO 09:1-6 - Wisdom's invitation
-- [ ] PRO 09:7-12 - Wisdom and folly contrasted
-- [ ] PRO 09:13-18 - Folly's invitation
-- [ ] PRO 10:1-16 - Proverbs of Solomon: contrasts
-- [ ] PRO 10:17-32 - More contrasts
-- [ ] PRO 11:1-15 - Integrity and righteousness
-- [ ] PRO 11:16-31 - Generosity and kindness
-- [ ] PRO 12:1-14 - Wisdom in word and work
-- [ ] PRO 12:15-28 - The way of the wise
-- [ ] PRO 13:1-13 - Wisdom and discipline
-- [ ] PRO 13:14-25 - The fruit of righteousness
-- [ ] PRO 14:1-18 - Wisdom builds the house
-- [ ] PRO 14:19-35 - Fear of the Lord
-- [ ] PRO 15:1-17 - A gentle answer
-- [ ] PRO 15:18-33 - The Lord sees all
-- [ ] PRO 16:1-16 - The Lord directs steps
-- [ ] PRO 16:17-33 - Pride and humility
-- [ ] PRO 17:1-14 - Strife and peace
-- [ ] PRO 17:15-28 - A friend loves at all times
-- [ ] PRO 18:1-12 - The fool's mouth
-- [ ] PRO 18:13-24 - A true friend
-- [ ] PRO 19:1-15 - Better the poor than a liar
-- [ ] PRO 19:16-29 - Discipline your children
-- [ ] PRO 20:1-15 - Wine is a mocker
-- [ ] PRO 20:16-30 - The Lord tests hearts
-- [ ] PRO 21:1-16 - The king's heart
-- [ ] PRO 21:17-31 - Better to live on a corner
-- [ ] PRO 22:1-16 - A good name
-- [ ] PRO 22:17-29 - Sayings of the wise
-- [ ] PRO 23:1-18 - Do not envy sinners
-- [ ] PRO 23:19-35 - Warning against drunkenness
-- [ ] PRO 24:1-14 - Wisdom is sweet
-- [ ] PRO 24:15-22 - Do not rejoice when enemies fall
-- [ ] PRO 24:23-34 - More sayings of the wise
-- [ ] PRO 25:1-14 - Proverbs copied by Hezekiah's men
-- [ ] PRO 25:15-28 - Self-control
-- [ ] PRO 26:1-12 - Concerning fools
-- [ ] PRO 26:13-28 - The sluggard and the deceiver
-- [ ] PRO 27:1-14 - Do not boast about tomorrow
-- [ ] PRO 27:15-27 - Know your flocks
-- [ ] PRO 28:1-14 - The righteous are bold
-- [ ] PRO 28:15-28 - Justice and integrity
-- [ ] PRO 29:1-14 - Discipline brings wisdom
-- [ ] PRO 29:15-27 - Where there is no vision
-- [ ] PRO 30:1-9 - Words of Agur
-- [ ] PRO 30:10-17 - Numerical sayings
-- [ ] PRO 30:18-33 - More numerical sayings
-- [ ] PRO 31:1-9 - Words of King Lemuel
-- [ ] PRO 31:10-31 - The excellent wife
+- [✅] PRO 01:20-33 - Wisdom's call
+- [✅] PRO 02:1-22 - Benefits of wisdom
+- [✅] PRO 03:1-12 - Trust in the Lord
+- [✅] PRO 03:13-26 - Blessed is the one who finds wisdom
+- [✅] PRO 03:27-35 - Do not withhold good
+- [✅] PRO 04:1-9 - Get wisdom
+- [✅] PRO 04:10-19 - Two paths
+- [✅] PRO 04:20-27 - Guard your heart
+- [✅] PRO 05:1-14 - Warning against adultery
+- [✅] PRO 05:15-23 - Rejoice in the wife of your youth
+- [✅] PRO 06:1-5 - Warning against surety
+- [✅] PRO 06:6-11 - The sluggard and the ant
+- [✅] PRO 06:12-19 - Seven things God hates
+- [✅] PRO 06:20-35 - Warning against adultery
+- [✅] PRO 07:1-27 - The seductress
+- [✅] PRO 08:1-21 - Wisdom's call
+- [✅] PRO 08:22-36 - Wisdom in creation
+- [✅] PRO 09:1-6 - Wisdom's invitation
+- [✅] PRO 09:7-12 - Wisdom and folly contrasted
+- [✅] PRO 09:13-18 - Folly's invitation
+- [✅] PRO 10:1-16 - Proverbs of Solomon: contrasts
+- [✅] PRO 10:17-32 - More contrasts
+- [✅] PRO 11:1-15 - Integrity and righteousness
+- [✅] PRO 11:16-31 - Generosity and kindness
+- [✅] PRO 12:1-14 - Wisdom in word and work
+- [✅] PRO 12:15-28 - The way of the wise
+- [✅] PRO 13:1-13 - Wisdom and discipline
+- [✅] PRO 13:14-25 - The fruit of righteousness
+- [✅] PRO 14:1-18 - Wisdom builds the house
+- [✅] PRO 14:19-35 - Fear of the Lord
+- [✅] PRO 15:1-17 - A gentle answer
+- [✅] PRO 15:18-33 - The Lord sees all
+- [✅] PRO 16:1-16 - The Lord directs steps
+- [✅] PRO 16:17-33 - Pride and humility
+- [✅] PRO 17:1-14 - Strife and peace
+- [✅] PRO 17:15-28 - A friend loves at all times
+- [✅] PRO 18:1-12 - The fool's mouth
+- [✅] PRO 18:13-24 - A true friend
+- [✅] PRO 19:1-15 - Better the poor than a liar
+- [✅] PRO 19:16-29 - Discipline your children
+- [✅] PRO 20:1-15 - Wine is a mocker
+- [✅] PRO 20:16-30 - The Lord tests hearts
+- [✅] PRO 21:1-16 - The king's heart
+- [✅] PRO 21:17-31 - Better to live on a corner
+- [✅] PRO 22:1-16 - A good name
+- [✅] PRO 22:17-29 - Sayings of the wise
+- [✅] PRO 23:1-18 - Do not envy sinners
+- [✅] PRO 23:19-35 - Warning against drunkenness
+- [✅] PRO 24:1-14 - Wisdom is sweet
+- [✅] PRO 24:15-22 - Do not rejoice when enemies fall
+- [✅] PRO 24:23-34 - More sayings of the wise
+- [✅] PRO 25:1-14 - Proverbs copied by Hezekiah's men
+- [✅] PRO 25:15-28 - Self-control
+- [✅] PRO 26:1-12 - Concerning fools
+- [✅] PRO 26:13-28 - The sluggard and the deceiver
+- [✅] PRO 27:1-14 - Do not boast about tomorrow
+- [✅] PRO 27:15-27 - Know your flocks
+- [✅] PRO 28:1-14 - The righteous are bold
+- [✅] PRO 28:15-28 - Justice and integrity
+- [✅] PRO 29:1-14 - Discipline brings wisdom
+- [✅] PRO 29:15-27 - Where there is no vision
+- [✅] PRO 30:1-9 - Words of Agur
+- [✅] PRO 30:10-17 - Numerical sayings
+- [✅] PRO 30:18-33 - More numerical sayings
+- [✅] PRO 31:1-9 - Words of King Lemuel
+- [✅] PRO 31:10-31 - The excellent wife
 
 ## Ecclesiastes (ECC)
 
@@ -2544,12 +2544,12 @@
 
 ## Titus (TIT)
 
-- [ ] TIT 01:1-4 - Greeting
-- [ ] TIT 01:5-16 - Qualifications for elders
-- [ ] TIT 02:1-10 - Teaching sound doctrine
-- [ ] TIT 02:11-15 - The grace of God
-- [ ] TIT 03:1-11 - Saved to do good
-- [ ] TIT 03:12-15 - Final instructions
+- [✅] TIT 01:1-4 - Greeting
+- [✅] TIT 01:5-16 - Qualifications for elders
+- [✅] TIT 02:1-10 - Teaching sound doctrine
+- [✅] TIT 02:11-15 - The grace of God
+- [✅] TIT 03:1-11 - Saved to do good
+- [✅] TIT 03:12-15 - Final instructions
 
 ## Philemon (PHM)
 
