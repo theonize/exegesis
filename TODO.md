@@ -2408,7 +2408,7 @@
 - [ ] 1CO 10:14-22 - Flee idolatry
 - [ ] 1CO 10:23-11:1 - Do all for God's glory
 - [ ] 1CO 11:2-16 - Head coverings
-- [ ] 1CO 11:17-34 - The Lord's Supper
+- [✅] 1CO 11:17-34 - The Lord's Supper
 - [ ] 1CO 12:1-11 - Spiritual gifts
 - [ ] 1CO 12:12-31 - One body, many members
 - [ ] 1CO 13:1-13 - The way of love
@@ -2779,7 +2779,19 @@
 - [ ] Clothing, vestments, robes, etc.
 - [ ] Angels
 - [✅] Wings
+- [✅] Human
 
+## Sacraments
+- [ ] Baptism
+- [✅] Communion
+- [ ] Marriage
+- [ ] Anointing
+- [ ] Confession
+- [ ] Confirmation
+- [ ] Ordination
+- [ ] Last rites
+- [✅] Eucharist (see Communion)
+- [ ] Reconciliation
 
 ## Characters
 **Research on particular characters**
