@@ -1142,45 +1142,45 @@
 - [✅] PSA 040:1-10 - He put a new song in my mouth
 - [✅] PSA 040:11-17 - Be pleased to deliver me
 - [✅] PSA 041:1-13 - Blessed is one who cares for poor
-- [ ] PSA 042:1-11 - As a deer pants for water
-- [ ] PSA 043:1-5 - Send out your light
-- [ ] PSA 044:1-8 - Past deliverance remembered
-- [ ] PSA 044:9-26 - Present suffering
-- [ ] PSA 045:1-17 - A royal wedding song
-- [ ] PSA 046:1-11 - God is our refuge
-- [ ] PSA 047:1-9 - God is king over all
-- [ ] PSA 048:1-14 - The city of God
-- [ ] PSA 049:1-20 - The folly of trusting riches
-- [ ] PSA 050:1-15 - God summons the earth
-- [ ] PSA 050:16-23 - Warning to the wicked
-- [ ] PSA 051:1-9 - Create in me a clean heart
-- [ ] PSA 051:10-19 - Restore the joy of salvation
-- [ ] PSA 052:1-9 - Judgment on the deceitful
-- [ ] PSA 053:1-6 - The fool says no God
-- [ ] PSA 054:1-7 - Prayer for deliverance
-- [ ] PSA 055:1-15 - Cast your burden on the Lord
-- [ ] PSA 055:16-23 - God will sustain you
-- [ ] PSA 056:1-13 - In God I trust
-- [ ] PSA 057:1-11 - Be exalted, O God
-- [ ] PSA 058:1-11 - Judgment on unjust rulers
-- [ ] PSA 059:1-17 - Deliver me from enemies
-- [ ] PSA 060:1-12 - Restore us, O God
-- [ ] PSA 061:1-8 - Lead me to the rock
-- [ ] PSA 062:1-12 - My soul waits for God alone
-- [ ] PSA 063:1-11 - My soul thirsts for you
-- [ ] PSA 064:1-10 - Protection from enemies
-- [ ] PSA 065:1-13 - Praise for God's provision
-- [ ] PSA 066:1-12 - Shout for joy to God
-- [ ] PSA 066:13-20 - I will come with offerings
-- [ ] PSA 067:1-7 - May God bless us
-- [ ] PSA 068:1-18 - God's triumphant march
-- [ ] PSA 068:19-35 - Blessed be the Lord
-- [ ] PSA 069:1-18 - Save me, O God
-- [ ] PSA 069:19-36 - Zeal for your house
-- [ ] PSA 070:1-5 - Hurry to help me
-- [ ] PSA 071:1-13 - Be my rock of refuge
-- [ ] PSA 071:14-24 - Praise in old age
-- [ ] PSA 072:1-20 - Prayer for the king
+- [✅] PSA 042:1-11 - As a deer pants for water
+- [✅] PSA 043:1-5 - Send out your light
+- [✅] PSA 044:1-8 - Past deliverance remembered
+- [✅] PSA 044:9-26 - Present suffering
+- [✅] PSA 045:1-17 - A royal wedding song
+- [✅] PSA 046:1-11 - God is our refuge
+- [✅] PSA 047:1-9 - God is king over all
+- [✅] PSA 048:1-14 - The city of God
+- [✅] PSA 049:1-20 - The folly of trusting riches
+- [✅] PSA 050:1-15 - God summons the earth
+- [✅] PSA 050:16-23 - Warning to the wicked
+- [✅] PSA 051:1-9 - Create in me a clean heart
+- [✅] PSA 051:10-19 - Restore the joy of salvation
+- [✅] PSA 052:1-9 - Judgment on the deceitful
+- [✅] PSA 053:1-6 - The fool says no God
+- [✅] PSA 054:1-7 - Prayer for deliverance
+- [✅] PSA 055:1-15 - Cast your burden on the Lord
+- [✅] PSA 055:16-23 - God will sustain you
+- [✅] PSA 056:1-13 - In God I trust
+- [✅] PSA 057:1-11 - Be exalted, O God
+- [✅] PSA 058:1-11 - Judgment on unjust rulers
+- [✅] PSA 059:1-17 - Deliver me from enemies
+- [✅] PSA 060:1-12 - Restore us, O God
+- [✅] PSA 061:1-8 - Lead me to the rock
+- [✅] PSA 062:1-12 - My soul waits for God alone
+- [✅] PSA 063:1-11 - My soul thirsts for you
+- [✅] PSA 064:1-10 - Protection from enemies
+- [✅] PSA 065:1-13 - Praise for God's provision
+- [✅] PSA 066:1-12 - Shout for joy to God
+- [✅] PSA 066:13-20 - I will come with offerings
+- [✅] PSA 067:1-7 - May God bless us
+- [✅] PSA 068:1-18 - God's triumphant march
+- [✅] PSA 068:19-35 - Blessed be the Lord
+- [✅] PSA 069:1-18 - Save me, O God
+- [✅] PSA 069:19-36 - Zeal for your house
+- [✅] PSA 070:1-5 - Hurry to help me
+- [✅] PSA 071:1-13 - Be my rock of refuge
+- [✅] PSA 071:14-24 - Praise in old age
+- [✅] PSA 072:1-20 - Prayer for the king
 - [ ] PSA 073:1-14 - Prosperity of the wicked
 - [ ] PSA 073:15-28 - God is my portion
 - [ ] PSA 074:1-11 - Why have you rejected us
