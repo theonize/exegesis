@@ -1040,108 +1040,108 @@
 
 ## Job (JOB)
 
-- [ ] JOB 01:1-5 - Job's prosperity and piety
-- [ ] JOB 01:6-12 - Satan's first accusation
-- [ ] JOB 01:13-22 - Job's first test
-- [ ] JOB 02:1-10 - Job's second test
-- [ ] JOB 02:11-13 - Job's three friends
-- [ ] JOB 03:1-26 - Job's lament
-- [ ] JOB 04:1-21 - Eliphaz's first speech
-- [ ] JOB 05:1-27 - Eliphaz continues
-- [ ] JOB 06:1-30 - Job's reply to Eliphaz
-- [ ] JOB 07:1-21 - Job's complaint to God
-- [ ] JOB 08:1-22 - Bildad's first speech
-- [ ] JOB 09:1-35 - Job's reply to Bildad
-- [ ] JOB 10:1-22 - Job's plea to God
-- [ ] JOB 11:1-20 - Zophar's first speech
-- [ ] JOB 12:1-25 - Job's reply begins
-- [ ] JOB 13:1-28 - Job challenges his friends
-- [ ] JOB 14:1-22 - The frailty of man
-- [ ] JOB 15:1-35 - Eliphaz's second speech
-- [ ] JOB 16:1-22 - Job's reply to Eliphaz
-- [ ] JOB 17:1-16 - Job's despair
-- [ ] JOB 18:1-21 - Bildad's second speech
-- [ ] JOB 19:1-29 - Job's reply: My Redeemer lives
-- [ ] JOB 20:1-29 - Zophar's second speech
-- [ ] JOB 21:1-34 - Job's reply on the wicked
-- [ ] JOB 22:1-30 - Eliphaz's third speech
-- [ ] JOB 23:1-17 - Job's longing to find God
-- [ ] JOB 24:1-25 - Why does God delay justice
-- [ ] JOB 25:1-6 - Bildad's third speech
-- [ ] JOB 26:1-14 - Job's reply on God's power
-- [ ] JOB 27:1-23 - Job maintains his integrity
-- [ ] JOB 28:1-28 - Where is wisdom found
-- [ ] JOB 29:1-25 - Job's former blessings
-- [ ] JOB 30:1-31 - Job's present suffering
-- [ ] JOB 31:1-40 - Job's oath of innocence
-- [ ] JOB 32:1-22 - Elihu's anger
-- [ ] JOB 33:1-33 - Elihu's first speech
-- [ ] JOB 34:1-37 - Elihu's second speech
-- [ ] JOB 35:1-16 - Elihu's third speech
-- [ ] JOB 36:1-21 - Elihu's fourth speech begins
-- [ ] JOB 36:22-37:24 - God's majesty in creation
-- [ ] JOB 38:1-21 - God speaks: creation
-- [ ] JOB 38:22-41 - God speaks: weather and stars
-- [ ] JOB 39:1-30 - God speaks: animals
-- [ ] JOB 40:1-5 - Job's brief response
-- [ ] JOB 40:6-24 - God speaks: Behemoth
-- [ ] JOB 41:1-34 - God speaks: Leviathan
-- [ ] JOB 42:1-6 - Job's repentance
-- [ ] JOB 42:7-17 - Job restored
+- [✅] JOB 01:1-5 - Job's prosperity and piety
+- [✅] JOB 01:6-12 - Satan's first accusation
+- [✅] JOB 01:13-22 - Job's first test
+- [✅] JOB 02:1-10 - Job's second test
+- [✅] JOB 02:11-13 - Job's three friends
+- [✅] JOB 03:1-26 - Job's lament
+- [✅] JOB 04:1-21 - Eliphaz's first speech
+- [✅] JOB 05:1-27 - Eliphaz continues
+- [✅] JOB 06:1-30 - Job's reply to Eliphaz
+- [✅] JOB 07:1-21 - Job's complaint to God
+- [✅] JOB 08:1-22 - Bildad's first speech
+- [✅] JOB 09:1-35 - Job's reply to Bildad
+- [✅] JOB 10:1-22 - Job's plea to God
+- [✅] JOB 11:1-20 - Zophar's first speech
+- [✅] JOB 12:1-25 - Job's reply begins
+- [✅] JOB 13:1-28 - Job challenges his friends
+- [✅] JOB 14:1-22 - The frailty of man
+- [✅] JOB 15:1-35 - Eliphaz's second speech
+- [✅] JOB 16:1-22 - Job's reply to Eliphaz
+- [✅] JOB 17:1-16 - Job's despair
+- [✅] JOB 18:1-21 - Bildad's second speech
+- [✅] JOB 19:1-29 - Job's reply: My Redeemer lives
+- [✅] JOB 20:1-29 - Zophar's second speech
+- [✅] JOB 21:1-34 - Job's reply on the wicked
+- [✅] JOB 22:1-30 - Eliphaz's third speech
+- [✅] JOB 23:1-17 - Job's longing to find God
+- [✅] JOB 24:1-25 - Why does God delay justice
+- [✅] JOB 25:1-6 - Bildad's third speech
+- [✅] JOB 26:1-14 - Job's reply on God's power
+- [✅] JOB 27:1-23 - Job maintains his integrity
+- [✅] JOB 28:1-28 - Where is wisdom found
+- [✅] JOB 29:1-25 - Job's former blessings
+- [✅] JOB 30:1-31 - Job's present suffering
+- [✅] JOB 31:1-40 - Job's oath of innocence
+- [✅] JOB 32:1-22 - Elihu's anger
+- [✅] JOB 33:1-33 - Elihu's first speech
+- [✅] JOB 34:1-37 - Elihu's second speech
+- [✅] JOB 35:1-16 - Elihu's third speech
+- [✅] JOB 36:1-21 - Elihu's fourth speech begins
+- [✅] JOB 36:22-37:24 - God's majesty in creation
+- [✅] JOB 38:1-21 - God speaks: creation
+- [✅] JOB 38:22-41 - God speaks: weather and stars
+- [✅] JOB 39:1-30 - God speaks: animals
+- [✅] JOB 40:1-5 - Job's brief response
+- [✅] JOB 40:6-24 - God speaks: Behemoth
+- [✅] JOB 41:1-34 - God speaks: Leviathan
+- [✅] JOB 42:1-6 - Job's repentance
+- [✅] JOB 42:7-17 - Job restored
 
 ## Psalms (PSA)
 
-- [ ] PSA 001:1-6 - Two ways of life
-- [ ] PSA 002:1-12 - The Lord's anointed
-- [ ] PSA 003:1-8 - Morning prayer for deliverance
-- [ ] PSA 004:1-8 - Evening prayer of trust
-- [ ] PSA 005:1-12 - Morning prayer for guidance
-- [ ] PSA 006:1-10 - Prayer in distress
-- [ ] PSA 007:1-17 - Prayer for vindication
-- [ ] PSA 008:1-9 - The majesty of God in creation
-- [ ] PSA 009:1-20 - Thanksgiving for victory
-- [ ] PSA 010:1-18 - Prayer for the oppressed
-- [ ] PSA 011:1-7 - Trust in the Lord
-- [ ] PSA 012:1-8 - The faithful have vanished
-- [ ] PSA 013:1-6 - How long, O Lord
-- [ ] PSA 014:1-7 - The fool says no God
-- [ ] PSA 015:1-5 - Who may dwell with God
-- [ ] PSA 016:1-11 - The path of life
-- [ ] PSA 017:1-15 - Prayer for protection
-- [ ] PSA 018:1-19 - David's song of deliverance
-- [ ] PSA 018:20-50 - God's faithfulness to David
-- [ ] PSA 019:1-6 - The heavens declare God's glory
-- [ ] PSA 019:7-14 - The law of the Lord
-- [ ] PSA 020:1-9 - Prayer for the king
-- [ ] PSA 021:1-13 - The king rejoices
-- [ ] PSA 022:1-21 - My God, why have you forsaken me
-- [ ] PSA 022:22-31 - Praise among the congregation
-- [ ] PSA 023:1-6 - The Lord is my shepherd
-- [ ] PSA 024:1-10 - The King of glory
-- [ ] PSA 025:1-22 - Prayer for guidance and forgiveness
-- [ ] PSA 026:1-12 - Plea for vindication
-- [ ] PSA 027:1-6 - The Lord is my light
-- [ ] PSA 027:7-14 - Wait for the Lord
-- [ ] PSA 028:1-9 - Prayer for help
-- [ ] PSA 029:1-11 - The voice of the Lord
-- [ ] PSA 030:1-12 - Thanksgiving for healing
-- [ ] PSA 031:1-8 - Into your hands
-- [ ] PSA 031:9-24 - Trust in times of distress
-- [ ] PSA 032:1-11 - Blessed is the forgiven
-- [ ] PSA 033:1-22 - Praise to the Creator
-- [ ] PSA 034:1-10 - I will bless the Lord
-- [ ] PSA 034:11-22 - Fear of the Lord
-- [ ] PSA 035:1-18 - Plea for rescue
-- [ ] PSA 035:19-28 - Do not let them triumph
-- [ ] PSA 036:1-12 - Wickedness and steadfast love
-- [ ] PSA 037:1-11 - Do not fret over evildoers
-- [ ] PSA 037:12-26 - The righteous will inherit
-- [ ] PSA 037:27-40 - Wait for the Lord
-- [ ] PSA 038:1-22 - Prayer of a suffering sinner
-- [ ] PSA 039:1-13 - Life is fleeting
-- [ ] PSA 040:1-10 - He put a new song in my mouth
-- [ ] PSA 040:11-17 - Be pleased to deliver me
-- [ ] PSA 041:1-13 - Blessed is one who cares for poor
+- [✅] PSA 001:1-6 - Two ways of life
+- [✅] PSA 002:1-12 - The Lord's anointed
+- [✅] PSA 003:1-8 - Morning prayer for deliverance
+- [✅] PSA 004:1-8 - Evening prayer of trust
+- [✅] PSA 005:1-12 - Morning prayer for guidance
+- [✅] PSA 006:1-10 - Prayer in distress
+- [✅] PSA 007:1-17 - Prayer for vindication
+- [✅] PSA 008:1-9 - The majesty of God in creation
+- [✅] PSA 009:1-20 - Thanksgiving for victory
+- [✅] PSA 010:1-18 - Prayer for the oppressed
+- [✅] PSA 011:1-7 - Trust in the Lord
+- [✅] PSA 012:1-8 - The faithful have vanished
+- [✅] PSA 013:1-6 - How long, O Lord
+- [✅] PSA 014:1-7 - The fool says no God
+- [✅] PSA 015:1-5 - Who may dwell with God
+- [✅] PSA 016:1-11 - The path of life
+- [✅] PSA 017:1-15 - Prayer for protection
+- [✅] PSA 018:1-19 - David's song of deliverance
+- [✅] PSA 018:20-50 - God's faithfulness to David
+- [✅] PSA 019:1-6 - The heavens declare God's glory
+- [✅] PSA 019:7-14 - The law of the Lord
+- [✅] PSA 020:1-9 - Prayer for the king
+- [✅] PSA 021:1-13 - The king rejoices
+- [✅] PSA 022:1-21 - My God, why have you forsaken me
+- [✅] PSA 022:22-31 - Praise among the congregation
+- [✅] PSA 023:1-6 - The Lord is my shepherd
+- [✅] PSA 024:1-10 - The King of glory
+- [✅] PSA 025:1-22 - Prayer for guidance and forgiveness
+- [✅] PSA 026:1-12 - Plea for vindication
+- [✅] PSA 027:1-6 - The Lord is my light
+- [✅] PSA 027:7-14 - Wait for the Lord
+- [✅] PSA 028:1-9 - Prayer for help
+- [✅] PSA 029:1-11 - The voice of the Lord
+- [✅] PSA 030:1-12 - Thanksgiving for healing
+- [✅] PSA 031:1-8 - Into your hands
+- [✅] PSA 031:9-24 - Trust in times of distress
+- [✅] PSA 032:1-11 - Blessed is the forgiven
+- [✅] PSA 033:1-22 - Praise to the Creator
+- [✅] PSA 034:1-10 - I will bless the Lord
+- [✅] PSA 034:11-22 - Fear of the Lord
+- [✅] PSA 035:1-18 - Plea for rescue
+- [✅] PSA 035:19-28 - Do not let them triumph
+- [✅] PSA 036:1-12 - Wickedness and steadfast love
+- [✅] PSA 037:1-11 - Do not fret over evildoers
+- [✅] PSA 037:12-26 - The righteous will inherit
+- [✅] PSA 037:27-40 - Wait for the Lord
+- [✅] PSA 038:1-22 - Prayer of a suffering sinner
+- [✅] PSA 039:1-13 - Life is fleeting
+- [✅] PSA 040:1-10 - He put a new song in my mouth
+- [✅] PSA 040:11-17 - Be pleased to deliver me
+- [✅] PSA 041:1-13 - Blessed is one who cares for poor
 - [ ] PSA 042:1-11 - As a deer pants for water
 - [ ] PSA 043:1-5 - Send out your light
 - [ ] PSA 044:1-8 - Past deliverance remembered
@@ -1296,8 +1296,8 @@
 - [ ] PSA 142:1-7 - With my voice I cry
 - [ ] PSA 143:1-12 - Hear my prayer, O Lord
 - [ ] PSA 144:1-15 - Blessed be the Lord my rock
-- [ ] PSA 145:1-13 - I will extol you, my King
-- [ ] PSA 145:14-21 - The Lord upholds all who fall
+- [✅] PSA 145:1-13 - I will extol you, my King
+- [✅] PSA 145:14-21 - The Lord upholds all who fall
 - [ ] PSA 146:1-10 - Praise the Lord, O my soul
 - [ ] PSA 147:1-11 - He heals the brokenhearted
 - [ ] PSA 147:12-20 - Praise the Lord, O Jerusalem
@@ -1378,26 +1378,26 @@
 
 ## Ecclesiastes (ECC)
 
-- [ ] ECC 01:1-11 - Vanity of vanities
-- [ ] ECC 01:12-18 - The futility of wisdom
-- [ ] ECC 02:1-11 - The futility of pleasure
-- [ ] ECC 02:12-26 - Wisdom and folly
-- [ ] ECC 03:1-15 - A time for everything
-- [ ] ECC 03:16-22 - Injustice and death
-- [ ] ECC 04:1-8 - Oppression and toil
-- [ ] ECC 04:9-16 - The value of companionship
-- [ ] ECC 05:1-7 - Fear God
-- [ ] ECC 05:8-20 - The vanity of wealth
-- [ ] ECC 06:1-12 - The vanity of possessions
-- [ ] ECC 07:1-14 - Wisdom for living
-- [ ] ECC 07:15-29 - The limits of wisdom
-- [ ] ECC 08:1-17 - The mystery of providence
-- [ ] ECC 09:1-12 - Death comes to all
-- [ ] ECC 09:13-10:4 - Wisdom is better than folly
-- [ ] ECC 10:5-20 - Wisdom and foolishness
-- [ ] ECC 11:1-6 - Cast your bread on the waters
-- [ ] ECC 11:7-12:8 - Remember your Creator
-- [ ] ECC 12:9-14 - Fear God and keep his commandments
+- [✅] ECC 01:1-11 - Vanity of vanities
+- [✅] ECC 01:12-18 - The futility of wisdom
+- [✅] ECC 02:1-11 - The futility of pleasure
+- [✅] ECC 02:12-26 - Wisdom and folly
+- [✅] ECC 03:1-15 - A time for everything
+- [✅] ECC 03:16-22 - Injustice and death
+- [✅] ECC 04:1-8 - Oppression and toil
+- [✅] ECC 04:9-16 - The value of companionship
+- [✅] ECC 05:1-7 - Fear God
+- [✅] ECC 05:8-20 - The vanity of wealth
+- [✅] ECC 06:1-12 - The vanity of possessions
+- [✅] ECC 07:1-14 - Wisdom for living
+- [✅] ECC 07:15-29 - The limits of wisdom
+- [✅] ECC 08:1-17 - The mystery of providence
+- [✅] ECC 09:1-12 - Death comes to all
+- [✅] ECC 09:13-10:4 - Wisdom is better than folly
+- [✅] ECC 10:5-20 - Wisdom and foolishness
+- [✅] ECC 11:1-6 - Cast your bread on the waters
+- [✅] ECC 11:7-12:8 - Remember your Creator
+- [✅] ECC 12:9-14 - Fear God and keep his commandments
 
 ## Song of Solomon (SNG)
 
