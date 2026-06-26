@@ -52,3 +52,5 @@ htmlcov/
 
 # Local data
 content/data/
+
+skidl.*

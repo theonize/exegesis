@@ -1654,7 +1654,7 @@
 - [ ] EZK 11:14-25 - Promise of restoration
 - [ ] EZK 12:1-16 - Sign of exile
 - [ ] EZK 12:17-28 - The certainty of judgment
-- [ ] EZK 13:1-16 - Against false prophets
+- [✅] EZK 13:1-16 - Against false prophets
 - [ ] EZK 13:17-23 - Against false prophetesses
 - [ ] EZK 14:1-11 - Idolatrous elders
 - [ ] EZK 14:12-23 - Jerusalem's sure judgment
@@ -1916,7 +1916,7 @@
 - [ ] MAT 07:7-12 - Ask, seek, knock
 - [ ] MAT 07:13-14 - The narrow gate
 - [ ] MAT 07:15-23 - Tree and its fruit
-- [ ] MAT 07:24-29 - Wise and foolish builders
+- [✅] MAT 07:24-29 - Wise and foolish builders
 - [ ] MAT 08:1-4 - Cleansing a leper
 - [ ] MAT 08:5-13 - Centurion's faith
 - [ ] MAT 08:14-17 - Healings at Peter's house
