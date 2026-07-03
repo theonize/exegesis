@@ -100,3 +100,4 @@ See `content/Books/OT/HAG/01/HAG_01_1-11.md` for a well-formed passage study.
 ## Resources
 
 Study tools and references are listed in `RESOURCES.md`.
+When `underrow` is running there will be an MCP service with semantic search tools available @ localhost:3740
