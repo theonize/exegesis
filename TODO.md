@@ -2586,18 +2586,18 @@
 
 ## James (JAS)
 
-- [ ] JAS 01:1-11 - Trials and temptations
-- [ ] JAS 01:12-18 - God does not tempt
-- [ ] JAS 01:19-27 - Doers of the word
-- [ ] JAS 02:1-13 - Do not show partiality
-- [ ] JAS 02:14-26 - Faith without works is dead
-- [ ] JAS 03:1-12 - Taming the tongue
-- [ ] JAS 03:13-18 - Wisdom from above
-- [ ] JAS 04:1-12 - Warning against worldliness
-- [ ] JAS 04:13-17 - Boasting about tomorrow
-- [ ] JAS 05:1-6 - Warning to the rich
-- [ ] JAS 05:7-12 - Patience and prayer
-- [ ] JAS 05:13-20 - Prayer of faith
+- [✅] JAS 01:1-11 - Trials and temptations
+- [✅] JAS 01:12-18 - God does not tempt
+- [✅] JAS 01:19-27 - Doers of the word
+- [✅] JAS 02:1-13 - Do not show partiality
+- [✅] JAS 02:14-26 - Faith without works is dead
+- [✅] JAS 03:1-12 - Taming the tongue
+- [✅] JAS 03:13-18 - Wisdom from above
+- [✅] JAS 04:1-12 - Warning against worldliness
+- [✅] JAS 04:13-17 - Boasting about tomorrow
+- [✅] JAS 05:1-6 - Warning to the rich
+- [✅] JAS 05:7-12 - Patience and prayer
+- [✅] JAS 05:13-20 - Prayer of faith
 
 ## 1 Peter (1PE)
 
