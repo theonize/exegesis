@@ -5,6 +5,8 @@ description: Research historical and cultural background of Bible passages. Use 
 
 # Historian Skill
 
+> **Pi port:** This project-local Pi skill is based on `.claude/skills/historian/SKILL.md`, but runs from `.pi/skills/historian/SKILL.md`. When using it in Pi, read this `.pi` file and do not edit or depend on the `.claude` skill.
+
 Research and determine the historical and cultural context of a Biblical passage by answering the following questions:
 * Who was the author?
 * What was the original audience?

@@ -1,9 +1,11 @@
 ---
 name: create-study
-description: Produce a 2pp handout and detailed leader's notes from an existing exegetical research file. Accepts a passage ref, topic or character name, or file path. Usage: /create-study <passage|topic|path> [output-dir]
+description: Produce a 2pp handout and detailed leader's notes from an existing exegetical research file. Accepts a passage ref, topic or character name, or file path. Usage: /skill:create-study <passage|topic|path> [output-dir]
 ---
 
 # Create-Study Skill — Handout + Leader's Notes
+
+> **Pi port:** This project-local Pi skill is based on `.claude/skills/create-study/SKILL.md`, but runs from `.pi/skills/create-study/SKILL.md`. When using it in Pi, read this `.pi` file and do not edit or depend on the `.claude` skill.
 
 Transform a completed exegetical research file into two teaching deliverables:
 
@@ -12,17 +14,17 @@ Transform a completed exegetical research file into two teaching deliverables:
 
 This skill **does not perform fresh exegesis**. Every claim in the outputs must trace back to the source research file. If the source omits something the study would need, note the gap rather than invent content.
 
-Usage: `/create-study <passage|topic|path> [output-dir]`
+Usage: `/skill:create-study <passage|topic|path> [output-dir]`
 
 Examples:
-- `/create-study HAG 02:20-23`
-- `/create-study Gold`
-- `/create-study content/Topics/Chroma/Gold.md`
-- `/create-study HAG 01:1-11 studies/winter-2026`
+- `/skill:create-study HAG 02:20-23`
+- `/skill:create-study Gold`
+- `/skill:create-study content/Topics/Chroma/Gold.md`
+- `/skill:create-study HAG 01:1-11 studies/winter-2026`
 
 ## Step 0 — Resolve the input to a source file
 
-**Argument splitting rule** (topic names may contain spaces, and passage refs always do): first try the ENTIRE argument string as the source. Only if that fails AND the final whitespace-separated token contains `/` or `\` or names an existing directory, treat that final token as `[output-dir]` and retry the remainder as the source. Never split a topic name on spaces otherwise. Example: `/create-study Holy Ground` → topic `content/Topics/Holy Ground.md`; `/create-study HAG 01:1-11 studies/winter-2026` → source `HAG 01:1-11`, output-dir `studies/winter-2026`.
+**Argument splitting rule** (topic names may contain spaces, and passage refs always do): first try the ENTIRE argument string as the source. Only if that fails AND the final whitespace-separated token contains `/` or `\` or names an existing directory, treat that final token as `[output-dir]` and retry the remainder as the source. Never split a topic name on spaces otherwise. Example: `/skill:create-study Holy Ground` → topic `content/Topics/Holy Ground.md`; `/skill:create-study HAG 01:1-11 studies/winter-2026` → source `HAG 01:1-11`, output-dir `studies/winter-2026`.
 
 Resolve the source by trying these patterns in order:
 
@@ -177,6 +179,8 @@ Target **900–1200 words total**. Same four sections as leader's notes, much te
 
 ## Step 4 — Write both files
 
+Use Pi tools: `bash` for directory creation and word counts, `read`/`edit` for checking existing files, and `write` only after the overwrite guard passes.
+
 Default output directory: `studies/` at the project root.
 
 If the user passed a second argument, use that as the output directory instead.
@@ -197,7 +201,7 @@ Report the two paths, a one-line summary (word count) for each, and the number o
 
 Do **not** modify `TODO.md` — that file tracks research, not studies. `studies/INDEX.md` is the studies tracker; a source file newer than its INDEX row means the study is stale.
 
-## Formatting (carry from CLAUDE.md)
+## Formatting (carry from project formatting)
 
 - Original-language terms: `**term** (Hebrew/Greek/Aramaic: script, *transliteration*)`
 - Biblical citations: `Book Chapter:Verses`

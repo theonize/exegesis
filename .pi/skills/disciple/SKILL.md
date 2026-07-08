@@ -5,6 +5,8 @@ description: Apply hermeneutical methods to Bible passages. Use when tracing can
 
 # Disciple Skill
 
+> **Pi port:** This project-local Pi skill is based on `.claude/skills/disciple/SKILL.md`, but runs from `.pi/skills/disciple/SKILL.md`. When using it in Pi, read this `.pi` file and do not edit or depend on the `.claude` skill.
+
 Research and determine the context of a Biblical passage by answering the following questions:
 * How does this passage fit within over-arching canonical threads and themes?
 * What wordplay and/or idioms or in use?

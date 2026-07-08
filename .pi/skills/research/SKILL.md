@@ -1,21 +1,25 @@
 ---
 name: research
-description: Run a complete exegetical analysis of a Bible passage. Fetches the passage text, fans out six analysis subagents in parallel, compiles the draft, runs a bibliographer verification pass, writes the file, and updates TODO.md. Usage: /research <passage>
+description: Run a complete exegetical analysis of a Bible passage in Pi. Fetches passage text, produces six analysis sections from the Pi skills, compiles and verifies the draft, writes the file, and updates TODO.md. Usage: /skill:research <passage>
 ---
 
-# Research Skill — Complete Exegetical Analysis
+# Research Skill — Complete Exegetical Analysis (Pi)
+
+> **Pi port:** This project-local Pi skill is based on `.claude/skills/research/SKILL.md`, but runs from `.pi/skills/research/SKILL.md`. Use Pi's `/skill:research <passage>` command form. When orchestrating other skills, read the `.pi/skills/.../SKILL.md` files. Do not edit or depend on the `.claude` skill files.
 
 Given a passage reference (e.g., "HAG 02:20-23" or "Genesis 1:1-25"), perform a complete exegetical analysis.
 
-Failure rule (applies throughout): a run **fails** when one or more analysis subagents fail or return empty/garbage output after one retry, when the passage text cannot be fetched, or when the verification pass cannot complete. On failure, set the TODO.md entry to `[❌]` and report which stage failed. Never mark `[✅]` on a partial document.
+Failure rule (applies throughout): a run **fails** when one or more analysis sections fail or return empty/garbage output after one retry, when the passage text cannot be fetched, or when the verification pass cannot complete. On failure, set the TODO.md entry to `[❌]` and report which stage failed. Never mark `[✅]` on a partial document.
 
 ## Step 0: Parse the Reference
 
 Extract BOOK_CODE, CHAPTER, and VERSES from the input. Use the mapping below for full book names.
 
+Normalize filenames according to the project rules: uppercase book code; zero-pad the starting chapter to match the tree (`01`, `02`, etc.; Psalms `001` through `150`); strip verse zero-padding; preserve cross-chapter notation with the second chapter unpadded and the second colon replaced by `_` (e.g., `MRK 08:31-9:1` -> `MRK_08_31-9_1.md`).
+
 ## Step 1: Claim the Passage
 
-Open `TODO.md` and find the matching entry:
+Use Pi tools (`read` first, then `edit`) to open `TODO.md` and find the matching entry:
 
 - `[ ]` — change to `[🔄]` and proceed.
 - `[🔄]` — a stale claim from a dead session; note this in your report, keep it `[🔄]`, and proceed.
@@ -27,7 +31,15 @@ Take the passage description from the TODO.md entry. If the entry had no descrip
 
 ## Step 2: Fetch the Passage Text
 
-**Never reproduce Scripture from memory.** Fetch the passage text from an online source (see `RESOURCES.md` — Bible Gateway, Bible Hub, Step Bible, and Blue Letter Bible all serve passage text), or from the `underrow` MCP service if it exposes verse text.
+**Never reproduce Scripture from memory.** Fetch the passage text from a source named in `RESOURCES.md`, from a local scripture source if this project provides one, or from an available source-access tool/service in the Pi session.
+
+Pi source-access options vary by installation. Prefer, in order:
+
+1. A local/project source or `underrow` service, if present.
+2. `bash` with `curl`, Python, or PowerShell to fetch a passage page/API allowed by `RESOURCES.md`.
+3. A browser/search/web extension if one is loaded in the current Pi session.
+
+If no source access is available or the fetched text cannot be verified, the run fails. Do **not** fill the gap from model memory.
 
 - **Translation choice is yours**: pick the translation best suited to the passage, and use more than one where comparison illuminates (the linguist's translation-comparison table is the natural home for alternates). Prefer translations whose licenses permit full-passage quotation (e.g., public-domain WEB, KJV, BSB); when quoting a restricted translation (ESV, NIV, NASB), keep within its quotation policy.
 - Sanity check: the fetched text must contain exactly the verses in the requested range — count them.
@@ -43,11 +55,18 @@ Take the passage description from the TODO.md entry. If the entry had no descrip
 
 If the text cannot be fetched after reasonable attempts, this is a failed run: set `[❌]` and stop.
 
-## Step 3: Fan Out Six Analysis Subagents IN PARALLEL
+## Step 3: Produce the Six Analysis Sections
 
-Launch **six subagents with the Agent tool in a SINGLE message** (this is what makes them run concurrently — Skill-tool calls do not). Each subagent gets a fresh context window, which keeps every section at full depth.
+Pi skills do not, by themselves, create Claude-style Agent-tool subagents. Do not claim that a normal skill call is parallel model execution.
 
-Prompt template for each subagent (one per skill: historian, linguist, author, theologian, disciple, shepherd):
+Use one of these routes:
+
+1. **If a Pi subagent/delegation tool is available in the current tool list and the user has approved it**, run six isolated workers concurrently. Each worker must read exactly one `.pi/skills/{skill}/SKILL.md`, follow it, write only its `##` section to the scratchpad, and return the path plus a one-line status.
+2. **Otherwise, run the six section passes sequentially in this Pi session.** For each skill, use `read` to load `.pi/skills/{skill}/SKILL.md`, produce only that section, write it to the scratchpad, validate it, then move to the next skill.
+
+Create a scratchpad directory outside `content/` (an OS temp directory is fine; a `.pi/tmp/...` directory is also fine if you clean or ignore it). Use filenames like `{BOOK}_{CHAPTER}_{VERSES}_{skill}.md`.
+
+Instruction template for each worker/pass (one per skill: historian, linguist, author, theologian, disciple, shepherd):
 
 ```
 You are producing one section of an exegetical analysis of {Full Book Name} {Chapter}:{Verses}.
@@ -55,13 +74,13 @@ You are producing one section of an exegetical analysis of {Full Book Name} {Cha
 Passage text ({Translation}):
 {fetched blockquote}
 
-1. Read C:\writ\exegesis\.claude\skills\{skill}\SKILL.md and follow it exactly — its questions, its `## ` heading, its numbered `### ` subsections, and its Formatting rules.
-2. Also follow the Formatting section of C:\writ\exegesis\CLAUDE.md. Do not emit `---` inside your section.
-3. Write ONLY your section (starting with its `## ` heading) to {scratchpad}\{BOOK}_{CHAPTER}_{VERSES}_{skill}.md.
-4. Return the absolute path you wrote and a one-line status.
+1. Read .pi/skills/{skill}/SKILL.md and follow it exactly — its questions, its `## ` heading, its numbered `### ` subsections, and its Formatting rules.
+2. Also follow AGENTS.md project formatting; if CLAUDE.md is present, its Formatting section is a secondary project reference. Do not emit `---` inside your section.
+3. Write ONLY your section (starting with its `## ` heading) to {scratchpad}/{BOOK}_{CHAPTER}_{VERSES}_{skill}.md.
+4. Return the path you wrote and a one-line status.
 ```
 
-When a subagent returns, check its file exists, is non-trivial, and begins with the expected `## ` heading:
+After each worker/pass, check that its file exists, is non-trivial, and begins with the expected `## ` heading:
 
 | Skill | Expected heading |
 |-------|------------------|
@@ -72,7 +91,7 @@ When a subagent returns, check its file exists, is non-trivial, and begins with 
 | disciple | `## Hermeneutic` |
 | shepherd | `## Application` |
 
-If a subagent failed or its output is empty/garbage, retry that one subagent **once**. If it fails again, the run fails: `[❌]`, report which section.
+If a section pass failed or its output is empty/garbage, retry that section **once**. If it fails again, the run fails: `[❌]`, report which section.
 
 ## Step 4: Compile the Draft (Mechanical — Never Regenerate)
 
@@ -84,7 +103,7 @@ Assemble a draft in the scratchpad by **concatenation only** — do not re-type,
 
 ## Step 5: Bibliographer Verification Pass
 
-Launch one subagent: "Read C:\writ\exegesis\.claude\skills\bibliographer\SKILL.md and apply it to {draft path}. Edit the draft in place and return your verification report."
+Use `read` to load `.pi/skills/bibliographer/SKILL.md` and apply it to the compiled draft. Edit the draft in place and keep a verification report for the final response.
 
 The bibliographer verifies Strong's numbers, original-language forms, cross-references, quotations, and dates; hedges or removes what cannot be verified; and appends the `## Sources` section. If the pass cannot complete, the run fails: `[❌]`.
 

@@ -5,6 +5,8 @@ description: Analyze literary features of Bible passages. Use when examining gen
 
 # Author Skill
 
+> **Pi port:** This project-local Pi skill is based on `.claude/skills/author/SKILL.md`, but runs from `.pi/skills/author/SKILL.md`. When using it in Pi, read this `.pi` file and do not edit or depend on the `.claude` skill.
+
 Research and determine the context of a Biblical passage by answering the following questions:
 * What is the genre (and sub-genres) of the passage? What rules of interpretation do those genres call for?
 * What is the literary structure of the immediate and surrounding?

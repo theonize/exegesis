@@ -28,8 +28,11 @@ Use this section order:
 4. Theological Analysis
 5. Hermeneutic
 6. Application
+7. Sources (compiled by the bibliographer skill)
 
-Separate top-level sections with `---`. Prefer tables for comparisons, timelines, vocabulary, and semantic ranges. Use ASCII diagrams for structures. Cite biblical references as `Book Chapter:Verses`; cite verses inside the target passage as `(v.1)` or `(vv.1-5)`.
+Separate top-level sections with `---` (never inside a section). Prefer tables for comparisons, timelines, vocabulary, and semantic ranges. Use ASCII diagrams for structures. Cite biblical references as `Book Chapter:Verses`; cite verses inside the target passage as `(v.1)` or `(vv.1-5)`.
+
+Scripture text is fetched from a source (`RESOURCES.md`), never reproduced from memory; the translation is chosen per passage and named in the attribution line.
 
 ## Structured Data
 

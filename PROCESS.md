@@ -1,186 +1,112 @@
-# Exegetical Analysis Process
+# Analysis Process
 
-This document consolidates the six analysis skills and the research orchestration process used to produce comprehensive exegetical analyses of Biblical passages.
+> Derived from `.claude/skills/*/SKILL.md` — do not edit here. Change the skill files, then regenerate this summary.
 
----
+## Orchestration
 
-## Historian — Historical & Cultural Analysis
+The `/research <BOOK_CODE> <CHAPTER>:<VERSES>` skill runs the pipeline:
 
-Research and determine the historical and cultural context of a Biblical passage by answering the following questions:
-* Who was the author?
-* What was the original audience?
-* When was it originally composed?
-* When did the events take place?
-* What are some notable practices of the day?
-* What archaeology and external histories are associated with the passage?
-* What was the political-socio-economic milieu of that time?  social structures?
-* What were the circumstantial social norms, practices and issues of the day?
-* What geography is associated with the passage?
-* What was the worldview and cosmology of those people?
-* What was the family structure of the times?
-* What notable iconography is associated with those people?
-* What intercultural issues were at play?
-* Where does this passage fit in the canonical narrative?
-
-### Output: `## Historical & Cultural Analysis`
-
-#### 1. Author
-Who, background, credentials, biographical details, ministry context.
-
-#### 2. Original Audience
-Identity, situation, needs, social composition.
-
-#### 3. Date of Composition and Events
-When composed, when events occurred. Use a timeline table:
-| Event | Date | Significance |
-
-#### 4. Notable Practices of the Day
-Religious, cultural, and economic practices relevant to the passage.
-
-#### 5. Archaeology and External History
-Archaeological evidence, ANE parallels, external corroboration.
-
-#### 6. Political-Socio-Economic Context
-Power structures, economic conditions, governance.
-
-#### 7. Social Norms and Issues
-Family structure, worldview, cosmology, intercultural dynamics, iconography.
-
-#### 8. Geography
-Physical setting, significance of locations, expanding/contracting scope where applicable.
+1. **Parse & claim** — normalize the reference, resolve the target path, set the `TODO.md` entry to `[🔄]` (with pre-flight checks for stale, done, or missing entries).
+2. **Fetch the text** — always from a source in `RESOURCES.md` (or the underrow MCP service), never from memory. The translation is chosen per passage — multiple allowed, prefer license-permissive translations for full quotes — and named in the attribution line.
+3. **Analyze in parallel** — six subagents, one per analysis skill below; each reads its own SKILL.md and writes its `##` section. A subagent that fails or returns empty/garbage output is retried once; a second failure fails the run (`[❌]`).
+4. **Compile** — mechanical concatenation: title, scripture blockquote, then the six sections separated by `---`. Never regenerated.
+5. **Verify** — the bibliographer skill checks references and facts, corrects or hedges, and appends `## Sources`.
+6. **Write & complete** — overwrite guard, completion gates (blockquote + six section headings + Sources present), then `[✅]`.
 
 ---
 
-## Linguist — Linguistic Analysis
+## Analysis Skills
 
-Research and determine the context of a Biblical passage by answering the following questions:
-* What was the original language of this writing?
-* What are the lexical semantics and range of the passage?
-* What are some notable morphological and grammatical features of the passage?
-* What are the lexical-syntactical and discourse features of the passage?
-* What is the etymology of key terms?
-* What wordplay and/or idioms or in use?
-* What are the dominant ideas and words in the passage?
-* What are some notable translation decisions associated with this passage?
-* What notable textual variants are there?
-  * Do they change the teaching?
+Each skill produces one top-level `##` section with numbered `###` subsections.
 
----
+### Historian → `## Historical & Cultural Analysis`
 
-## Author — Literary Analysis
+Questions: author; original audience; date of composition and of the events; notable practices of the day; archaeology and external histories; political-socio-economic milieu and social structures; circumstantial social norms and issues; geography; worldview and cosmology; family structure; iconography; intercultural issues.
 
-Research and determine the context of a Biblical passage by answering the following questions:
-* What is the genre (and sub-genres) of the passage?
-  * What are the rules of interpretation for these?
-* What is the literary structure of the immediate and surrounding?
-* What is the voice, mood and style of the passage?
-* What rhetorical devices are used in the text?
-  * What overt symbols are present and what is their significance?
-  * What numerology is in play here?
-  * What colors, items, et cetera have significance?
-* What literary devices are used in the text?
-* What are the characters and images in use?  and their purpose in the passage?
-* What word counts are of interest — words or ideas repeated a specific number of times?
-* What numerical word values are important in the original language?
-* What canonical macro-patterns are established or reiterated in the text?
-* What micro-patterns are established in the text?
+Subsections:
+1. Author
+2. Original Audience
+3. Date of Composition and Events — timeline table `| Event | Date | Significance |`
+4. Notable Practices of the Day
+5. Archaeology and External History
+6. Political-Socio-Economic Context
+7. Social Norms and Issues
+8. Geography
 
-### Output: `## Literary Analysis`
+### Linguist → `## Linguistic Analysis`
 
-#### 1. Genre and Sub-Genres
-Primary genre classification and any sub-genre elements.
+Questions: original language; lexical semantics and range; morphological and grammatical features; lexical-syntactical and discourse features; etymology of key terms; notable translation decisions; textual variants and whether they change the teaching.
 
-#### 2. Literary Structure
-Immediate and surrounding structure. Use ASCII diagrams for chiastic and parallel structures:
-```
-A  - element
-  B  - element
-    C  - pivot
-  B' - element
-A' - element
-```
+Subsections:
+1. Original Language
+2. Lexical Semantics — vocabulary table `| Term | Strong's | Root | Meaning | Occurrences | Key Usage |`
+3. Morphological and Grammatical Features
+4. Discourse Structure
+5. Etymology of Key Terms
+6. Translation Decisions — comparison table `| Version | Rendering | Notes |`
+7. Textual Variants — state explicitly whether any variant changes the teaching
 
-#### 3. Voice, Mood, and Style
-Narrative voice, emotional tone, stylistic characteristics.
+### Author → `## Literary Analysis`
 
-#### 4. Rhetorical Devices
-Identified devices with examples from the text.
+Questions: genre and sub-genres, with the rules of interpretation they call for; literary structure of the immediate and surrounding text; voice, mood, and style; rhetorical devices; literary devices; characters and images and their purpose; numerology; significant colors and items; overt symbols; word counts and repeated ideas; numerical word values; micro-patterns.
 
-#### 5. Literary Devices
-Identified devices with examples from the text.
+Scope: patterning **within the passage and its book**. Canon-scale patterns belong to the disciple skill.
 
-#### 6. Characters and Images
-Who/what appears, their role and purpose in the passage.
+Subsections:
+1. Genre and Sub-Genres
+2. Literary Structure — ASCII chiasm/parallel diagrams (A/B/C/B'/A')
+3. Voice, Mood, and Style
+4. Rhetorical Devices
+5. Literary Devices
+6. Characters and Images
+7. Numerology and Symbolic Elements
+8. Colors, Items, and Significance — catalog table `| Symbol | Meaning | Biblical Precedent |`
 
-#### 7. Numerology and Symbolic Elements
-Number significance, word counts, repeated patterns, numerical word values, macro/micro patterns.
+### Theologian → `## Theological Analysis`
 
-#### 8. Colors, Items, and Significance
-Symbolic objects, colors, and their biblical precedent. Use catalog tables:
-| Symbol | Meaning | Biblical Precedent |
+Questions: who God — Father, Christ, Spirit — is in this passage (attributes, actions, promises); what the original audience would have drawn from it; spiritual disciplines in play; timeless principles and how the passage progresses revelation.
 
----
+Subsections:
+1. What the Original Audience Would Have Understood
+2. Spiritual Disciplines in View
+3. Timeless Theological Principles
+4. Key Theological Themes — begins with who God is in the passage; cross-reference tables `| Theme | OT Foundation | NT Development |`
 
-## Teacher — Theological Analysis
+### Disciple → `## Hermeneutic`
 
-Research and determine the context of a Biblical passage by answering the following questions:
-* Who is God in this passage? the Christ? the Spirit?
-  * attributes, actions, promises
-* What would the original audience have drawn from the passage?
-* What spiritual disciplines, or formations, are in play in the passage?
-* What timeless principles are in view in the passage?
-  * How is it progressing the revelation? connecting past and future?
+Questions: how the passage fits over-arching canonical threads and themes; wordplay and idioms; micro and macro structures; image-bearer and wisdom elements; plenary authorship intent and why the passage sits where it does.
 
-### Output: `## Theological Analysis`
+Scope: canon-scale patterning (type-scenes, covenant echoes, Genesis-to-Revelation threads). Intra-book patterning belongs to the author skill.
 
-#### 1. What the Original Audience Would Have Understood
-Theological concepts accessible to the first hearers/readers in their context.
+Subsections:
+1. Canonical Threads and Themes — thread table `| Stage | Passage | Development |`
+2. Wordplay and Idioms
+3. Micro and Macro Structures
+4. Image-Bearer and Wisdom Elements
+5. Plenary Authorship Intent
 
-#### 2. Spiritual Disciplines in View
-Practices of faith the passage calls for or models.
+### Shepherd → `## Application`
 
-#### 3. Timeless Theological Principles
-Doctrinal truths that transcend the original setting.
+Questions: the original meaning clarified for a modern audience and its universal principles; what attributes or actions must change; when, where, and how to implement; meaning versus method.
 
-#### 4. Key Theological Themes
-Expanded sub-themes with cross-references where the passage connects to broader biblical theology.
+Produces exactly subsections 1–4 — no extra headings, no `---` inside the section.
+
+Subsections:
+1. Clarifying the Original Meaning for a Modern Audience — table `| Ancient Reality | Modern Equivalent |`
+2. What Must Change
+3. When, Where, and How to Implement — table `| Context | When | Where | How |`
+4. Meaning Versus Method
+
+### Bibliographer → `## Sources` (verification pass)
+
+Runs after compilation, over the whole draft. Checks: Strong's numbers against lemma and gloss; script/transliteration/term agreement; cross-references exist and support their claims; quotations and named authorities verified, hedged, or removed; date consistency; scripture quotes match the named translation. Fixes mechanical errors in place, hedges or deletes unverifiable specifics, then appends `## Sources` — a per-discipline bibliography of works actually consulted.
 
 ---
 
-## Disciple — Hermeneutic
+## Shared Formatting
 
-Research and determine the context of a Biblical passage by answering the following questions:
-* How does this passage fit within over-arching canonical threads and themes?
-* What are the human image-bearer elements of the passage?  wisdom elements?
-* What is the plenary authorship intent in composing this text?
-  * Why is this passage where it is?
-
-### Output: `## Hermeneutic`
-
-#### 1. Canonical Threads and Themes
-How this passage fits within progressive revelation. Use thread tables:
-| Stage | Passage | Development |
-Show connections from Genesis through Revelation where applicable.
-
-#### 2. Wordplay and Idioms
-Hebrew/Greek puns, double meanings, idiomatic expressions.
-
-#### 3. Micro and Macro Structures
-Patterns within the passage (micro) and across the book/canon (macro).
-
-#### 4. Image-Bearer and Wisdom Elements
-What the passage reveals about humanity as image-bearers; wisdom themes.
-
-#### 5. Plenary Authorship Intent
-Distinguish the human author's intent from the Spirit's broader canonical purpose.
-
----
-
-## Shepherd — Application
-
-Research and determine the context of a Biblical passage by answering the following questions:
-* Clarify the original meaning for a modern audience
-  * What are the universal principles?
-* What attributes or actions, of the modern audience, must change according to this Word?
-* When, where and how might we implement these changes?
-* Meaning versus method: how might I accomplish these things?
+- Original-language terms: `**term** (Hebrew/Greek/Aramaic: original script, *transliteration*)`
+- Strong's numbers: `H1234` / `G5678`
+- Biblical citations: `Book Chapter:Verses`; in-passage references: `(v.1)`, `(vv.1-5)`
+- `---` between `##` sections only — never inside a section
+- Tone: scholarly content for an amateur audience

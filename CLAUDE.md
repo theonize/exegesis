@@ -12,7 +12,9 @@ To analyze a passage, use the `/research` skill:
 
 Example: `/research HAG 02:20-23`
 
-The skill runs the six analysis skills, compiles the output, writes the file, and updates `TODO.md`.
+The skill fetches the passage text, fans out the six analysis skills as parallel subagents, compiles the output, runs the `bibliographer` skill as a verification pass, writes the file, and updates `TODO.md`.
+
+Scripture text is always **fetched from a source** (see `RESOURCES.md`), never reproduced from memory. The translation is not fixed: choose the translation(s) best suited to the passage — prefer license-permissive translations for full-passage quotation — and name whatever is used in the attribution line.
 
 ## Research Posture
 
@@ -48,7 +50,7 @@ NT: MAT MRK LUK JHN ACT ROM 1CO 2CO GAL EPH PHP COL 1TH 2TH 1TI 2TI TIT PHM HEB 
 >
 > **2** Second verse text...
 >
-> -- *English Standard Version (ESV)*
+> — *Translation Name (ABBR)*
 
 ---
 
@@ -79,6 +81,11 @@ NT: MAT MRK LUK JHN ACT ROM 1CO 2CO GAL EPH PHP COL 1TH 2TH 1TI 2TI TIT PHM HEB 
 
 ## Application
 ### [subsections per shepherd skill]
+
+---
+
+## Sources
+[per-discipline bibliography, compiled by the bibliographer skill]
 ```
 
 ## Formatting
@@ -88,14 +95,14 @@ NT: MAT MRK LUK JHN ACT ROM 1CO 2CO GAL EPH PHP COL 1TH 2TH 1TI 2TI TIT PHM HEB 
 - Verse references inside the target passage: `(v.1)`, `(vv.1-5)`
 - Strong's numbers: `H1234` or `G5678` where useful
 - Top-level sections: `##`; subsections: `###`
-- Separators: `---` between each `##` section
+- Separators: `---` between each `##` section only — never inside a section
 - Tables: comparisons, timelines, vocabulary, semantic ranges
 - Diagrams: ASCII for chiastic patterns and literary structures
 - Tone: scholar addressing an amateur audience; confessional/evangelical, no particular tradition
 
 ## Exemplar
 
-See `content/Books/OT/HAG/01/HAG_01_1-11.md` for a well-formed passage study.
+See `content/Books/OT/PRO/11/PRO_11_1-15.md` for a well-formed passage study (full subsection contracts, Strong's numbers, ASCII diagrams, all table types) — except its Application section, which retains legacy extra headings (Summary/Conclusion) and intra-section `---`; the shepherd skill's contract (exactly subsections 1–4) wins there. Older files such as `content/Books/OT/HAG/01/HAG_01_1-11.md` retain a legacy shape throughout; do not imitate their extra unnumbered subsections or intra-section `---` rules.
 
 ## Resources
 

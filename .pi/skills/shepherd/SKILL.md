@@ -5,6 +5,8 @@ description: Develop practical, real-life applications from Bible passages. Use 
 
 # Shepherd Skill
 
+> **Pi port:** This project-local Pi skill is based on `.claude/skills/shepherd/SKILL.md`, but runs from `.pi/skills/shepherd/SKILL.md`. When using it in Pi, read this `.pi` file and do not edit or depend on the `.claude` skill.
+
 Research and determine the context of a Biblical passage by answering the following questions:
 * Clarify the original meaning for a modern audience — what are the universal principles?
 * What attributes or actions, of the modern audience, must change according to this Word?

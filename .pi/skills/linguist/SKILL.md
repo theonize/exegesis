@@ -5,6 +5,8 @@ description: Analyze Hebrew, Greek, and Aramaic linguistic features in Bible pas
 
 # Linguist Skill
 
+> **Pi port:** This project-local Pi skill is based on `.claude/skills/linguist/SKILL.md`, but runs from `.pi/skills/linguist/SKILL.md`. When using it in Pi, read this `.pi` file and do not edit or depend on the `.claude` skill.
+
 Research and determine the context of a Biblical passage by answering the following questions:
 * What was the original language of this writing?
 * What are the lexical semantics and range of the passage?

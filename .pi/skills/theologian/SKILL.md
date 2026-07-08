@@ -5,6 +5,8 @@ description: Analyze theological themes, doctrines, and spiritual principles in 
 
 # Theologian Skill
 
+> **Pi port:** This project-local Pi skill is based on `.claude/skills/theologian/SKILL.md`, but runs from `.pi/skills/theologian/SKILL.md`. When using it in Pi, read this `.pi` file and do not edit or depend on the `.claude` skill.
+
 Research and determine the context of a Biblical passage by answering the following questions:
 * Who is God in this passage? the Christ? the Spirit? — attributes, actions, promises
 * What would the original audience have drawn from the passage?
