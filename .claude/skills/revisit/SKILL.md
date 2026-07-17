@@ -24,9 +24,9 @@ Examples:
 
 ## Step 1: Resolve the Target to Existing File(s)
 
-Resolve using the **same rules as `create-study` Step 0** (read `C:\writ\exegesis\.claude\skills\create-study\SKILL.md` — passage normalization with worked examples, cross-chapter ranges, range fallback glob, file paths, Topics/Characters branches, whole-argument-first splitting). Two extensions:
+Resolve using the **resolution patterns of `create-study` Step 0** (read `C:\writ\exegesis\.claude\skills\create-study\SKILL.md` — passage normalization with worked examples, cross-chapter ranges, range fallback glob, file paths, Topics/Characters branches). Borrow only its three resolution patterns — **not** its `[output-dir]` argument-splitting mechanism; revisit has no output-dir argument, and the ` -- ` split in Step 0 above is the only splitting this skill does. Two additional patterns, tried alongside the three before any halt:
 
-1. **Chapter target** — `BOOK CH` with no colon (e.g. `JAS 01`): resolve to **every** `.md` file in `content/Books/*/<BOOK_CODE>/<CHAPTER>/`.
+1. **Chapter target** — `BOOK CH` with no colon (e.g. `JAS 01`, `PSA 23`): zero-pad the chapter per create-study's rule (2 digits for most books, 3 for Psalms — `PSA 23` → `023`), then resolve to **every** `.md` file in `content/Books/*/<BOOK_CODE>/<CHAPTER>/`.
 2. **Directory target** — an argument naming an existing directory under `content/`: resolve to every `.md` file directly inside it.
 
 Multiple files are processed **sequentially** — run Steps 2–7 to completion for one file before starting the next.
@@ -39,7 +39,7 @@ Read the resolved file end-to-end and identify:
 
 - The title (first H1) — carried into the revision **verbatim**.
 - The scripture blockquote and its attribution line (translation name), if present.
-- Each of the six standard sections (the table in Step 4), noting any that are missing.
+- Each of the six standard sections (the table in Step 4), noting any that are missing. Identify **semantically, not by exact string**: a heading variant (e.g. `## Hermeneutic Analysis` for `## Hermeneutic`) is that standard section — assign it to its seat, which normalizes the heading — never both carried over and rewritten.
 - Any **non-standard `## ` sections** (e.g. `## Overview`, `## Curated Passage Index`, `## Key Passages Reference`) — these are carried over verbatim in their original positions; no seat owns them.
 - `## Sources`, if present — it is **dropped** from the draft; the bibliographer rebuilds it in Step 6.
 - Legacy shape (extra unnumbered subsections, `---` inside sections): note it — the seats normalize their own sections to current contracts.
@@ -53,7 +53,7 @@ If the file has none of the six standard sections, it is not a study this skill 
 If the original has a scripture blockquote: fetch the same passage in the **same translation named in the attribution line** from a source (`RESOURCES.md` — Bible Gateway, Bible Hub, Step Bible, Blue Letter Bible — or the `underrow` MCP service). Check verse count and wording.
 
 - Matches: keep the block as is.
-- Drifts from the fetched text: replace the block with the fetched text and log the correction.
+- Drifts from the fetched text: replace the block with the fetched text — formatted per the blockquote template in `research` Step 2 / the CLAUDE.md Output Format (`> **N** ...` verses, attribution line naming the translation) — and log the correction.
 - Cannot be fetched after reasonable attempts: keep the existing block **unchanged** and flag it in the report. **Never regenerate Scripture from memory.** This is not a fatal failure — the text already exists in the file.
 
 If the original has no scripture blockquote (some topic studies), skip this step; do not add one.
@@ -109,9 +109,9 @@ Assemble a draft in the scratchpad by **concatenation only** — do not re-type,
 
 ## Step 6: Bibliographer Verification Pass
 
-Launch one subagent: "Read C:\writ\exegesis\.claude\skills\bibliographer\SKILL.md and apply it to {draft path}. Revision context (may be empty): {context}. Pay first attention to newly added or changed claims — compare against the snapshot at {snapshot path}. Edit the draft in place and return your verification report."
+Launch one subagent: "Read C:\writ\exegesis\.claude\skills\bibliographer\SKILL.md and apply it to {draft path}. Revision context (may be empty): {context}. Pay first attention to newly added or changed claims — compare against the snapshot at {snapshot path}. Append `## Sources` as the last section of the document — after any non-standard sections that follow `## Application` (e.g. `## Curated Passage Index`) — and do not reorder the sections already in the draft. Edit the draft in place and return your verification report."
 
-The bibliographer verifies Strong's numbers, original-language forms, cross-references, quotations, and dates; hedges or removes what cannot be verified; and appends a fresh `## Sources` section. If the pass cannot complete, the run fails for this file: original untouched.
+The bibliographer verifies Strong's numbers, original-language forms, cross-references, quotations, and dates; hedges or removes what cannot be verified; and appends a fresh `## Sources` section as the last section of the file. If the pass cannot complete, the run fails for this file: original untouched.
 
 ## Step 7: Replace the Original (Gated)
 

@@ -30,7 +30,7 @@ Work through the document section by section. Use the reference sites in `RESOUR
 ## Output
 
 1. **The corrected document** — edit the file in place. Preserve its structure exactly: do not add, remove, renumber, or reorder sections; do not touch prose that passed verification.
-2. **`## Sources`** — append as the final section (after `## Application`, preceded by `---`): a per-discipline list (`### Historical & Cultural` / `### Linguistic` / `### Literary` / `### Theological` / `### Hermeneutical` / `### Application` — one bucket per document section, omit a bucket only if truly empty) of the works and sites actually consulted during verification or genuinely relied on by the analysis. Never pad with unconsulted works; an invented citation is worse than none.
+2. **`## Sources`** — append as the last section of the document (after `## Application` and any trailing non-standard sections such as `## Curated Passage Index`, preceded by `---`): a per-discipline list (`### Historical & Cultural` / `### Linguistic` / `### Literary` / `### Theological` / `### Hermeneutical` / `### Application` — one bucket per document section, omit a bucket only if truly empty) of the works and sites actually consulted during verification or genuinely relied on by the analysis. Never pad with unconsulted works; an invented citation is worse than none.
 3. **Verification report** (returned, not written into the document): counts of claims checked, corrected, hedged, and removed, plus any unresolved flags a human should review.
 
 ## Formatting
