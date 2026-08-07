@@ -83,6 +83,13 @@ Leader's notes are the superset; the handout is a distillation. Generating in th
 
 ---
 
+## Topics
+
+- **{Topic}** — {one line: what the passage says about it, and where}
+...
+
+---
+
 ## Info
 
 ### v.1
@@ -97,15 +104,8 @@ Leader's notes are the superset; the handout is a distillation. Generating in th
 
 ## Discussion
 
-### Observation
 1. {question}
    - **Leader's note:** {direction + key text/principle}
-...
-
-### Interpretation
-...
-
-### Application
 ...
 ```
 
@@ -116,21 +116,22 @@ Leader's notes are the superset; the handout is a distillation. Generating in th
 - **Big idea** — one sentence
 - **Supporting movements** — 2–4 bullets
 
+**Topics section** — **1–4 topics** the passage actually addresses (fewer is better than padded). Each is a short label (2–4 words) plus one line naming what the passage says about it and the verse(s) where it surfaces. Draw the labels from the source's Theological / Hermeneutic sections; do not invent topics the source never treats. These same topics carry into the handout unchanged.
+
 **Info section** — go line-by-line:
 - For **passages**: one `### v.N` subsection per verse in the passage. For each verse, 4–8 short bullets pulling from across the source: key original-language terms, historical/cultural notes, literary observations, theological weight, cross-references. Keep bullets scannable — half a line each where possible.
 - For **topics**: replace `### v.N` with `### {Subsection Heading}` mirroring the source's major sections.
 
-**Discussion section** — 8–12 total questions, grouped:
-- **Observation** (3–4) — what the text says
-- **Interpretation** (3–4) — what it means
-- **Application** (3–4) — what it asks of us; pull from the source's `## Application`
+**Discussion section** — **at most 4 questions**, a single numbered list (no Observation/Interpretation/Application subheadings). Fewer than 4 is fine when the passage is short or narrow; never exceed 4.
+- Across the set, move from observation → interpretation → application, so the group works the text before applying it. Pull the applying question(s) from the source's `## Application`.
 - Under each numbered question, one `**Leader's note:**` bullet summarizing the expected direction of discussion and the key text/principle to surface.
+- These are the **same questions** that go in the handout, verbatim — the handout just drops the leader's notes.
 
 **Gaps section** (leader's notes only, optional): this skill's rule is "note the gap rather than invent content" — gap notes live here. If the source lacked anything the study needed (a verse never analyzed, no application material, missing scripture block), add a final `## Gaps in the Source` section listing each gap in one bullet. Omit the section when there are no gaps. Keep the handout clean — no gaps section there.
 
 ## Step 3 — Generate the handout
 
-Target **900–1200 words total**. Same four sections as leader's notes, much terser, no leader cues.
+Target **900–1200 words total**. Same sections as leader's notes, much terser, no leader cues.
 
 **Filename**: `<source-basename>_handout.md` (e.g. `HAG_01_1-11.md` → `HAG_01_1-11_handout.md`), with the same subfolder prefix rule as the leader's notes.
 
@@ -153,6 +154,13 @@ Target **900–1200 words total**. Same four sections as leader's notes, much te
 
 ---
 
+## Topics
+
+- **{Topic}** — {one line}
+...
+
+---
+
 ## Info
 
 ### v.1
@@ -171,9 +179,11 @@ Target **900–1200 words total**. Same four sections as leader's notes, much te
 
 **Overview** — ~120–200 words. Tight prose paragraph(s) orienting the reader, ending with a `**Big idea:**` line.
 
+**Topics** — the **1–4 topics** from the leader's notes, carried over unchanged: bolded label plus one line each. This is the at-a-glance highlight of what the passage addresses; keep it under ~60 words.
+
 **Info** — ~400–600 words total. Terse bullets per verse/unit; prefer **2–4 bullets per verse** over 6–8. Designed to prompt deeper study, not exhaust the source.
 
-**Discussion** — 5–7 open-ended questions only (no leader notes), mixing observation / interpretation / application. Suitable for a small group cold.
+**Discussion** — **at most 4** open-ended questions (fewer is fine), no leader notes. Same questions as the leader's notes, in the same order, verbatim. Suitable for a small group cold.
 
 **Length discipline**: the handout MUST stay within ~1200 words. If the source is unusually rich, prune rather than overflow.
 

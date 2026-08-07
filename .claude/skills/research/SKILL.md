@@ -1,13 +1,13 @@
 ---
 name: research
-description: Run a complete exegetical analysis of a Bible passage. Fetches the passage text, fans out six analysis subagents in parallel, compiles the draft, runs a bibliographer verification pass, writes the file, and updates TODO.md. Usage: /research <passage>
+description: Run a complete exegetical analysis of a Bible passage. Fetches the passage text, fans out six analysis subagents in parallel, compiles the draft, runs a critic reasoning audit and a bibliographer verification pass, writes the file, and updates TODO.md. Usage: /research <passage>
 ---
 
 # Research Skill — Complete Exegetical Analysis
 
 Given a passage reference (e.g., "HAG 02:20-23" or "Genesis 1:1-25"), perform a complete exegetical analysis.
 
-Failure rule (applies throughout): a run **fails** when one or more analysis subagents fail or return empty/garbage output after one retry, when the passage text cannot be fetched, or when the verification pass cannot complete. On failure, set the TODO.md entry to `[❌]` and report which stage failed. Never mark `[✅]` on a partial document.
+Failure rule (applies throughout): a run **fails** when one or more analysis subagents fail or return empty/garbage output after one retry, when the passage text cannot be fetched, or when the critic or verification pass cannot complete. On failure, set the TODO.md entry to `[❌]` and report which stage failed. Never mark `[✅]` on a partial document.
 
 ## Step 0: Parse the Reference
 
@@ -82,13 +82,23 @@ Assemble a draft in the scratchpad by **concatenation only** — do not re-type,
 2. The fetched scripture blockquote
 3. The six section files, in the order of the table above, with `---` on its own line between the title/scripture block and each `## ` section
 
-## Step 5: Bibliographer Verification Pass
+## Step 5: Critic Reasoning Audit
+
+The six seats wrote in isolation and never saw each other's work. This is the first pass over the whole document, and the only one that can catch what falls between sections.
+
+Launch one subagent: "Read C:\writ\exegesis\.claude\skills\critic\SKILL.md and apply it to {draft path}. Edit the draft in place and return your critique report."
+
+The critic audits reasoning, not citations: cross-section contradictions, confidence language outstripping its evidence, exegetical fallacies, inference gaps, cruxes presented as settled, and applications not grounded in the exegesis. It edits surgically within the constraints in its skill — it never re-drafts a section, changes headings, or touches the scripture blockquote. A report of zero findings is a valid outcome, not a failed pass; the run fails only if the pass cannot complete or the draft comes back structurally damaged (a missing or renamed `## ` heading).
+
+The critic runs **before** the bibliographer so any hedge or counter-reading it introduces is itself fact-checked, and so `## Sources` is compiled against the final text.
+
+## Step 6: Bibliographer Verification Pass
 
 Launch one subagent: "Read C:\writ\exegesis\.claude\skills\bibliographer\SKILL.md and apply it to {draft path}. Edit the draft in place and return your verification report."
 
 The bibliographer verifies Strong's numbers, original-language forms, cross-references, quotations, and dates; hedges or removes what cannot be verified; and appends the `## Sources` section. If the pass cannot complete, the run fails: `[❌]`.
 
-## Step 6: Write the Output
+## Step 7: Write the Output
 
 1. Determine the testament folder: `OT` for Genesis through Malachi, `NT` for Matthew through Revelation.
 2. Create directory `content/Books/<TESTAMENT>/<BOOK_CODE>/<CHAPTER>/` if it does not exist.
@@ -98,11 +108,11 @@ The bibliographer verifies Strong's numbers, original-language forms, cross-refe
 4. **Overwrite guard**: if the target already exists, stop and ask the user before replacing it (it may be hand-edited). An existing file alongside a `[ ]` TODO entry is an inconsistency — surface it.
 5. Copy the verified draft to the target.
 
-## Step 7: Mark Complete
+## Step 8: Mark Complete
 
 Gate before flipping the status: the written file must contain the scripture blockquote, all six exact `## ` headings from the table in Step 3, and `## Sources`. Only then change `[🔄]` to `[✅]` in `TODO.md`.
 
-Report: the output path, the TODO.md change, the bibliographer's correction count, and offer (do not perform unasked) a single commit covering both changed files.
+Report: the output path, the TODO.md change, the critic's fixed/flagged counts (surface every flagged item — those are for you, not the file), the bibliographer's correction count, and offer (do not perform unasked) a single commit covering both changed files.
 
 ## Book Code ↔ Full Name
 

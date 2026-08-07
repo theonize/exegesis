@@ -12,7 +12,7 @@ To analyze a passage, use the `/research` skill:
 
 Example: `/research HAG 02:20-23`
 
-The skill fetches the passage text, fans out the six analysis skills as parallel subagents, compiles the output, runs the `bibliographer` skill as a verification pass, writes the file, and updates `TODO.md`.
+The skill fetches the passage text, fans out the six analysis skills as parallel subagents, compiles the output, runs the `critic` skill as a reasoning audit and then the `bibliographer` skill as a verification pass, writes the file, and updates `TODO.md`.
 
 To re-examine an **existing** study — after a model upgrade, a new discovery, or updated scholarship — use the `/revisit` skill:
 
@@ -22,7 +22,7 @@ To re-examine an **existing** study — after a model upgrade, a new discovery, 
 
 Example: `/revisit HAG 02:20-23 -- updated Persian-period chronology`
 
-The skill re-runs the six analysis seats in review mode over the existing file (preserve what survives scrutiny, correct and deepen the rest), re-verifies with the `bibliographer`, and replaces the file in place. It never creates new studies and never touches `TODO.md`.
+The skill re-runs the six analysis seats in review mode over the existing file (preserve what survives scrutiny, correct and deepen the rest), audits the result with the `critic`, re-verifies with the `bibliographer`, and replaces the file in place. It never creates new studies and never touches `TODO.md`.
 
 Scripture text is always **fetched from a source** (see `RESOURCES.md`), never reproduced from memory. The translation is not fixed: choose the translation(s) best suited to the passage — prefer license-permissive translations for full-passage quotation — and name whatever is used in the attribution line.
 

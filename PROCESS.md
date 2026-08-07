@@ -10,8 +10,9 @@ The `/research <BOOK_CODE> <CHAPTER>:<VERSES>` skill runs the pipeline:
 2. **Fetch the text** — always from a source in `RESOURCES.md` (or the underrow MCP service), never from memory. The translation is chosen per passage — multiple allowed, prefer license-permissive translations for full quotes — and named in the attribution line.
 3. **Analyze in parallel** — six subagents, one per analysis skill below; each reads its own SKILL.md and writes its `##` section. A subagent that fails or returns empty/garbage output is retried once; a second failure fails the run (`[❌]`).
 4. **Compile** — mechanical concatenation: title, scripture blockquote, then the six sections separated by `---`. Never regenerated.
-5. **Verify** — the bibliographer skill checks references and facts, corrects or hedges, and appends `## Sources`.
-6. **Write & complete** — overwrite guard, completion gates (blockquote + six section headings + Sources present), then `[✅]`.
+5. **Critique** — the critic skill audits the whole draft's reasoning: cross-section coherence, confidence proportional to evidence, exegetical fallacies, unstated counter-readings, application groundedness. Fixes surgically, flags the rest to the report.
+6. **Verify** — the bibliographer skill checks references and facts, corrects or hedges, and appends `## Sources`. Runs last so `## Sources` reflects the final text.
+7. **Write & complete** — overwrite guard, completion gates (blockquote + six section headings + Sources present), then `[✅]`.
 
 ---
 
@@ -96,6 +97,10 @@ Subsections:
 2. What Must Change
 3. When, Where, and How to Implement — table `| Context | When | Where | How |`
 4. Meaning Versus Method
+
+### Critic → no section of its own (reasoning audit)
+
+Runs after compilation and before the bibliographer, over the whole draft — the first pass that sees all six sections together. Checks: contradictions between sections; confidence language outstripping its evidence; exegetical fallacies (root, etymological, illegitimate totality transfer, semantic anachronism, selective range, false parallel); inference validity; observation/inference/tradition/application kept distinct; genuine cruxes presented as settled; applications not grounded in the exegesis; anachronism and eisegesis; tone and audience. Edits surgically — downgrades overconfidence, inserts a one-clause counter-reading, cuts a fallacious step — and never re-drafts a section, changes headings, or touches the scripture blockquote. Anything needing fresh research is flagged to the report, not rewritten. Zero findings is a valid result.
 
 ### Bibliographer → `## Sources` (verification pass)
 

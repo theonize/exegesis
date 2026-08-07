@@ -5,15 +5,15 @@ description: Re-examine and improve an existing exegetical study. Use when a new
 
 # Revisit Skill — Review & Improve an Existing Study
 
-Given a target that resolves to one or more **existing** study files, re-run the six analysis seats in review mode over each file: every seat examines the whole document, rewrites its own section to preserve what survives scrutiny and improve what does not, and the bibliographer re-verifies the result before it replaces the original.
+Given a target that resolves to one or more **existing** study files, re-run the six analysis seats in review mode over each file: every seat examines the whole document, rewrites its own section to preserve what survives scrutiny and improve what does not, then the critic audits the assembled draft's reasoning and the bibliographer re-verifies it before it replaces the original.
 
 This skill never creates a new study — a target with no existing file is an error (point the user to `/research`). It follows the same pipeline shape as the `research` skill, with review posture instead of fresh composition.
 
-Failure rule (applies throughout): a run **fails** for a file when one or more seat subagents fail or return empty/garbage output after one retry, or when the bibliographer pass cannot complete. On failure, **leave the original file untouched**, discard the draft, and report which stage failed. Never write a partially revised document. `TODO.md` is never modified by this skill.
+Failure rule (applies throughout): a run **fails** for a file when one or more seat subagents fail or return empty/garbage output after one retry, or when the critic or bibliographer pass cannot complete. On failure, **leave the original file untouched**, discard the draft, and report which stage failed. Never write a partially revised document. `TODO.md` is never modified by this skill.
 
 ## Step 0: Parse the Arguments
 
-If the argument string contains ` -- `, split once on it: the left side is the **target**, the right side is the **review context** — free text describing what prompted the revisit (a new discovery, updated scholarship, a newer model, a resource now available). Otherwise the whole string is the target and the context is empty. The context is passed verbatim to every seat and to the bibliographer.
+If the argument string contains ` -- `, split once on it: the left side is the **target**, the right side is the **review context** — free text describing what prompted the revisit (a new discovery, updated scholarship, a newer model, a resource now available). Otherwise the whole string is the target and the context is empty. The context is passed verbatim to every seat, to the critic, and to the bibliographer.
 
 Examples:
 
@@ -41,7 +41,7 @@ Read the resolved file end-to-end and identify:
 - The scripture blockquote and its attribution line (translation name), if present.
 - Each of the six standard sections (the table in Step 4), noting any that are missing. Identify **semantically, not by exact string**: a heading variant (e.g. `## Hermeneutic Analysis` for `## Hermeneutic`) is that standard section — assign it to its seat, which normalizes the heading — never both carried over and rewritten.
 - Any **non-standard `## ` sections** (e.g. `## Overview`, `## Curated Passage Index`, `## Key Passages Reference`) — these are carried over verbatim in their original positions; no seat owns them.
-- `## Sources`, if present — it is **dropped** from the draft; the bibliographer rebuilds it in Step 6.
+- `## Sources`, if present — it is **dropped** from the draft; the bibliographer rebuilds it in Step 7.
 - Legacy shape (extra unnumbered subsections, `---` inside sections): note it — the seats normalize their own sections to current contracts.
 
 Copy the original to the scratchpad as a snapshot before any other step touches it.
@@ -107,13 +107,21 @@ Assemble a draft in the scratchpad by **concatenation only** — do not re-type,
 3. All `## ` sections **in the original document's order**, substituting each of the six standard sections with its seat's revised file and carrying every non-standard section over verbatim from the snapshot. Seats whose sections were missing from the original slot into the standard order (the table in Step 4, matching `AGENTS.md`). Omit the old `## Sources`.
 4. `---` on its own line between the title/scripture block and each `## ` section — never inside one.
 
-## Step 6: Bibliographer Verification Pass
+## Step 6: Critic Reasoning Audit
+
+Launch one subagent: "Read C:\writ\exegesis\.claude\skills\critic\SKILL.md and apply it to {draft path}. Revision context (may be empty): {context}. Six seats revised this document independently and none saw the others' work — give first attention to cross-section coherence, and to whether the revisions raised any conclusion's confidence beyond what its evidence supports. The prior version is at {snapshot path} for comparison; a claim that survived unchanged from it is not thereby verified. Do not touch non-standard sections carried over verbatim. Edit the draft in place and return your critique report."
+
+The critic audits reasoning, not citations: cross-section contradictions, confidence language outstripping its evidence, exegetical fallacies, inference gaps, cruxes presented as settled, and applications not grounded in the exegesis. It edits surgically within the constraints in its skill. A report of zero findings is a valid outcome; the run fails for this file only if the pass cannot complete or the draft comes back structurally damaged (a missing or renamed `## ` heading) — original untouched.
+
+Collect the critique report for the final report.
+
+## Step 7: Bibliographer Verification Pass
 
 Launch one subagent: "Read C:\writ\exegesis\.claude\skills\bibliographer\SKILL.md and apply it to {draft path}. Revision context (may be empty): {context}. Pay first attention to newly added or changed claims — compare against the snapshot at {snapshot path}. Append `## Sources` as the last section of the document — after any non-standard sections that follow `## Application` (e.g. `## Curated Passage Index`) — and do not reorder the sections already in the draft. Edit the draft in place and return your verification report."
 
 The bibliographer verifies Strong's numbers, original-language forms, cross-references, quotations, and dates; hedges or removes what cannot be verified; and appends a fresh `## Sources` section as the last section of the file. If the pass cannot complete, the run fails for this file: original untouched.
 
-## Step 7: Replace the Original (Gated)
+## Step 8: Replace the Original (Gated)
 
 Gate before writing: the draft must contain the original title, the scripture blockquote (when the original had one), all six exact `## ` headings from the table in Step 4, every non-standard section preserved from the original, and `## Sources`. If the gate fails, the run fails for this file: original untouched, report why.
 
@@ -124,6 +132,7 @@ Report per file:
 - Path revised, and the review context applied.
 - Scripture verification result (verified / corrected / source unreachable).
 - Each seat's change summary ("no changes" included).
+- The critic's fixed/flagged counts, plus every flagged item verbatim — those live only in the report, never in the file.
 - The bibliographer's correction count and unresolved flags.
 - If the file appears in `studies/INDEX.md`, note that its handout and leader's notes are now stale (regenerate via `/create-study`).
 
