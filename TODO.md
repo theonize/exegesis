@@ -1406,10 +1406,10 @@
 - [✅] SNG 02:1-7 - The beloved's beauty
 - [✅] SNG 02:8-17 - The beloved's invitation
 - [✅] SNG 03:1-5 - Seeking the beloved
-- [ ] SNG 03:6-11 - Solomon's wedding procession
-- [ ] SNG 04:1-7 - The bride's beauty praised
-- [ ] SNG 04:8-15 - A garden enclosed
-- [ ] SNG 04:16-5:1 - The garden enjoyed
+- [✅] SNG 03:6-11 - Solomon's wedding procession
+- [✅] SNG 04:1-7 - The bride's beauty praised
+- [✅] SNG 04:8-15 - A garden enclosed
+- [✅] SNG 04:16-5:1 - The garden enjoyed
 - [ ] SNG 05:2-8 - A troubled dream
 - [ ] SNG 05:9-16 - Description of the beloved
 - [ ] SNG 06:1-3 - Where has your beloved gone
