@@ -1410,10 +1410,10 @@
 - [✅] SNG 04:1-7 - The bride's beauty praised
 - [✅] SNG 04:8-15 - A garden enclosed
 - [✅] SNG 04:16-5:1 - The garden enjoyed
-- [ ] SNG 05:2-8 - A troubled dream
-- [ ] SNG 05:9-16 - Description of the beloved
-- [ ] SNG 06:1-3 - Where has your beloved gone
-- [ ] SNG 06:4-12 - The bride's unique beauty
+- [✅] SNG 05:2-8 - A troubled dream
+- [✅] SNG 05:9-16 - Description of the beloved
+- [✅] SNG 06:1-3 - Where has your beloved gone
+- [✅] SNG 06:4-12 - The bride's unique beauty
 - [ ] SNG 06:13-7:9 - The Shulammite's beauty
 - [ ] SNG 07:10-8:4 - Longing for the beloved
 - [ ] SNG 08:5-14 - The power of love
