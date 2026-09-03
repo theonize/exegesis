@@ -7,7 +7,7 @@ description: Produce a 2pp handout and detailed leader's notes from an existing 
 
 Transform a completed exegetical research file into two teaching deliverables:
 
-1. **Handout** — ~900–1200 words, easily digestible, designed to prompt deeper study.
+1. **Handout** — ~900–1200 words, easily digestible, designed to prompt deeper study. Carries a single key verse and 2–4 highlights so the main points survive a one-minute skim.
 2. **Leader's notes** — bullet-dense, essentially line-by-line through the basis text, with a fuller overview and discussion-leader cues.
 
 This skill **does not perform fresh exegesis**. Every claim in the outputs must trace back to the source research file. If the source omits something the study would need, note the gap rather than invent content.
@@ -56,6 +56,10 @@ Identify these sections in the source (they may not all be present):
 
 Note the **title** (first H1), and for passages, **identify each verse** (or for topics, each major section).
 
+While reading, mark two things you will need later:
+- **Key-verse candidates** — the verse(s) the source itself treats as the hinge: the one its Literary section places at the centre of a chiasm or turn, its Theological section builds on, or its Hermeneutic section names as the interpretive key. Prefer a verse the source repeatedly returns to over one it merely mentions.
+- **Highlight candidates** — the passage's load-bearing claims: the sentences the source's Theological, Hermeneutic, and Application sections converge on. These become the `## Highlights` section (2–4 items) in both outputs.
+
 If the source has **no scripture blockquote**, omit the `## Verses` section from BOTH outputs — never reconstruct Scripture from memory (consistent with the no-fresh-exegesis rule).
 
 ## Step 2 — Generate the leader's notes (do this FIRST)
@@ -78,6 +82,22 @@ Leader's notes are the superset; the handout is a distillation. Generating in th
 ## Overview
 
 {bullet-dense, ~300–500 words}
+
+---
+
+## Key Verse
+
+> **{N}** {verse text, verbatim from the scripture blockquote}
+
+- **Why this verse:** {one line, grounded in the source}
+
+---
+
+## Highlights
+
+1. **{Highlight}** — {one sentence: the claim, and the verse(s) it rests on}
+   - **Source:** {which section(s) of the research file carry it}
+...
 
 ---
 
@@ -114,7 +134,11 @@ Leader's notes are the superset; the handout is a distillation. Generating in th
 - **Big idea** — one sentence
 - **Supporting movements** — 2–4 bullets
 
-**Topics section** — **1–4 topics** the passage actually addresses (fewer is better than padded). Each is a short label (2–4 words) plus one line naming what the passage says about it and the verse(s) where it surfaces. Draw the labels from the source's Theological / Hermeneutic sections; do not invent topics the source never treats. These same topics carry into the handout unchanged.
+**Key Verse section** — **exactly one verse** from the passage, quoted **verbatim from the source's scripture blockquote** with its verse number in bold. Never quote from memory or from a different translation than the source uses. Choose the verse the source itself treats as the hinge (see the key-verse candidates from Step 1). One `**Why this verse:**` bullet, one line, citing what in the source makes it central. Do not pick the "most famous" verse if the source's argument turns elsewhere — this is the passage's key, not a memory verse. If the source has no scripture blockquote, omit the section from BOTH outputs and record it under `## Gaps in the Source`. For topic studies, the key verse must still be a verse the source **quotes in full** somewhere in its body; if it quotes none, omit and note the gap. The handout carries the same verse unchanged.
+
+**Highlights section** — **2–4 highlights**: the passage's main points, each a **complete propositional sentence** (a claim the passage makes), not a subject label — that is what distinguishes Highlights from Topics. Bold a 2–5 word lead, then one sentence stating the point and the verse(s) it rests on. Under each, one `**Source:**` bullet naming the research-file section(s) that carry the claim, so the leader can go deeper. Order them as the passage does. Every highlight must be a claim the source actually argues; do not promote an aside to a highlight because it preaches well. The same highlights carry into the handout verbatim, minus the `**Source:**` bullets. Highlights and Topics may touch the same material; the test is form — Highlights assert, Topics name.
+
+**Topics section** — **1–4 topics** the passage actually addresses (fewer is better than padded). Each is a short label (2–4 words) plus one line naming what the passage says about it and the verse(s) where it surfaces. Draw the labels from the source's Theological / Hermeneutic sections; do not invent topics the source never treats. These same topics carry into the handout unchanged. If a topic would merely restate a highlight as a noun, drop the topic — Highlights already carry it.
 
 **Info section** — go line-by-line:
 - For **passages**: one `### v.N` subsection per verse in the passage. For each verse, 4–8 short bullets pulling from across the source: key original-language terms, historical/cultural notes, literary observations, theological weight, cross-references. Keep bullets scannable — half a line each where possible.
@@ -125,7 +149,7 @@ Leader's notes are the superset; the handout is a distillation. Generating in th
 - Under each numbered question, one `**Leader's note:**` bullet summarizing the expected direction of discussion and the key text/principle to surface.
 - These are the **same questions** that go in the handout, verbatim — the handout just drops the leader's notes.
 
-**Gaps section** (leader's notes only, optional): this skill's rule is "note the gap rather than invent content" — gap notes live here. If the source lacked anything the study needed (a verse never analyzed, no application material, missing scripture block), add a final `## Gaps in the Source` section listing each gap in one bullet. Omit the section when there are no gaps. Keep the handout clean — no gaps section there.
+**Gaps section** (leader's notes only, optional): this skill's rule is "note the gap rather than invent content" — gap notes live here. If the source lacked anything the study needed (a verse never analyzed, no application material, missing scripture block, no quotable key verse, fewer than two defensible highlights), add a final `## Gaps in the Source` section listing each gap in one bullet. Omit the section when there are no gaps. Keep the handout clean — no gaps section there.
 
 ## Step 3 — Generate the handout
 
@@ -149,6 +173,19 @@ Target **900–1200 words total**. Same sections as leader's notes, much terser,
 {120–200 words tight prose}
 
 **Big idea:** {one sentence}
+
+---
+
+## Key Verse
+
+> **{N}** {verse text, verbatim from the scripture blockquote}
+
+---
+
+## Highlights
+
+1. **{Highlight}** — {one sentence}
+...
 
 ---
 
@@ -177,9 +214,13 @@ Target **900–1200 words total**. Same sections as leader's notes, much terser,
 
 **Overview** — ~120–200 words. Tight prose paragraph(s) orienting the reader, ending with a `**Big idea:**` line.
 
-**Topics** — the **1–4 topics** from the leader's notes, carried over unchanged: bolded label plus one line each. This is the at-a-glance highlight of what the passage addresses; keep it under ~60 words.
+**Key Verse** — the same single verse as the leader's notes, quoted verbatim from the scripture blockquote, verse number in bold. No commentary in the handout; the "why" stays in the leader's notes.
 
-**Info** — ~400–600 words total. Terse bullets per verse/unit; prefer **2–4 bullets per verse** over 6–8. Designed to prompt deeper study, not exhaust the source.
+**Highlights** — the **2–4 highlights** from the leader's notes, carried over verbatim as a numbered list, without the `**Source:**` bullets. Keep the whole section under ~100 words. This is the take-home: a reader who reads nothing else should leave with these.
+
+**Topics** — the **1–4 topics** from the leader's notes, carried over unchanged: bolded label plus one line each. This is the at-a-glance index of what the passage addresses; keep it under ~60 words.
+
+**Info** — ~350–550 words total (trimmed from the previous budget to make room for Key Verse and Highlights). Terse bullets per verse/unit; prefer **2–4 bullets per verse** over 6–8. Designed to prompt deeper study, not exhaust the source.
 
 **Discussion** — **at most 4** open-ended questions (fewer is fine), no leader notes. Same questions as the leader's notes, in the same order, verbatim. Suitable for a small group cold.
 
@@ -203,7 +244,7 @@ Write **both** files. Then append one row to `studies/INDEX.md` (create it with 
 | <source path> | <handout path> | <leader path> | <YYYY-MM-DD> |
 ```
 
-Report the two paths, a one-line summary (word count) for each, and the number of gaps noted (0 if none).
+Report the two paths, a one-line summary (word count) for each, the key verse chosen (reference only), the number of highlights, and the number of gaps noted (0 if none).
 
 Do **not** modify `TODO.md` — that file tracks research, not studies. `studies/INDEX.md` is the studies tracker; a source file newer than its INDEX row means the study is stale.
 
