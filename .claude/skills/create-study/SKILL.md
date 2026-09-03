@@ -98,6 +98,7 @@ Leader's notes are the superset; the handout is a distillation. Generating in th
 1. **{Point}** (vv.{a}-{b}) — {one sentence: what the passage says here}
    - **Source:** {which section(s) of the research file carry it}
 ...
+{(vv.a-b) is the passage form; topic studies use book-qualified citations or no parenthetical — see Main Points section rules}
 
 ---
 
@@ -134,22 +135,23 @@ Leader's notes are the superset; the handout is a distillation. Generating in th
 
 **Key Verse section** — **exactly one verse** from the passage, quoted **verbatim from the source's scripture blockquote** with its verse number in bold. Never quote from memory or from a different translation than the source uses. Choose the verse the source itself treats as the hinge (see the key-verse candidates from Step 1). One `**Why this verse:**` bullet, one line, citing what in the source makes it central. Do not pick the "most famous" verse if the source's argument turns elsewhere — this is the passage's key, not a memory verse. If the source has no scripture blockquote, omit the section from BOTH outputs and record it under `## Gaps in the Source`. For topic studies, the key verse must still be a verse the source **quotes in full** somewhere in its body; if it quotes none, omit and note the gap. The handout carries the same verse unchanged.
 
-**Main Points section** — **2–4 points**, the lesson's outline. Each point is a short bolded label (2–5 words), the verse range it covers in parentheses, and one sentence stating what the passage says there. Under each, one `**Source:**` bullet naming the research-file section(s) that carry it, so the leader can go deeper.
+**Main Points section** — **2–4 points**, the lesson's outline. Each point is a short bolded label (2–5 words), a reference in parentheses (see below), and one sentence stating what the passage says there. Under each, one `**Source:**` bullet naming the research-file section(s) that carry it, so the leader can go deeper.
 - **Let the passage's shape decide the points.** If the source's Literary section shows structural units (stanzas, scenes, a chiasm's panels, steps in an argument), each point covers one unit and the verse ranges partition the passage in order. If the passage is a single unit developing one idea (a short proverb cluster, a tight argument), the points are its main ideas instead, each tagged with the verse(s) where that idea surfaces; ranges may then overlap.
 - **Alliteration or parallel phrasing is welcome when it comes naturally** (e.g. *Provoked · Promised · Proven*) and forbidden when it bends the point to fit the letter. Accuracy to the source wins every time; a plain label beats a clever wrong one.
-- Every point must be something the source actually argues; do not promote an aside because it preaches well. Draw substance from the Theological / Hermeneutic sections and structure from Literary. Never pad to four.
+- Every point must be something the source actually argues; do not promote an aside because it preaches well. Draw substance from the Theological / Hermeneutic sections and structure from Literary. Never pad to four — and never pad to two: if the source defensibly supports only **one** movement, write a single point, record "source supports only one main point" under `## Gaps in the Source`, and let `## Info` sit under that one heading. A one-point study is compliant; an invented second point is not.
+- **Reference form**: for passage sources, the verse range within the passage, `(vv.a-b)`. For topic and character sources there is no single target passage, so use book-qualified citations of the verse(s) the source actually treats under that point, e.g. `(Genesis 41:42; Exodus 25:11)`, discontiguous where needed — or omit the parenthetical when the point rests on the topic as a whole rather than on specific texts. Never coin a bare `(vv.a-b)` range for a topic study.
 - The same points, numbered and labelled identically, become the `###` headings of `## Info` and carry into the handout verbatim (minus the `**Source:**` bullets).
 
 **Info section** — go line-by-line, grouped under the main points:
 - For **passages**: one `### N. {Point} (vv.a-b)` subsection per main point, in the same order and wording as `## Main Points`, and under it one `#### v.N` subsection per verse in that range. Every verse of the passage appears exactly once; if a verse belongs to no point (a transition, a superscription), attach it to the nearest point rather than leaving it orphaned. When the points are ideas rather than units and ranges overlap, assign each verse to the point it serves most and do not repeat it. For each verse, 4–8 short bullets pulling from across the source: key original-language terms, historical/cultural notes, literary observations, theological weight, cross-references. Keep bullets scannable — half a line each where possible.
-- For **topics**: the `###` headings are still the main points; replace `#### v.N` with `#### {Subsection Heading}` mirroring the source's major sections that feed each point.
+- For **topics**: the `###` headings are still the main points (with the same book-qualified references or none, never `(vv.a-b)`); replace `#### v.N` with `#### {Subsection Heading}` mirroring the source's major sections that feed each point.
 
 **Discussion section** — **at most 4 questions**, a single numbered list (no Observation/Interpretation/Application subheadings). Fewer than 4 is fine when the passage is short or narrow; never exceed 4.
 - Across the set, move from observation → interpretation → application, so the group works the text before applying it. Pull the applying question(s) from the source's `## Application`.
 - Under each numbered question, one `**Leader's note:**` bullet summarizing the expected direction of discussion and the key text/principle to surface.
 - These are the **same questions** that go in the handout, verbatim — the handout just drops the leader's notes.
 
-**Gaps section** (leader's notes only, optional): this skill's rule is "note the gap rather than invent content" — gap notes live here. If the source lacked anything the study needed (a verse never analyzed, no application material, missing scripture block, no quotable key verse, fewer than two defensible main points), add a final `## Gaps in the Source` section listing each gap in one bullet. Omit the section when there are no gaps. Keep the handout clean — no gaps section there.
+**Gaps section** (leader's notes only, optional): this skill's rule is "note the gap rather than invent content" — gap notes live here. If the source lacked anything the study needed (a verse never analyzed, no application material, missing scripture block, no quotable key verse, source supports only one main point), add a final `## Gaps in the Source` section listing each gap in one bullet. Omit the section when there are no gaps. Keep the handout clean — no gaps section there.
 
 ## Step 3 — Generate the handout
 
@@ -211,7 +213,7 @@ Target **900–1200 words total**. Same sections as leader's notes, much terser,
 
 **Key Verse** — the same single verse as the leader's notes, quoted verbatim from the scripture blockquote, verse number in bold. No commentary in the handout; the "why" stays in the leader's notes.
 
-**Main Points** — the **2–4 points** from the leader's notes, carried over verbatim as a numbered list with verse ranges, without the `**Source:**` bullets. Keep the whole section under ~100 words. This is the take-home: a reader who reads nothing else should leave with these.
+**Main Points** — the **2–4 points** (or the single point, in the one-point case) from the leader's notes, carried over verbatim as a numbered list with their references, without the `**Source:**` bullets. Keep the whole section under ~100 words. This is the take-home: a reader who reads nothing else should leave with these.
 
 **Info** — ~400–550 words total. Same `### N. {Point}` headings as the leader's notes, with `#### v.N` under each; terse bullets per verse, prefer **2–4 bullets per verse** over 6–8. Designed to prompt deeper study, not exhaust the source.
 
