@@ -10,9 +10,10 @@ The `/research <BOOK_CODE> <CHAPTER>:<VERSES>` skill runs the pipeline:
 2. **Fetch the text** — always from a source in `RESOURCES.md` (or the underrow MCP service), never from memory. The translation is chosen per passage — multiple allowed, prefer license-permissive translations for full quotes — and named in the attribution line.
 3. **Analyze in parallel** — six subagents, one per analysis skill below; each reads its own SKILL.md and writes its `##` section. A subagent that fails or returns empty/garbage output is retried once; a second failure fails the run (`[❌]`).
 4. **Compile** — mechanical concatenation: title, scripture blockquote, then the six sections separated by `---`. Never regenerated.
-5. **Critique** — the critic skill audits the whole draft's reasoning: cross-section coherence, confidence proportional to evidence, exegetical fallacies, unstated counter-readings, application groundedness. Fixes surgically, flags the rest to the report.
-6. **Verify** — the bibliographer skill checks references and facts, corrects or hedges, and appends `## Sources`. Runs last so `## Sources` reflects the final text.
-7. **Write & complete** — overwrite guard, completion gates (blockquote + six section headings + Sources present), then `[✅]`.
+5. **Synthesize** — the expositor skill reads the compiled draft and writes `## Overview` (big idea, place in the book, key verse and movements) immediately after the blockquote, adding no claim the sections do not make. Reports cross-section tensions for the critic.
+6. **Critique** — the critic skill audits the whole draft's reasoning: cross-section coherence against the Overview's big idea, Overview traceability, confidence proportional to evidence, exegetical fallacies, unstated counter-readings, application groundedness. Fixes surgically, flags the rest to the report.
+7. **Verify** — the bibliographer skill checks references and facts, corrects or hedges, and appends `## Sources`. Runs last so `## Sources` reflects the final text.
+8. **Write & complete** — overwrite guard, completion gates (blockquote + Overview + six section headings + Sources present), then `[✅]`.
 
 ---
 
@@ -98,9 +99,18 @@ Subsections:
 3. When, Where, and How to Implement — table `| Context | When | Where | How |`
 4. Meaning Versus Method
 
+### Expositor → `## Overview` (synthesis)
+
+Runs after compilation and before the critic, over the whole draft — the first seat to read all six sections together. Sets forth what the sections have found; performs no fresh exegesis, and every claim carries a pointer to the section that supports it (`see Literary §2`). 250–450 words, no tables, never edits another section. Reports cross-section tensions to the orchestrator, which forwards them to the critic. On `/revisit`, rewrites the Overview from the revised sections (files without a scripture blockquote keep any existing Overview verbatim).
+
+Subsections:
+1. Big Idea — one bold thesis sentence, at most one paragraph
+2. In Context — what precedes, what follows, what the unit does for the book's argument; one closing sentence on the canonical horizon
+3. Key Verse and Movements — one verse quoted byte-for-byte from the blockquote, then 2–4 movements with verse ranges
+
 ### Critic → no section of its own (reasoning audit)
 
-Runs after compilation and before the bibliographer, over the whole draft — the first pass that sees all six sections together. Checks: contradictions between sections; confidence language outstripping its evidence; exegetical fallacies (root, etymological, illegitimate totality transfer, semantic anachronism, selective range, false parallel); inference validity; observation/inference/tradition/application kept distinct; genuine cruxes presented as settled; applications not grounded in the exegesis; anachronism and eisegesis; tone and audience. Edits surgically — downgrades overconfidence, inserts a one-clause counter-reading, cuts a fallacious step — and never re-drafts a section, changes headings, or touches the scripture blockquote. Anything needing fresh research is flagged to the report, not rewritten. Zero findings is a valid result.
+Runs after the expositor and before the bibliographer, over the whole draft — the first pass that tests all six sections and the Overview together. Checks: contradictions between sections, using the Overview's big idea as the reference point; Overview traceability (every claim points to a section that says it, key verse verbatim, movements cover the passage); confidence language outstripping its evidence; exegetical fallacies (root, etymological, illegitimate totality transfer, semantic anachronism, selective range, false parallel); inference validity; observation/inference/tradition/application kept distinct; genuine cruxes presented as settled; applications not grounded in the exegesis; anachronism and eisegesis; tone and audience. Edits surgically — downgrades overconfidence, inserts a one-clause counter-reading, cuts a fallacious step — and never re-drafts a section, rewrites the Overview wholesale, changes headings, or touches the scripture blockquote. A hedge applied to a section claim is propagated to any Overview sentence that points to it. Anything needing fresh research is flagged to the report, not rewritten. Zero findings is a valid result.
 
 ### Bibliographer → `## Sources` (verification pass)
 

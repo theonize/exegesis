@@ -12,7 +12,7 @@ To analyze a passage, use the `/research` skill:
 
 Example: `/research HAG 02:20-23`
 
-The skill fetches the passage text, fans out the six analysis skills as parallel subagents, compiles the output, runs the `critic` skill as a reasoning audit and then the `bibliographer` skill as a verification pass, writes the file, and updates `TODO.md`.
+The skill fetches the passage text, fans out the six analysis skills as parallel subagents, compiles the output, runs the `expositor` skill to write the `## Overview` from the compiled sections, then the `critic` skill as a reasoning audit and the `bibliographer` skill as a verification pass, writes the file, and updates `TODO.md`.
 
 To re-examine an **existing** study — after a model upgrade, a new discovery, or updated scholarship — use the `/revisit` skill:
 
@@ -22,7 +22,7 @@ To re-examine an **existing** study — after a model upgrade, a new discovery, 
 
 Example: `/revisit HAG 02:20-23 -- updated Persian-period chronology`
 
-The skill re-runs the six analysis seats in review mode over the existing file (preserve what survives scrutiny, correct and deepen the rest), audits the result with the `critic`, re-verifies with the `bibliographer`, and replaces the file in place. It never creates new studies and never touches `TODO.md`.
+The skill re-runs the six analysis seats in review mode over the existing file (preserve what survives scrutiny, correct and deepen the rest), has the `expositor` rewrite the `## Overview` from the revised sections, audits the result with the `critic`, re-verifies with the `bibliographer`, and replaces the file in place. It never creates new studies and never touches `TODO.md`.
 
 Scripture text is always **fetched from a source** (see `RESOURCES.md`), never reproduced from memory. The translation is not fixed: choose the translation(s) best suited to the passage — prefer license-permissive translations for full-passage quotation — and name whatever is used in the attribution line.
 
@@ -61,6 +61,13 @@ NT: MAT MRK LUK JHN ACT ROM 1CO 2CO GAL EPH PHP COL 1TH 2TH 1TI 2TI TIT PHM HEB 
 > **2** Second verse text...
 >
 > — *Translation Name (ABBR)*
+
+---
+
+## Overview
+### 1. Big Idea
+### 2. In Context
+### 3. Key Verse and Movements
 
 ---
 
@@ -112,7 +119,7 @@ NT: MAT MRK LUK JHN ACT ROM 1CO 2CO GAL EPH PHP COL 1TH 2TH 1TI 2TI TIT PHM HEB 
 
 ## Exemplar
 
-See `content/Books/OT/PRO/11/PRO_11_1-15.md` for a well-formed passage study (full subsection contracts, Strong's numbers, ASCII diagrams, all table types) — except its Application section, which retains legacy extra headings (Summary/Conclusion) and intra-section `---`; the shepherd skill's contract (exactly subsections 1–4) wins there. Older files such as `content/Books/OT/HAG/01/HAG_01_1-11.md` retain a legacy shape throughout; do not imitate their extra unnumbered subsections or intra-section `---` rules.
+See `content/Books/OT/PRO/11/PRO_11_1-15.md` for a well-formed passage study (full subsection contracts, Strong's numbers, ASCII diagrams, all table types) — except its Application section, which retains legacy extra headings (Summary/Conclusion) and intra-section `---`; the shepherd skill's contract (exactly subsections 1–4) wins there. It also predates the `## Overview` section, as do all studies researched before the `expositor` seat was added; they gain one when re-researched. Older files such as `content/Books/OT/HAG/01/HAG_01_1-11.md` retain a legacy shape throughout; do not imitate their extra unnumbered subsections or intra-section `---` rules.
 
 ## Resources
 

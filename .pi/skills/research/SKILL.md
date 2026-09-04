@@ -1,6 +1,6 @@
 ---
 name: research
-description: Run a complete exegetical analysis of a Bible passage in Pi. Fetches passage text, produces six analysis sections from the Pi skills, compiles and verifies the draft, writes the file, and updates TODO.md. Usage: /skill:research <passage>
+description: Run a complete exegetical analysis of a Bible passage in Pi. Fetches passage text, produces six analysis sections from the Pi skills, compiles the draft, writes its Overview with the expositor skill, audits it with the critic, verifies it with the bibliographer, writes the file, and updates TODO.md. Usage: /skill:research <passage>
 ---
 
 # Research Skill — Complete Exegetical Analysis (Pi)
@@ -9,7 +9,7 @@ description: Run a complete exegetical analysis of a Bible passage in Pi. Fetche
 
 Given a passage reference (e.g., "HAG 02:20-23" or "Genesis 1:1-25"), perform a complete exegetical analysis.
 
-Failure rule (applies throughout): a run **fails** when one or more analysis sections fail or return empty/garbage output after one retry, when the passage text cannot be fetched, or when the verification pass cannot complete. On failure, set the TODO.md entry to `[❌]` and report which stage failed. Never mark `[✅]` on a partial document.
+Failure rule (applies throughout): a run **fails** when one or more analysis sections fail or return empty/garbage output after one retry, when the passage text cannot be fetched, or when the expositor, critic, or verification pass cannot complete. On failure, set the TODO.md entry to `[❌]` and report which stage failed. Never mark `[✅]` on a partial document.
 
 ## Step 0: Parse the Reference
 
@@ -101,13 +101,33 @@ Assemble a draft in the scratchpad by **concatenation only** — do not re-type,
 2. The fetched scripture blockquote
 3. The six section files, in the order of the table above, with `---` on its own line between the title/scripture block and each `## ` section
 
-## Step 5: Bibliographer Verification Pass
+The `## Overview` slot (between the blockquote and `## Historical & Cultural Analysis`) is filled in Step 4b.
+
+## Step 4b: Expositor Synthesis
+
+The six sections were produced independently. The expositor is the first pass to read the whole draft; it writes the document's thesis and orientation from what the sections already establish, and adds no claim of its own.
+
+Use `read` to load `.pi/skills/expositor/SKILL.md` and apply it to the compiled draft (as an isolated worker if the delegation route from Step 3 is in use, otherwise in this session). Write ONLY the `## Overview` section to `{scratchpad}/{BOOK}_{CHAPTER}_{VERSES}_expositor.md` and keep its list of cross-section tensions for the critic prompt and the final report.
+
+Check mechanically: the file begins with `## Overview` and contains `### 1.`, `### 2.`, and `### 3.`; it is at most 500 words (the expositor's hard cap, measured on its output before the critic touches it); its quoted key-verse line (`> **N** …`) is byte-identical to a line in the fetched blockquote; it contains no `---`. Insert the section into the draft immediately after the scripture blockquote, with `---` on its own line before and after it. If the check fails or the output is empty/garbage, retry **once**; a second failure fails the run: `[❌]`, report the expositor stage.
+
+## Step 5: Critic Reasoning Audit
+
+The six sections were produced independently and the expositor has written `## Overview` from them; the critic is the first pass that *tests* the whole document.
+
+Use `read` to load `.pi/skills/critic/SKILL.md` and apply it to the compiled draft, with this context: "The expositor reported these cross-section tensions: {tension list or 'none'}. Check that every `## Overview` claim traces to the section it points to and that the Overview's stated main point agrees with the sections." Edit the draft in place and keep the critique report for the final response.
+
+The critic audits reasoning, not citations: cross-section contradictions, confidence language outstripping its evidence, exegetical fallacies, inference gaps, cruxes presented as settled, and applications not grounded in the exegesis. It edits surgically within the constraints in its skill — it never re-drafts a section, changes headings, or touches the scripture blockquote. A report of zero findings is a valid outcome; the run fails only if the pass cannot complete or the draft comes back structurally damaged (a missing or renamed `## ` heading).
+
+The critic runs **before** the bibliographer so any hedge or counter-reading it introduces is itself fact-checked, and so `## Sources` is compiled against the final text.
+
+## Step 6: Bibliographer Verification Pass
 
 Use `read` to load `.pi/skills/bibliographer/SKILL.md` and apply it to the compiled draft. Edit the draft in place and keep a verification report for the final response.
 
 The bibliographer verifies Strong's numbers, original-language forms, cross-references, quotations, and dates; hedges or removes what cannot be verified; and appends the `## Sources` section. If the pass cannot complete, the run fails: `[❌]`.
 
-## Step 6: Write the Output
+## Step 7: Write the Output
 
 1. Determine the testament folder: `OT` for Genesis through Malachi, `NT` for Matthew through Revelation.
 2. Create directory `content/Books/<TESTAMENT>/<BOOK_CODE>/<CHAPTER>/` if it does not exist.
@@ -117,11 +137,11 @@ The bibliographer verifies Strong's numbers, original-language forms, cross-refe
 4. **Overwrite guard**: if the target already exists, stop and ask the user before replacing it (it may be hand-edited). An existing file alongside a `[ ]` TODO entry is an inconsistency — surface it.
 5. Copy the verified draft to the target.
 
-## Step 7: Mark Complete
+## Step 8: Mark Complete
 
-Gate before flipping the status: the written file must contain the scripture blockquote, all six exact `## ` headings from the table in Step 3, and `## Sources`. Only then change `[🔄]` to `[✅]` in `TODO.md`.
+Gate before flipping the status: the written file must contain the scripture blockquote, `## Overview` immediately after it, all six exact `## ` headings from the table in Step 3, and `## Sources`. Only then change `[🔄]` to `[✅]` in `TODO.md`.
 
-Report: the output path, the TODO.md change, the bibliographer's correction count, and offer (do not perform unasked) a single commit covering both changed files.
+Report: the output path, the TODO.md change, the expositor's cross-section tensions, the critic's fixed/flagged counts (surface every flagged item — those are for you, not the file), the bibliographer's correction count, and offer (do not perform unasked) a single commit covering both changed files.
 
 ## Book Code ↔ Full Name
 

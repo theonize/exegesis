@@ -26,7 +26,7 @@ Theological concepts accessible to the first hearers/readers in their context.
 Practices of faith the passage calls for or models.
 
 ### 3. Timeless Theological Principles
-Doctrinal truths that transcend the original setting.
+Doctrinal truths that transcend the original setting. End this subsection with one sentence stating the passage's central theological claim.
 
 ### 4. Key Theological Themes
 Begin with who God — Father, Christ, Spirit — is in this passage: attributes, actions, promises. Then expanded sub-themes with cross-references where the passage connects to broader biblical theology, including how the passage progresses revelation.

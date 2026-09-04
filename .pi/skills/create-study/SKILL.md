@@ -49,6 +49,7 @@ Read the resolved file end-to-end. This is the **sole basis** for both outputs.
 
 Identify these sections in the source (they may not all be present):
 - Scripture block (the `> **1** ...` blockquote)
+- `## Overview` (if present — big idea, place in the book, key verse and movements)
 - `## Historical & Cultural Analysis`
 - `## Linguistic Analysis`
 - `## Literary Analysis`
@@ -61,6 +62,8 @@ Note the **title** (first H1), and for passages, **identify each verse** (or for
 While reading, mark two things you will need later:
 - **Key-verse candidates** — the verse(s) the source itself treats as the hinge: the one its Literary section places at the centre of a chiasm or turn, its Theological section builds on, or its Hermeneutic section names as the interpretive key. Prefer a verse the source repeatedly returns to over one it merely mentions.
 - **Main-point candidates** — the 2–4 movements a lesson on this passage would have. Read the source's Literary section for how the passage divides (chiasm, stanzas, scenes, argument steps) and its Theological / Hermeneutic sections for what each division is saying. These become the `## Main Points` section and the outline of `## Info` in both outputs.
+
+**If the source has `## Overview`**, start there: take the key verse from its §3, the main points from its movements (labels may be tightened), and the big idea from its §1 — then validate each against the sections it points to. A verse not in the blockquote, or a movement no section supports, falls back to the triangulation above and is recorded under `## Gaps in the Source`. Setting, author, and genre bullets still come from the Historical and Literary sections.
 
 If the source has **no scripture blockquote**, omit the `## Verses` section from BOTH outputs — never reconstruct Scripture from memory (consistent with the no-fresh-exegesis rule).
 
@@ -132,7 +135,7 @@ Leader's notes are the superset; the handout is a distillation. Generating in th
 - **Setting** — date, place, audience (from Historical & Cultural)
 - **Author / speaker** and immediate context within the book (from Literary)
 - **Genre and literary frame** (from Literary)
-- **Big idea** — one sentence
+- **Big idea** — one sentence (from the source's Overview §1 when present)
 - **Supporting movements** — 2–4 bullets
 
 **Key Verse section** — **exactly one verse** from the passage, quoted **verbatim from the source's scripture blockquote** with its verse number in bold. Never quote from memory or from a different translation than the source uses. Choose the verse the source itself treats as the hinge (see the key-verse candidates from Step 1). One `**Why this verse:**` bullet, one line, citing what in the source makes it central. Do not pick the "most famous" verse if the source's argument turns elsewhere — this is the passage's key, not a memory verse. If the source has no scripture blockquote, omit the section from BOTH outputs and record it under `## Gaps in the Source`. For topic studies, the key verse must still be a verse the source **quotes in full** somewhere in its body; if it quotes none, omit and note the gap. The handout carries the same verse unchanged.
@@ -211,7 +214,7 @@ Target **900–1200 words total**. Same sections as leader's notes, much terser,
 ...
 ```
 
-**Overview** — ~120–200 words. Tight prose paragraph(s) orienting the reader, ending with a `**Big idea:**` line.
+**Overview** — ~120–200 words. Tight prose paragraph(s) orienting the reader, ending with a `**Big idea:**` line (from the source's Overview §1 when present).
 
 **Key Verse** — the same single verse as the leader's notes, quoted verbatim from the scripture blockquote, verse number in bold. No commentary in the handout; the "why" stays in the leader's notes.
 

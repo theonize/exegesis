@@ -5,6 +5,8 @@ description: Audit the reasoning of a compiled exegetical analysis — cross-sec
 
 # Critic Skill — Argument & Reasoning Audit
 
+> **Pi port:** This project-local Pi skill is based on `.claude/skills/critic/SKILL.md`, but runs from `.pi/skills/critic/SKILL.md`. When using it in Pi, read this `.pi` file and do not edit or depend on the `.claude` skill. Use `read` to load the draft and `edit` for every in-place change.
+
 Given a compiled exegetical analysis (a file path, or a passage reference to resolve via the standard `content/Books/...` path rules), audit the **quality of its reasoning**, correct what can be corrected surgically, and flag what cannot.
 
 This skill enforces the project's core posture: *distinguish observation, inference, tradition, and application; keep conclusions proportional to the evidence*. It performs no fresh exegesis and writes no new argument — it tests what the analysis already claims.
@@ -67,7 +69,7 @@ Some overlap between sections is by design — six disciplines on one passage wi
 
 ## Formatting
 
-Anything the critic writes into the document follows the Formatting section of `CLAUDE.md`:
+Anything the critic writes into the document follows the project formatting (AGENTS.md; CLAUDE.md is a secondary reference if present):
 
 - Original-language terms: `**term** (Hebrew/Greek/Aramaic: script, *transliteration*)`
 - Strong's numbers: `H1234` / `G5678`

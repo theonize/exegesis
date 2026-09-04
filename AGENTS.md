@@ -22,13 +22,14 @@ Begin with authorial intent in historical, cultural, linguistic, literary, and c
 
 Use this section order:
 
-1. Historical & Cultural Analysis
-2. Linguistic Analysis
-3. Literary Analysis
-4. Theological Analysis
-5. Hermeneutic
-6. Application
-7. Sources (compiled by the bibliographer skill)
+1. Overview (written by the expositor skill from the six sections below; immediately after the scripture blockquote)
+2. Historical & Cultural Analysis
+3. Linguistic Analysis
+4. Literary Analysis
+5. Theological Analysis
+6. Hermeneutic
+7. Application
+8. Sources (compiled by the bibliographer skill)
 
 Separate top-level sections with `---` (never inside a section). Prefer tables for comparisons, timelines, vocabulary, and semantic ranges. Use ASCII diagrams for structures. Cite biblical references as `Book Chapter:Verses`; cite verses inside the target passage as `(v.1)` or `(vv.1-5)`.
 
