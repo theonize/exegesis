@@ -8,7 +8,7 @@
 
 - [✅] GEN 01:1-25 - Creation of the world
 - [✅] GEN 01:26-31 - Creation of humanity
-- [ ] GEN 02:1-3 - The seventh day rest
+- [✅] GEN 02:1-3 - The seventh day rest
 - [✅] GEN 02:4-17 - Man placed in Eden
 - [ ] GEN 02:18-25 - Creation of woman
 - [✅] GEN 03:1-7 - The temptation and fall
