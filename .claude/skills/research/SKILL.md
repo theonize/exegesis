@@ -93,7 +93,7 @@ Launch one subagent (sequential — it needs the compiled draft): "Read `.claude
 When it returns, check mechanically:
 
 - the file begins with `## Overview` and contains `### 1.`, `### 2.`, and `### 3.`;
-- it is at most ~600 words;
+- it is at most 500 words (the expositor's hard cap, measured on its output before the critic touches it);
 - its quoted key-verse line (`> **N** …`) is byte-identical to a line in the fetched blockquote;
 - it contains no `---`.
 

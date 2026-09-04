@@ -28,12 +28,12 @@ The Overview gives the critic a stated main point to test the sections against; 
 
 Produce content under the heading `## Overview`, placed immediately after the scripture blockquote and before `## Historical & Cultural Analysis`.
 
-Length: 250–450 words; hard cap 500. This is a thesis, a map, and a key — not a seventh essay and not a summary of each section.
+Length: 250–450 words; hard cap 500, measured on what you write (the critic's later hedges do not count against it). This is a thesis, a map, and a key — not a seventh essay and not a summary of each section.
 
 Exactly three `### ` subsections:
 
 ### 1. Big Idea
-One **bold** sentence stating what the passage says and does, then at most one short paragraph unpacking it. If the sections disagree on the main point, say so here in one sentence and prefer the better-evidenced reading; list the disagreement in your returned report.
+One **bold** sentence stating what the passage says and does, followed on the same line by its `(see …)` pointer — the thesis is not exempt from the traceability rule — then at most one short paragraph unpacking it. If the sections disagree on the main point, say so here in one sentence and prefer the better-evidenced reading; list the disagreement in your returned report.
 
 ### 2. In Context
 What immediately precedes the passage, what follows it, and what this unit does for the book's argument at this point. Close with one sentence on the canonical horizon, pointing to Hermeneutic §1 rather than re-tracing it.
