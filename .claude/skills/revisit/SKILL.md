@@ -5,11 +5,11 @@ description: Re-examine and improve an existing exegetical study. Use when a new
 
 # Revisit Skill — Review & Improve an Existing Study
 
-Given a target that resolves to one or more **existing** study files, re-run the six analysis seats in review mode over each file: every seat examines the whole document, rewrites its own section to preserve what survives scrutiny and improve what does not, then the critic audits the assembled draft's reasoning and the bibliographer re-verifies it before it replaces the original.
+Given a target that resolves to one or more **existing** study files, re-run the six analysis seats in review mode over each file: every seat examines the whole document, rewrites its own section to preserve what survives scrutiny and improve what does not, then the expositor rewrites `## Overview` from the revised sections, the critic audits the assembled draft's reasoning, and the bibliographer re-verifies it before it replaces the original.
 
 This skill never creates a new study — a target with no existing file is an error (point the user to `/research`). It follows the same pipeline shape as the `research` skill, with review posture instead of fresh composition.
 
-Failure rule (applies throughout): a run **fails** for a file when one or more seat subagents fail or return empty/garbage output after one retry, or when the critic or bibliographer pass cannot complete. On failure, **leave the original file untouched**, discard the draft, and report which stage failed. Never write a partially revised document. `TODO.md` is never modified by this skill.
+Failure rule (applies throughout): a run **fails** for a file when one or more seat subagents fail or return empty/garbage output after one retry, or when the expositor, critic, or bibliographer pass cannot complete. On failure, **leave the original file untouched**, discard the draft, and report which stage failed. Never write a partially revised document. `TODO.md` is never modified by this skill.
 
 ## Step 0: Parse the Arguments
 
@@ -24,7 +24,7 @@ Examples:
 
 ## Step 1: Resolve the Target to Existing File(s)
 
-Resolve using the **resolution patterns of `create-study` Step 0** (read `C:\writ\exegesis\.claude\skills\create-study\SKILL.md` — passage normalization with worked examples, cross-chapter ranges, range fallback glob, file paths, Topics/Characters branches). Borrow only its three resolution patterns — **not** its `[output-dir]` argument-splitting mechanism; revisit has no output-dir argument, and the ` -- ` split in Step 0 above is the only splitting this skill does. Two additional patterns, tried alongside the three before any halt:
+Resolve using the **resolution patterns of `create-study` Step 0** (read `.claude/skills/create-study/SKILL.md` — passage normalization with worked examples, cross-chapter ranges, range fallback glob, file paths, Topics/Characters branches). Borrow only its three resolution patterns — **not** its `[output-dir]` argument-splitting mechanism; revisit has no output-dir argument, and the ` -- ` split in Step 0 above is the only splitting this skill does. Two additional patterns, tried alongside the three before any halt:
 
 1. **Chapter target** — `BOOK CH` with no colon (e.g. `JAS 01`, `PSA 23`): zero-pad the chapter per create-study's rule (2 digits for most books, 3 for Psalms — `PSA 23` → `023`), then resolve to **every** `.md` file in `content/Books/*/<BOOK_CODE>/<CHAPTER>/`.
 2. **Directory target** — an argument naming an existing directory under `content/`: resolve to every `.md` file directly inside it.
@@ -40,7 +40,8 @@ Read the resolved file end-to-end and identify:
 - The title (first H1) — carried into the revision **verbatim**.
 - The scripture blockquote and its attribution line (translation name), if present.
 - Each of the six standard sections (the table in Step 4), noting any that are missing. Identify **semantically, not by exact string**: a heading variant (e.g. `## Hermeneutic Analysis` for `## Hermeneutic`) is that standard section — assign it to its seat, which normalizes the heading — never both carried over and rewritten.
-- Any **non-standard `## ` sections** (e.g. `## Overview`, `## Curated Passage Index`, `## Key Passages Reference`) — these are carried over verbatim in their original positions; no seat owns them.
+- `## Overview`, if present. In a file **with** a scripture blockquote it is a standard section owned by the expositor: its old text is input to Step 5b, not carried over. In a file **without** a blockquote (some topic studies, e.g. `content/Topics/Wings.md`) it is non-standard and carried over verbatim.
+- Any **non-standard `## ` sections** (e.g. `## Curated Passage Index`, `## Key Passages Reference`) — these are carried over verbatim in their original positions; no seat owns them.
 - `## Sources`, if present — it is **dropped** from the draft; the bibliographer rebuilds it in Step 7.
 - Legacy shape (extra unnumbered subsections, `---` inside sections): note it — the seats normalize their own sections to current contracts.
 
@@ -71,15 +72,15 @@ Study file (read it in full for context): {original file path}
 Your section: the one beginning `{expected ## heading}`.
 Review context from the user (may be empty): {context}
 
-1. Read C:\writ\exegesis\.claude\skills\{skill}\SKILL.md — its questions, its `## ` heading, its numbered `### ` subsections, and its Formatting rules define the CURRENT contract for your section.
+1. Read `.claude/skills/{skill}/SKILL.md` — its questions, its `## ` heading, its numbered `### ` subsections, and its Formatting rules define the CURRENT contract for your section.
 2. Review posture — preserve what survives scrutiny:
    - Keep existing material that is accurate, well-supported, and on-contract. Do not paraphrase sound prose for the sake of change.
    - Correct what is wrong; hedge or cut what is unsupported, padded, or off-topic.
    - Update what newer discoveries, scholarship, or your own current knowledge supersede — weigh the review context above.
    - Deepen what is thin: answer contract questions the section skipped or shortchanged.
    - Restructure to the exact current contract (numbered `### ` subsections) if the section is missing, mis-ordered, or in legacy shape.
-3. Follow the Formatting section of C:\writ\exegesis\CLAUDE.md. Do not emit `---` inside your section.
-4. Write your COMPLETE revised section (starting with its `## ` heading) to {scratchpad}\{source-basename}_{skill}.md — a full replacement, not a diff. If the section needs no changes, write it verbatim.
+3. Follow the Formatting section of `CLAUDE.md`. Do not emit `---` inside your section.
+4. Write your COMPLETE revised section (starting with its `## ` heading) to {scratchpad}/{source-basename}_{skill}.md — a full replacement, not a diff. If the section needs no changes, write it verbatim.
 5. Return the absolute path you wrote and a bullet-list change summary (or "no changes").
 ```
 
@@ -104,12 +105,20 @@ Assemble a draft in the scratchpad by **concatenation only** — do not re-type,
 
 1. The original title line, verbatim.
 2. The scripture blockquote from Step 3 (if the original had one).
-3. All `## ` sections **in the original document's order**, substituting each of the six standard sections with its seat's revised file and carrying every non-standard section over verbatim from the snapshot. Seats whose sections were missing from the original slot into the standard order (the table in Step 4, matching `AGENTS.md`). Omit the old `## Sources`.
+3. All `## ` sections **in the original document's order**, substituting each of the six standard sections with its seat's revised file and carrying every non-standard section over verbatim from the snapshot. Seats whose sections were missing from the original slot into the standard order (the table in Step 4, matching `AGENTS.md`). Omit the old `## Sources`. Omit the old `## Overview` when the file has a blockquote — its slot, immediately after the blockquote, is filled in Step 5b.
 4. `---` on its own line between the title/scripture block and each `## ` section — never inside one.
+
+## Step 5b: Expositor Synthesis
+
+Passage files only — when the file has no scripture blockquote, skip this step and say so in the report (any existing `## Overview` was carried over verbatim in Step 5).
+
+Launch one subagent (sequential — it needs the compiled draft): "Read `.claude/skills/expositor/SKILL.md` and apply it to {draft path}. The prior Overview, if any, is in the snapshot at {snapshot path}: keep what still matches the revised sections, rewrite what does not. Revision context (may be empty): {context}. Write ONLY the `## Overview` section to {scratchpad}/{source-basename}_expositor.md. Return the path, a one-line status, a bullet-list change summary versus the prior Overview (or 'Overview added' when there was none), and a bullet list of cross-section tensions you found (or 'none')."
+
+When it returns, check mechanically: the file begins with `## Overview` and contains `### 1.`, `### 2.`, and `### 3.`; it is at most ~600 words; its quoted key-verse line (`> **N** …`) is byte-identical to a line in the draft's blockquote; it contains no `---`. Insert it immediately after the blockquote with `---` on its own line before and after. If the check fails or the output is empty/garbage, retry **once**; a second failure fails the run for this file: original untouched, report the expositor stage. Keep the change summary and the tension list for the critic prompt and the final report.
 
 ## Step 6: Critic Reasoning Audit
 
-Launch one subagent: "Read C:\writ\exegesis\.claude\skills\critic\SKILL.md and apply it to {draft path}. Revision context (may be empty): {context}. Six seats revised this document independently and none saw the others' work — give first attention to cross-section coherence, and to whether the revisions raised any conclusion's confidence beyond what its evidence supports. The prior version is at {snapshot path} for comparison; a claim that survived unchanged from it is not thereby verified. Do not touch non-standard sections carried over verbatim. Edit the draft in place and return your critique report."
+Launch one subagent: "Read `.claude/skills/critic/SKILL.md` and apply it to {draft path}. Revision context (may be empty): {context}. Six seats revised this document independently and none saw the others' work; the expositor then wrote `## Overview` from their revised sections and reported these cross-section tensions: {tension list or 'none'}. Give first attention to cross-section coherence, to whether every Overview claim traces to the section it points to and its main point agrees with the sections, and to whether the revisions raised any conclusion's confidence beyond what its evidence supports. The prior version is at {snapshot path} for comparison; a claim that survived unchanged from it is not thereby verified. Do not touch non-standard sections carried over verbatim. Edit the draft in place and return your critique report."
 
 The critic audits reasoning, not citations: cross-section contradictions, confidence language outstripping its evidence, exegetical fallacies, inference gaps, cruxes presented as settled, and applications not grounded in the exegesis. It edits surgically within the constraints in its skill. A report of zero findings is a valid outcome; the run fails for this file only if the pass cannot complete or the draft comes back structurally damaged (a missing or renamed `## ` heading) — original untouched.
 
@@ -117,13 +126,13 @@ Collect the critique report for the final report.
 
 ## Step 7: Bibliographer Verification Pass
 
-Launch one subagent: "Read C:\writ\exegesis\.claude\skills\bibliographer\SKILL.md and apply it to {draft path}. Revision context (may be empty): {context}. Pay first attention to newly added or changed claims — compare against the snapshot at {snapshot path}. Append `## Sources` as the last section of the document — after any non-standard sections that follow `## Application` (e.g. `## Curated Passage Index`) — and do not reorder the sections already in the draft. Edit the draft in place and return your verification report."
+Launch one subagent: "Read `.claude/skills/bibliographer/SKILL.md` and apply it to {draft path}. Revision context (may be empty): {context}. Pay first attention to newly added or changed claims — compare against the snapshot at {snapshot path}. Append `## Sources` as the last section of the document — after any non-standard sections that follow `## Application` (e.g. `## Curated Passage Index`) — and do not reorder the sections already in the draft. Edit the draft in place and return your verification report."
 
 The bibliographer verifies Strong's numbers, original-language forms, cross-references, quotations, and dates; hedges or removes what cannot be verified; and appends a fresh `## Sources` section as the last section of the file. If the pass cannot complete, the run fails for this file: original untouched.
 
 ## Step 8: Replace the Original (Gated)
 
-Gate before writing: the draft must contain the original title, the scripture blockquote (when the original had one), all six exact `## ` headings from the table in Step 4, every non-standard section preserved from the original, and `## Sources`. If the gate fails, the run fails for this file: original untouched, report why.
+Gate before writing: the draft must contain the original title, the scripture blockquote (when the original had one) with `## Overview` immediately after it, all six exact `## ` headings from the table in Step 4, every non-standard section preserved from the original, and `## Sources`. If the gate fails, the run fails for this file: original untouched, report why.
 
 Overwrite the original file with the draft in a single write. Git history preserves the prior version — no backup copies in `content/`.
 
@@ -132,6 +141,7 @@ Report per file:
 - Path revised, and the review context applied.
 - Scripture verification result (verified / corrected / source unreachable).
 - Each seat's change summary ("no changes" included).
+- The expositor's change summary ("Overview added" for files that lacked one; "skipped — no blockquote" for topic studies) and its cross-section tensions.
 - The critic's fixed/flagged counts, plus every flagged item verbatim — those live only in the report, never in the file.
 - The bibliographer's correction count and unresolved flags.
 - If the file appears in `studies/INDEX.md`, note that its handout and leader's notes are now stale (regenerate via `/create-study`).

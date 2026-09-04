@@ -1,13 +1,13 @@
 ---
 name: research
-description: Run a complete exegetical analysis of a Bible passage. Fetches the passage text, fans out six analysis subagents in parallel, compiles the draft, runs a critic reasoning audit and a bibliographer verification pass, writes the file, and updates TODO.md. Usage: /research <passage>
+description: Run a complete exegetical analysis of a Bible passage. Fetches the passage text, fans out six analysis subagents in parallel, compiles the draft, runs an expositor synthesis, a critic reasoning audit and a bibliographer verification pass, writes the file, and updates TODO.md. Usage: /research <passage>
 ---
 
 # Research Skill — Complete Exegetical Analysis
 
 Given a passage reference (e.g., "HAG 02:20-23" or "Genesis 1:1-25"), perform a complete exegetical analysis.
 
-Failure rule (applies throughout): a run **fails** when one or more analysis subagents fail or return empty/garbage output after one retry, when the passage text cannot be fetched, or when the critic or verification pass cannot complete. On failure, set the TODO.md entry to `[❌]` and report which stage failed. Never mark `[✅]` on a partial document.
+Failure rule (applies throughout): a run **fails** when one or more analysis subagents fail or return empty/garbage output after one retry, when the passage text cannot be fetched, or when the expositor, critic, or verification pass cannot complete. On failure, set the TODO.md entry to `[❌]` and report which stage failed. Never mark `[✅]` on a partial document.
 
 ## Step 0: Parse the Reference
 
@@ -55,9 +55,9 @@ You are producing one section of an exegetical analysis of {Full Book Name} {Cha
 Passage text ({Translation}):
 {fetched blockquote}
 
-1. Read C:\writ\exegesis\.claude\skills\{skill}\SKILL.md and follow it exactly — its questions, its `## ` heading, its numbered `### ` subsections, and its Formatting rules.
-2. Also follow the Formatting section of C:\writ\exegesis\CLAUDE.md. Do not emit `---` inside your section.
-3. Write ONLY your section (starting with its `## ` heading) to {scratchpad}\{BOOK}_{CHAPTER}_{VERSES}_{skill}.md.
+1. Read `.claude/skills/{skill}/SKILL.md` and follow it exactly — its questions, its `## ` heading, its numbered `### ` subsections, and its Formatting rules.
+2. Also follow the Formatting section of `CLAUDE.md`. Do not emit `---` inside your section.
+3. Write ONLY your section (starting with its `## ` heading) to {scratchpad}/{BOOK}_{CHAPTER}_{VERSES}_{skill}.md.
 4. Return the absolute path you wrote and a one-line status.
 ```
 
@@ -82,11 +82,28 @@ Assemble a draft in the scratchpad by **concatenation only** — do not re-type,
 2. The fetched scripture blockquote
 3. The six section files, in the order of the table above, with `---` on its own line between the title/scripture block and each `## ` section
 
+The `## Overview` slot (between the blockquote and `## Historical & Cultural Analysis`) is filled in Step 4b.
+
+## Step 4b: Expositor Synthesis
+
+The six seats wrote in isolation and never saw each other's work. The expositor is the first seat to read the whole draft; it writes the document's thesis and orientation from what the sections already establish, and adds no claim of its own.
+
+Launch one subagent (sequential — it needs the compiled draft): "Read `.claude/skills/expositor/SKILL.md` and apply it to {draft path}. Write ONLY the `## Overview` section to {scratchpad}/{BOOK}_{CHAPTER}_{VERSES}_expositor.md. Return the path, a one-line status, and a bullet list of cross-section tensions you found (or 'none')."
+
+When it returns, check mechanically:
+
+- the file begins with `## Overview` and contains `### 1.`, `### 2.`, and `### 3.`;
+- it is at most ~600 words;
+- its quoted key-verse line (`> **N** …`) is byte-identical to a line in the fetched blockquote;
+- it contains no `---`.
+
+Insert the section into the draft immediately after the scripture blockquote, with `---` on its own line before and after it. If the check fails or the subagent returns empty/garbage, retry **once**; a second failure fails the run: `[❌]`, report the expositor stage. Keep the tension list for the critic prompt and the final report.
+
 ## Step 5: Critic Reasoning Audit
 
-The six seats wrote in isolation and never saw each other's work. This is the first pass over the whole document, and the only one that can catch what falls between sections.
+The expositor has written `## Overview` from the six sections; the critic is the first pass that *tests* the whole document, and the only one that can catch what falls between sections.
 
-Launch one subagent: "Read C:\writ\exegesis\.claude\skills\critic\SKILL.md and apply it to {draft path}. Edit the draft in place and return your critique report."
+Launch one subagent: "Read `.claude/skills/critic/SKILL.md` and apply it to {draft path}. The expositor reported these cross-section tensions: {tension list or 'none'}. Check that every `## Overview` claim traces to the section it points to and that the Overview's stated main point agrees with the sections. Edit the draft in place and return your critique report."
 
 The critic audits reasoning, not citations: cross-section contradictions, confidence language outstripping its evidence, exegetical fallacies, inference gaps, cruxes presented as settled, and applications not grounded in the exegesis. It edits surgically within the constraints in its skill — it never re-drafts a section, changes headings, or touches the scripture blockquote. A report of zero findings is a valid outcome, not a failed pass; the run fails only if the pass cannot complete or the draft comes back structurally damaged (a missing or renamed `## ` heading).
 
@@ -94,7 +111,7 @@ The critic runs **before** the bibliographer so any hedge or counter-reading it 
 
 ## Step 6: Bibliographer Verification Pass
 
-Launch one subagent: "Read C:\writ\exegesis\.claude\skills\bibliographer\SKILL.md and apply it to {draft path}. Edit the draft in place and return your verification report."
+Launch one subagent: "Read `.claude/skills/bibliographer/SKILL.md` and apply it to {draft path}. Edit the draft in place and return your verification report."
 
 The bibliographer verifies Strong's numbers, original-language forms, cross-references, quotations, and dates; hedges or removes what cannot be verified; and appends the `## Sources` section. If the pass cannot complete, the run fails: `[❌]`.
 
@@ -110,9 +127,9 @@ The bibliographer verifies Strong's numbers, original-language forms, cross-refe
 
 ## Step 8: Mark Complete
 
-Gate before flipping the status: the written file must contain the scripture blockquote, all six exact `## ` headings from the table in Step 3, and `## Sources`. Only then change `[🔄]` to `[✅]` in `TODO.md`.
+Gate before flipping the status: the written file must contain the scripture blockquote, `## Overview` immediately after it, all six exact `## ` headings from the table in Step 3, and `## Sources`. Only then change `[🔄]` to `[✅]` in `TODO.md`.
 
-Report: the output path, the TODO.md change, the critic's fixed/flagged counts (surface every flagged item — those are for you, not the file), the bibliographer's correction count, and offer (do not perform unasked) a single commit covering both changed files.
+Report: the output path, the TODO.md change, the expositor's cross-section tensions, the critic's fixed/flagged counts (surface every flagged item — those are for you, not the file), the bibliographer's correction count, and offer (do not perform unasked) a single commit covering both changed files.
 
 ## Book Code ↔ Full Name
 

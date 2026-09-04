@@ -1,6 +1,6 @@
 ---
 name: research
-description: Run a complete exegetical analysis of a Bible passage in Pi. Fetches passage text, produces six analysis sections from the Pi skills, compiles and verifies the draft, writes the file, and updates TODO.md. Usage: /skill:research <passage>
+description: Run a complete exegetical analysis of a Bible passage in Pi. Fetches passage text, produces six analysis sections from the Pi skills, compiles the draft, writes its Overview with the expositor skill, verifies it, writes the file, and updates TODO.md. Usage: /skill:research <passage>
 ---
 
 # Research Skill — Complete Exegetical Analysis (Pi)
@@ -9,7 +9,7 @@ description: Run a complete exegetical analysis of a Bible passage in Pi. Fetche
 
 Given a passage reference (e.g., "HAG 02:20-23" or "Genesis 1:1-25"), perform a complete exegetical analysis.
 
-Failure rule (applies throughout): a run **fails** when one or more analysis sections fail or return empty/garbage output after one retry, when the passage text cannot be fetched, or when the verification pass cannot complete. On failure, set the TODO.md entry to `[❌]` and report which stage failed. Never mark `[✅]` on a partial document.
+Failure rule (applies throughout): a run **fails** when one or more analysis sections fail or return empty/garbage output after one retry, when the passage text cannot be fetched, or when the expositor or verification pass cannot complete. On failure, set the TODO.md entry to `[❌]` and report which stage failed. Never mark `[✅]` on a partial document.
 
 ## Step 0: Parse the Reference
 
@@ -101,6 +101,16 @@ Assemble a draft in the scratchpad by **concatenation only** — do not re-type,
 2. The fetched scripture blockquote
 3. The six section files, in the order of the table above, with `---` on its own line between the title/scripture block and each `## ` section
 
+The `## Overview` slot (between the blockquote and `## Historical & Cultural Analysis`) is filled in Step 4b.
+
+## Step 4b: Expositor Synthesis
+
+The six sections were produced independently. The expositor is the first pass to read the whole draft; it writes the document's thesis and orientation from what the sections already establish, and adds no claim of its own.
+
+Use `read` to load `.pi/skills/expositor/SKILL.md` and apply it to the compiled draft (as an isolated worker if the delegation route from Step 3 is in use, otherwise in this session). Write ONLY the `## Overview` section to `{scratchpad}/{BOOK}_{CHAPTER}_{VERSES}_expositor.md` and keep its list of cross-section tensions for the final report.
+
+Check mechanically: the file begins with `## Overview` and contains `### 1.`, `### 2.`, and `### 3.`; it is at most ~600 words; its quoted key-verse line (`> **N** …`) is byte-identical to a line in the fetched blockquote; it contains no `---`. Insert the section into the draft immediately after the scripture blockquote, with `---` on its own line before and after it. If the check fails or the output is empty/garbage, retry **once**; a second failure fails the run: `[❌]`, report the expositor stage.
+
 ## Step 5: Bibliographer Verification Pass
 
 Use `read` to load `.pi/skills/bibliographer/SKILL.md` and apply it to the compiled draft. Edit the draft in place and keep a verification report for the final response.
@@ -119,9 +129,9 @@ The bibliographer verifies Strong's numbers, original-language forms, cross-refe
 
 ## Step 7: Mark Complete
 
-Gate before flipping the status: the written file must contain the scripture blockquote, all six exact `## ` headings from the table in Step 3, and `## Sources`. Only then change `[🔄]` to `[✅]` in `TODO.md`.
+Gate before flipping the status: the written file must contain the scripture blockquote, `## Overview` immediately after it, all six exact `## ` headings from the table in Step 3, and `## Sources`. Only then change `[🔄]` to `[✅]` in `TODO.md`.
 
-Report: the output path, the TODO.md change, the bibliographer's correction count, and offer (do not perform unasked) a single commit covering both changed files.
+Report: the output path, the TODO.md change, the expositor's cross-section tensions, the bibliographer's correction count, and offer (do not perform unasked) a single commit covering both changed files.
 
 ## Book Code ↔ Full Name
 

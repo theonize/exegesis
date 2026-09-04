@@ -26,32 +26,33 @@ Run the critic **before** the bibliographer so the bibliographer gets the last w
 
 ## Audit Checklist
 
-Read the whole document first. The critic is the only pass that sees all six sections at once — cross-section work is its distinctive contribution and comes first.
+Read the whole document first. The critic is the first pass that tests all six sections and the `## Overview` together — cross-section work is its distinctive contribution and comes first.
 
-1. **Cross-section coherence** — six seats wrote in isolation. Do any two sections contradict each other on the meaning of a key term, the identity of a referent, the date or setting, or the passage's main point? Do later sections silently depend on a reading an earlier section rejected?
-2. **Evidentiary proportion** — is the confidence language matched to the support offered? Flag *clearly*, *obviously*, *certainly*, *must mean*, *proves*, *undoubtedly*, *the only possible reading* wherever the document has given one line of evidence or none.
-3. **Exegetical fallacies** — the standard failure modes of word study and inference:
+1. **Cross-section coherence** — six seats wrote in isolation. Do any two sections contradict each other on the meaning of a key term, the identity of a referent, the date or setting, or the passage's main point? Do later sections silently depend on a reading an earlier section rejected? Use the `## Overview`'s Big Idea as the reference point: does each section support it, or does a section argue a different main point?
+2. **Overview traceability** — the expositor wrote `## Overview` from the sections and may add nothing of its own. Does every Overview claim point to a section (`see Literary §2`), and does that section actually say it? Is the key verse quoted verbatim from the blockquote? Do the movements' verse ranges cover the passage in order?
+3. **Evidentiary proportion** — is the confidence language matched to the support offered? Flag *clearly*, *obviously*, *certainly*, *must mean*, *proves*, *undoubtedly*, *the only possible reading* wherever the document has given one line of evidence or none.
+4. **Exegetical fallacies** — the standard failure modes of word study and inference:
    - **Root fallacy** — meaning derived from a word's components or root rather than its usage.
    - **Etymological fallacy** — an older or original sense imposed on the author's usage.
    - **Illegitimate totality transfer** — the whole semantic range imported into a single occurrence.
    - **Semantic anachronism** — a later sense (often the New Testament's, or a modern one) read back into an earlier text.
    - **Selective range** — one gloss chosen from a lexicon with no argument for why the others do not fit.
    - **Numerology and false parallel** — occurrence counts, gematria, or "the same word appears in X" carrying weight without a demonstrated link.
-4. **Inference validity** — does each conclusion follow from its stated premises? Flag non sequiturs, assumed conclusions, arguments from silence presented as positive evidence, and appeals to parallels that are not actually parallel.
-5. **Category discipline** — observation, inference, tradition, and application must remain distinguishable. Flag inference stated as observation ("the text says" when the text implies), tradition stated as text (a received reading presented as what the passage states), and application smuggled into exegesis.
-6. **Unstated counter-readings** — where the passage has a genuine interpretive crux, a settled-sounding presentation is a defect. The document should name the main alternative in at least one clause and say why the chosen reading is preferred. Reserve this for real cruxes; do not manufacture controversy over a consensus reading.
-7. **Application groundedness** — does each application in `## Application` trace to something the exegesis actually established? Flag moralizing, allegorizing, and generic advice that would follow equally from any passage.
-8. **Anachronism and eisegesis** — modern categories, institutions, or debates imposed on the ancient text without a bridge.
-9. **Tone and audience** — confessional/evangelical without narrowing to one tradition, scholar addressing a serious non-specialist. Flag polemic against other traditions, and jargon left unexplained.
+5. **Inference validity** — does each conclusion follow from its stated premises? Flag non sequiturs, assumed conclusions, arguments from silence presented as positive evidence, and appeals to parallels that are not actually parallel.
+6. **Category discipline** — observation, inference, tradition, and application must remain distinguishable. Flag inference stated as observation ("the text says" when the text implies), tradition stated as text (a received reading presented as what the passage states), and application smuggled into exegesis.
+7. **Unstated counter-readings** — where the passage has a genuine interpretive crux, a settled-sounding presentation is a defect. The document should name the main alternative in at least one clause and say why the chosen reading is preferred. Reserve this for real cruxes; do not manufacture controversy over a consensus reading.
+8. **Application groundedness** — does each application in `## Application` trace to something the exegesis actually established? Flag moralizing, allegorizing, and generic advice that would follow equally from any passage.
+9. **Anachronism and eisegesis** — modern categories, institutions, or debates imposed on the ancient text without a bridge.
+10. **Tone and audience** — confessional/evangelical without narrowing to one tradition, scholar addressing a serious non-specialist. Flag polemic against other traditions, and jargon left unexplained.
 
 Some overlap between sections is by design — six disciplines on one passage will touch the same evidence. Only flag repetition that is near-verbatim or that adds no new angle.
 
 ## Action Rules
 
-- **Fix in place** (surgical, minimal): downgrade overreaching confidence language; insert a one-clause counter-reading or hedge; cut a fallacious inference step while leaving the surrounding prose intact; correct a cross-section contradiction by keeping the better-evidenced position and noting the alternative in one clause.
+- **Fix in place** (surgical, minimal): downgrade overreaching confidence language; insert a one-clause counter-reading or hedge; cut a fallacious inference step while leaving the surrounding prose intact; correct a cross-section contradiction by keeping the better-evidenced position and noting the alternative in one clause. When you hedge or cut a section claim, propagate the same hedge to any `## Overview` sentence that points to it.
 - **Flag only, do not rewrite**: anything requiring fresh research, a new argument, or a substantive re-draft. Report it for a human or for a targeted re-run of the owning seat.
 - **Preserve the voice.** Each section was written by a different discipline and reads differently on purpose. Do not paraphrase sound prose, harmonize style, or "tighten" writing that is merely not yours.
-- **Never**: re-draft a section wholesale; add, remove, renumber, or reorder `## ` or `### ` sections; alter headings; touch the scripture blockquote or its attribution line; delete a whole subsection (that breaks the seat's contract — hollow it to its defensible core instead); introduce a citation, statistic, date, or original-language form the document did not already contain.
+- **Never**: re-draft a section wholesale; rewrite the `## Overview` wholesale (flag it for an expositor re-run instead); add, remove, renumber, or reorder `## ` or `### ` sections; alter headings; touch the scripture blockquote or its attribution line; delete a whole subsection (that breaks the seat's contract — hollow it to its defensible core instead); introduce a citation, statistic, date, or original-language form the document did not already contain.
 - **A clean run is a valid result.** Do not manufacture findings to look thorough. Report zero where zero is true. A weak flag raised to pad a report costs more than it saves.
 - Log every change you make, with the section it lands in.
 
