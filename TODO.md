@@ -803,7 +803,7 @@
 - [ ] 2KI 02:1-12 - Elijah taken up
 - [ ] 2KI 02:13-25 - Elisha succeeds Elijah
 - [ ] 2KI 03:1-27 - War against Moab
-- [ ] 2KI 04:1-7 - Widow's oil multiplied
+- [🔄] 2KI 04:1-7 - Widow's oil multiplied
 - [ ] 2KI 04:8-17 - Shunammite woman's hospitality
 - [ ] 2KI 04:18-37 - Shunammite's son raised
 - [ ] 2KI 04:38-44 - Miracles of provision
