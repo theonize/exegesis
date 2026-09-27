@@ -604,16 +604,16 @@
 
 ## 1 Samuel (1SA)
 
-- [ ] 1SA 01:1-8 - Hannah's barrenness
-- [ ] 1SA 01:9-20 - Hannah's prayer and vow
-- [ ] 1SA 01:21-28 - Samuel dedicated
-- [ ] 1SA 02:1-11 - Hannah's song
-- [ ] 1SA 02:12-17 - Wickedness of Eli's sons
-- [ ] 1SA 02:18-26 - Samuel grows
-- [ ] 1SA 02:27-36 - Prophecy against Eli's house
-- [ ] 1SA 03:1-14 - The Lord calls Samuel
-- [ ] 1SA 03:15-21 - Samuel recognized as prophet
-- [ ] 1SA 04:1-11 - Ark captured
+- [✅] 1SA 01:1-8 - Hannah's barrenness
+- [✅] 1SA 01:9-20 - Hannah's prayer and vow
+- [✅] 1SA 01:21-28 - Samuel dedicated
+- [✅] 1SA 02:1-11 - Hannah's song
+- [✅] 1SA 02:12-17 - Wickedness of Eli's sons
+- [✅] 1SA 02:18-26 - Samuel grows
+- [✅] 1SA 02:27-36 - Prophecy against Eli's house
+- [✅] 1SA 03:1-14 - The Lord calls Samuel
+- [✅] 1SA 03:15-21 - Samuel recognized as prophet
+- [✅] 1SA 04:1-11 - Ark captured
 - [ ] 1SA 04:12-22 - Death of Eli
 - [ ] 1SA 05:1-12 - Ark in Philistia
 - [ ] 1SA 06:1-12 - Return of the ark
@@ -682,16 +682,16 @@
 
 ## 2 Samuel (2SA)
 
-- [ ] 2SA 01:1-16 - News of Saul's death
-- [ ] 2SA 01:17-27 - David's lament
-- [ ] 2SA 02:1-7 - David anointed over Judah
-- [ ] 2SA 02:8-11 - Ish-bosheth made king
-- [ ] 2SA 02:12-32 - War between houses
-- [ ] 2SA 03:1-11 - David's sons; Abner defects
-- [ ] 2SA 03:12-21 - Abner makes peace
-- [ ] 2SA 03:22-39 - Joab kills Abner
-- [ ] 2SA 04:1-12 - Murder of Ish-bosheth
-- [ ] 2SA 05:1-5 - David king over all Israel
+- [✅] 2SA 01:1-16 - News of Saul's death
+- [✅] 2SA 01:17-27 - David's lament
+- [✅] 2SA 02:1-7 - David anointed over Judah
+- [✅] 2SA 02:8-11 - Ish-bosheth made king
+- [✅] 2SA 02:12-32 - War between houses
+- [✅] 2SA 03:1-11 - David's sons; Abner defects
+- [✅] 2SA 03:12-21 - Abner makes peace
+- [✅] 2SA 03:22-39 - Joab kills Abner
+- [✅] 2SA 04:1-12 - Murder of Ish-bosheth
+- [✅] 2SA 05:1-5 - David king over all Israel
 - [ ] 2SA 05:6-16 - David takes Jerusalem
 - [ ] 2SA 05:17-25 - Victories over Philistines
 - [ ] 2SA 06:1-11 - Bringing up the ark
