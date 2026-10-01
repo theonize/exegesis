@@ -2028,18 +2028,18 @@
 - [✅] MRK 02:13-17 - Call of Levi
 - [✅] MRK 02:18-22 - Question about fasting
 - [✅] MRK 02:23-28 - Lord of the Sabbath
-- [🔄] MRK 03:1-6 - Healing on the Sabbath
-- [🔄] MRK 03:7-12 - Crowds follow Jesus
-- [🔄] MRK 03:13-19 - Appointing the twelve
-- [🔄] MRK 03:20-30 - Blasphemy against the Spirit
-- [🔄] MRK 03:31-35 - Jesus' true family
+- [✅] MRK 03:1-6 - Healing on the Sabbath
+- [✅] MRK 03:7-12 - Crowds follow Jesus
+- [✅] MRK 03:13-19 - Appointing the twelve
+- [✅] MRK 03:20-30 - Blasphemy against the Spirit
+- [✅] MRK 03:31-35 - Jesus' true family
 - [🔄] MRK 04:1-20 - Parable of the sower
-- [ ] MRK 04:21-25 - Lamp under a basket
-- [ ] MRK 04:26-34 - Growing seed and mustard seed
-- [ ] MRK 04:35-41 - Calming the storm
-- [ ] MRK 05:1-20 - Gerasene demoniac
-- [ ] MRK 05:21-34 - Jairus's daughter and woman with bleeding
-- [ ] MRK 05:35-43 - Jairus's daughter raised
+- [🔄] MRK 04:21-25 - Lamp under a basket
+- [🔄] MRK 04:26-34 - Growing seed and mustard seed
+- [🔄] MRK 04:35-41 - Calming the storm
+- [🔄] MRK 05:1-20 - Gerasene demoniac
+- [🔄] MRK 05:21-34 - Jairus's daughter and woman with bleeding
+- [🔄] MRK 05:35-43 - Jairus's daughter raised
 - [ ] MRK 06:1-6 - Rejection at Nazareth
 - [ ] MRK 06:7-13 - Sending out the twelve
 - [ ] MRK 06:14-29 - Death of John the Baptist
