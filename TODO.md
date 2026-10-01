@@ -2018,19 +2018,19 @@
 
 ## Mark (MRK)
 
-- [ ] MRK 01:1-8 - John the Baptist
-- [ ] MRK 01:9-13 - Baptism and temptation
-- [ ] MRK 01:14-20 - Jesus begins ministry and calls disciples
-- [ ] MRK 01:21-28 - Authority over demons
-- [ ] MRK 01:29-34 - Healings at Simon's house
-- [ ] MRK 01:35-45 - Preaching in Galilee
-- [ ] MRK 02:1-12 - Healing the paralytic
-- [ ] MRK 02:13-17 - Call of Levi
-- [ ] MRK 02:18-22 - Question about fasting
-- [ ] MRK 02:23-28 - Lord of the Sabbath
-- [ ] MRK 03:1-6 - Healing on the Sabbath
-- [ ] MRK 03:7-12 - Crowds follow Jesus
-- [ ] MRK 03:13-19 - Appointing the twelve
+- [✅] MRK 01:1-8 - John the Baptist
+- [✅] MRK 01:9-13 - Baptism and temptation
+- [✅] MRK 01:14-20 - Jesus begins ministry and calls disciples
+- [✅] MRK 01:21-28 - Authority over demons
+- [✅] MRK 01:29-34 - Healings at Simon's house
+- [✅] MRK 01:35-45 - Preaching in Galilee
+- [✅] MRK 02:1-12 - Healing the paralytic
+- [🔄] MRK 02:13-17 - Call of Levi
+- [🔄] MRK 02:18-22 - Question about fasting
+- [🔄] MRK 02:23-28 - Lord of the Sabbath
+- [🔄] MRK 03:1-6 - Healing on the Sabbath
+- [🔄] MRK 03:7-12 - Crowds follow Jesus
+- [🔄] MRK 03:13-19 - Appointing the twelve
 - [ ] MRK 03:20-30 - Blasphemy against the Spirit
 - [✅] MRK 03:31-35 - Jesus' true family
 - [ ] MRK 04:1-20 - Parable of the sower
