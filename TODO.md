@@ -2046,16 +2046,16 @@
 - [✅] MRK 06:30-44 - Feeding the five thousand
 - [✅] MRK 06:45-52 - Jesus walks on water
 - [✅] MRK 06:53-56 - Healings at Gennesaret
-- [🔄] MRK 07:1-23 - Tradition and defilement
+- [✅] MRK 07:1-23 - Tradition and defilement
 - [🔄] MRK 07:24-30 - Syrophoenician woman's faith
-- [🔄] MRK 07:31-37 - Healing a deaf man
+- [✅] MRK 07:31-37 - Healing a deaf man
 - [🔄] MRK 08:1-10 - Feeding the four thousand
 - [🔄] MRK 08:11-13 - Pharisees demand a sign
 - [🔄] MRK 08:14-21 - Leaven of the Pharisees
 - [🔄] MRK 08:22-26 - Blind man at Bethsaida
-- [ ] MRK 08:27-30 - Peter's confession
-- [✅] MRK 08:31-9:1 - Jesus predicts his death
-- [ ] MRK 09:2-13 - The transfiguration
+- [🔄] MRK 08:27-30 - Peter's confession
+- [🔄] MRK 08:31-9:1 - Jesus predicts his death
+- [🔄] MRK 09:2-13 - The transfiguration
 - [ ] MRK 09:14-29 - Healing the boy with a demon
 - [ ] MRK 09:30-32 - Second prediction of death
 - [ ] MRK 09:33-37 - Who is the greatest
