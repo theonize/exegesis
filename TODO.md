@@ -2041,18 +2041,18 @@
 - [✅] MRK 05:21-34 - Jairus's daughter and woman with bleeding
 - [✅] MRK 05:35-43 - Jairus's daughter raised
 - [✅] MRK 06:1-6 - Rejection at Nazareth
-- [🔄] MRK 06:7-13 - Sending out the twelve
-- [🔄] MRK 06:14-29 - Death of John the Baptist
-- [🔄] MRK 06:30-44 - Feeding the five thousand
-- [🔄] MRK 06:45-52 - Jesus walks on water
-- [🔄] MRK 06:53-56 - Healings at Gennesaret
+- [✅] MRK 06:7-13 - Sending out the twelve
+- [✅] MRK 06:14-29 - Death of John the Baptist
+- [✅] MRK 06:30-44 - Feeding the five thousand
+- [✅] MRK 06:45-52 - Jesus walks on water
+- [✅] MRK 06:53-56 - Healings at Gennesaret
 - [🔄] MRK 07:1-23 - Tradition and defilement
-- [ ] MRK 07:24-30 - Syrophoenician woman's faith
-- [ ] MRK 07:31-37 - Healing a deaf man
-- [ ] MRK 08:1-10 - Feeding the four thousand
-- [ ] MRK 08:11-13 - Pharisees demand a sign
-- [ ] MRK 08:14-21 - Leaven of the Pharisees
-- [ ] MRK 08:22-26 - Blind man at Bethsaida
+- [🔄] MRK 07:24-30 - Syrophoenician woman's faith
+- [🔄] MRK 07:31-37 - Healing a deaf man
+- [🔄] MRK 08:1-10 - Feeding the four thousand
+- [🔄] MRK 08:11-13 - Pharisees demand a sign
+- [🔄] MRK 08:14-21 - Leaven of the Pharisees
+- [🔄] MRK 08:22-26 - Blind man at Bethsaida
 - [ ] MRK 08:27-30 - Peter's confession
 - [✅] MRK 08:31-9:1 - Jesus predicts his death
 - [ ] MRK 09:2-13 - The transfiguration
