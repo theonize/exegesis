@@ -2018,7 +2018,7 @@
 
 ## Mark (MRK)
 
-- [ ] MRK 01:1-8 - John the Baptist
+- [✅] MRK 01:1-8 - John the Baptist
 - [ ] MRK 01:9-13 - Baptism and temptation
 - [ ] MRK 01:14-20 - Jesus begins ministry and calls disciples
 - [ ] MRK 01:21-28 - Authority over demons
