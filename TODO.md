@@ -2559,13 +2559,13 @@
 
 ## Hebrews (HEB)
 
-- [ ] HEB 01:1-4 - God has spoken by his Son
-- [ ] HEB 01:5-14 - The Son superior to angels
-- [ ] HEB 02:1-4 - Warning to pay attention
-- [ ] HEB 02:5-18 - Jesus made like his brothers
-- [ ] HEB 03:1-6 - Jesus greater than Moses
-- [ ] HEB 03:7-19 - Warning against unbelief
-- [ ] HEB 04:1-13 - The promise of rest
+- [✅] HEB 01:1-4 - God has spoken by his Son
+- [✅] HEB 01:5-14 - The Son superior to angels
+- [✅] HEB 02:1-4 - Warning to pay attention
+- [✅] HEB 02:5-18 - Jesus made like his brothers
+- [✅] HEB 03:1-6 - Jesus greater than Moses
+- [✅] HEB 03:7-19 - Warning against unbelief
+- [✅] HEB 04:1-13 - The promise of rest
 - [ ] HEB 04:14-16 - Jesus the great high priest
 - [ ] HEB 05:1-10 - The source of salvation
 - [ ] HEB 05:11-6:12 - Warning against falling away
