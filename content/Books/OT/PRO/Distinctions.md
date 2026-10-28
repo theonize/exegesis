@@ -33,3 +33,24 @@ These are not formal literary types, but they are the standard topical groupings
 The book itself marks one further set of categories through its superscriptions: the main Solomonic collections, the “sayings of the wise,” the words of Agur, and the words of Lemuel.
 
 So while the text does not come with a modern table of contents, both the formal literary types (especially the kinds of parallelism) and the recurring themes are well-established and widely used.
+
+
+                   [ The Simple ] (Naively open to all influence)
+                         |
+        +----------------+----------------+
+
+        |                                 |
+  (Rejects Discipline)             (Accepts Discipline)
+
+        |                                 |
+        v                                 v
+  [ The Sluggard ]                  [ The Prudent ]
+  (Paralyzed by excuses)                  |
+
+        |                                 |
+  (Hardens into pride)             (Grows in humility)
+
+        |                                 |
+        v                                 v
+[ The Mocker/Scoffer ]                [ The Wise ]
+ (Actively hostile to truth)        (Refined by correction)
