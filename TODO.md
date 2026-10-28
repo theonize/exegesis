@@ -1420,26 +1420,26 @@
 
 ## Isaiah (ISA)
 
-- [ ] ISA 01:1-9 - A sinful nation
-- [ ] ISA 01:10-20 - Meaningless offerings
-- [ ] ISA 01:21-31 - Jerusalem's redemption
-- [ ] ISA 02:1-5 - The mountain of the Lord
-- [ ] ISA 02:6-22 - The day of the Lord
-- [ ] ISA 03:1-15 - Judgment on Judah
-- [ ] ISA 03:16-4:1 - Judgment on the women
-- [ ] ISA 04:2-6 - The Branch of the Lord
-- [ ] ISA 05:1-7 - Song of the vineyard
-- [ ] ISA 05:8-17 - Woes pronounced
-- [ ] ISA 05:18-30 - More woes
-- [ ] ISA 06:1-13 - Isaiah's vision and call
-- [ ] ISA 07:1-9 - Sign of Immanuel
-- [ ] ISA 07:10-25 - The virgin will conceive
-- [ ] ISA 08:1-10 - Maher-shalal-hash-baz
-- [ ] ISA 08:11-22 - Fear God, not man
-- [ ] ISA 09:1-7 - A child is born
-- [ ] ISA 09:8-21 - Judgment on Israel
-- [ ] ISA 10:1-19 - Woe to Assyria
-- [ ] ISA 10:20-34 - A remnant will return
+- [✅] ISA 01:1-9 - A sinful nation
+- [✅] ISA 01:10-20 - Meaningless offerings
+- [✅] ISA 01:21-31 - Jerusalem's redemption
+- [✅] ISA 02:1-5 - The mountain of the Lord
+- [✅] ISA 02:6-22 - The day of the Lord
+- [✅] ISA 03:1-15 - Judgment on Judah
+- [✅] ISA 03:16-4:1 - Judgment on the women
+- [✅] ISA 04:2-6 - The Branch of the Lord
+- [✅] ISA 05:1-7 - Song of the vineyard
+- [✅] ISA 05:8-17 - Woes pronounced
+- [✅] ISA 05:18-30 - More woes
+- [✅] ISA 06:1-13 - Isaiah's vision and call
+- [✅] ISA 07:1-9 - Sign of Immanuel
+- [✅] ISA 07:10-25 - The virgin will conceive
+- [✅] ISA 08:1-10 - Maher-shalal-hash-baz
+- [✅] ISA 08:11-22 - Fear God, not man
+- [✅] ISA 09:1-7 - A child is born
+- [✅] ISA 09:8-21 - Judgment on Israel
+- [✅] ISA 10:1-19 - Woe to Assyria
+- [✅] ISA 10:20-34 - A remnant will return
 - [ ] ISA 11:1-9 - The Branch from Jesse
 - [ ] ISA 11:10-16 - The remnant gathered
 - [ ] ISA 12:1-6 - Songs of praise
