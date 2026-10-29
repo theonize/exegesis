@@ -1460,26 +1460,26 @@
 - [✅] ISA 24:1-23 - The Lord's devastation
 - [✅] ISA 25:1-12 - Praise for God's salvation
 - [✅] ISA 26:1-19 - A song of trust
-- [ ] ISA 26:20-27:13 - Israel's restoration
-- [ ] ISA 28:1-13 - Woe to Ephraim
-- [ ] ISA 28:14-29 - The cornerstone in Zion
-- [ ] ISA 29:1-14 - Woe to Jerusalem
-- [ ] ISA 29:15-24 - Woe to those who hide plans
-- [ ] ISA 30:1-18 - Woe to rebellious children
-- [ ] ISA 30:19-33 - God's grace and judgment
-- [ ] ISA 31:1-9 - Woe to those who trust Egypt
-- [ ] ISA 32:1-20 - The kingdom of righteousness
-- [ ] ISA 33:1-24 - Distress and deliverance
-- [ ] ISA 34:1-17 - Judgment on the nations
-- [ ] ISA 35:1-10 - The ransomed will return
-- [ ] ISA 36:1-22 - Sennacherib threatens Jerusalem
-- [ ] ISA 37:1-20 - Hezekiah seeks Isaiah
-- [ ] ISA 37:21-38 - Assyria's defeat
-- [ ] ISA 38:1-22 - Hezekiah's illness and recovery
-- [ ] ISA 39:1-8 - Envoys from Babylon
-- [ ] ISA 40:1-11 - Comfort my people
-- [ ] ISA 40:12-31 - The incomparable God
-- [ ] ISA 41:1-20 - God helps Israel
+- [✅] ISA 26:20-27:13 - Israel's restoration
+- [✅] ISA 28:1-13 - Woe to Ephraim
+- [✅] ISA 28:14-29 - The cornerstone in Zion
+- [✅] ISA 29:1-14 - Woe to Jerusalem
+- [✅] ISA 29:15-24 - Woe to those who hide plans
+- [✅] ISA 30:1-18 - Woe to rebellious children
+- [✅] ISA 30:19-33 - God's grace and judgment
+- [✅] ISA 31:1-9 - Woe to those who trust Egypt
+- [✅] ISA 32:1-20 - The kingdom of righteousness
+- [✅] ISA 33:1-24 - Distress and deliverance
+- [✅] ISA 34:1-17 - Judgment on the nations
+- [✅] ISA 35:1-10 - The ransomed will return
+- [✅] ISA 36:1-22 - Sennacherib threatens Jerusalem
+- [✅] ISA 37:1-20 - Hezekiah seeks Isaiah
+- [✅] ISA 37:21-38 - Assyria's defeat
+- [✅] ISA 38:1-22 - Hezekiah's illness and recovery
+- [✅] ISA 39:1-8 - Envoys from Babylon
+- [✅] ISA 40:1-11 - Comfort my people
+- [✅] ISA 40:12-31 - The incomparable God
+- [✅] ISA 41:1-20 - God helps Israel
 - [ ] ISA 41:21-29 - Idols are nothing
 - [ ] ISA 42:1-9 - The servant of the Lord
 - [ ] ISA 42:10-17 - Sing a new song
