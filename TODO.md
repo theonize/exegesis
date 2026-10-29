@@ -1440,26 +1440,26 @@
 - [✅] ISA 09:8-21 - Judgment on Israel
 - [✅] ISA 10:1-19 - Woe to Assyria
 - [✅] ISA 10:20-34 - A remnant will return
-- [ ] ISA 11:1-9 - The Branch from Jesse
-- [ ] ISA 11:10-16 - The remnant gathered
-- [ ] ISA 12:1-6 - Songs of praise
-- [ ] ISA 13:1-22 - Oracle against Babylon
-- [ ] ISA 14:1-23 - Fall of the king of Babylon
-- [ ] ISA 14:24-32 - Oracles against Assyria and Philistia
-- [ ] ISA 15:1-16:14 - Oracle against Moab
-- [ ] ISA 17:1-14 - Oracle against Damascus
-- [ ] ISA 18:1-7 - Oracle against Cush
-- [ ] ISA 19:1-15 - Oracle against Egypt
-- [ ] ISA 19:16-25 - Egypt and Assyria blessed
-- [ ] ISA 20:1-6 - Sign against Egypt and Cush
-- [ ] ISA 21:1-10 - Oracle against Babylon
-- [ ] ISA 21:11-17 - Oracles against Edom and Arabia
-- [ ] ISA 22:1-14 - Oracle concerning Jerusalem
-- [ ] ISA 22:15-25 - Shebna and Eliakim
-- [ ] ISA 23:1-18 - Oracle against Tyre
-- [ ] ISA 24:1-23 - The Lord's devastation
-- [ ] ISA 25:1-12 - Praise for God's salvation
-- [ ] ISA 26:1-19 - A song of trust
+- [✅] ISA 11:1-9 - The Branch from Jesse
+- [✅] ISA 11:10-16 - The remnant gathered
+- [✅] ISA 12:1-6 - Songs of praise
+- [✅] ISA 13:1-22 - Oracle against Babylon
+- [✅] ISA 14:1-23 - Fall of the king of Babylon
+- [✅] ISA 14:24-32 - Oracles against Assyria and Philistia
+- [✅] ISA 15:1-16:14 - Oracle against Moab
+- [✅] ISA 17:1-14 - Oracle against Damascus
+- [✅] ISA 18:1-7 - Oracle against Cush
+- [✅] ISA 19:1-15 - Oracle against Egypt
+- [✅] ISA 19:16-25 - Egypt and Assyria blessed
+- [✅] ISA 20:1-6 - Sign against Egypt and Cush
+- [✅] ISA 21:1-10 - Oracle against Babylon
+- [✅] ISA 21:11-17 - Oracles against Edom and Arabia
+- [✅] ISA 22:1-14 - Oracle concerning Jerusalem
+- [✅] ISA 22:15-25 - Shebna and Eliakim
+- [✅] ISA 23:1-18 - Oracle against Tyre
+- [✅] ISA 24:1-23 - The Lord's devastation
+- [✅] ISA 25:1-12 - Praise for God's salvation
+- [✅] ISA 26:1-19 - A song of trust
 - [ ] ISA 26:20-27:13 - Israel's restoration
 - [ ] ISA 28:1-13 - Woe to Ephraim
 - [ ] ISA 28:14-29 - The cornerstone in Zion
