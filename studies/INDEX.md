@@ -8,4 +8,9 @@
 | content/Books/NT/MRK/01/MRK_01_1-8.md | ../currier/Studies/Nursing Home/Mark/Part1_handout.md | ../currier/Studies/Nursing Home/Mark/Part1_leader.md | 2026-10-08 |
 | content/Books/NT/MRK/01/MRK_01_9-13.md | ../currier/Studies/Nursing Home/Mark/Part2_handout.md | ../currier/Studies/Nursing Home/Mark/Part2_leader.md | 2026-10-15 |
 | content/Books/NT/MRK/01/MRK_01_14-20.md | ../currier/Studies/Nursing Home/Mark/Part3_handout.md | ../currier/Studies/Nursing Home/Mark/Part3_leader.md | 2026-10-18 |
-| content/Books/NT/MRK/01/MRK_01_21-28.md | ../currier/Studies/Nursing Home/Mark/Part4_handout.md | ../currier/Studies/Nursing Home/Mark/Part4_leader.md | 2026-10-29 |
+| content/Books/NT/MRK/01/MRK_01_21-28.md | ../currier/Studies/Nursing Home/Mark/Part4_handout.md | ../currier/Studies/Nursing Home/Mark/Part4_leader.md | 2026-10-30 |
+| content/Books/NT/MRK/01/MRK_01_29-34.md | ../currier/Studies/Nursing Home/Mark/Part5_handout.md | ../currier/Studies/Nursing Home/Mark/Part5_leader.md | 2026-10-30 |
+| content/Books/NT/MRK/01/MRK_01_35-45.md | ../currier/Studies/Nursing Home/Mark/Part6_handout.md | ../currier/Studies/Nursing Home/Mark/Part6_leader.md | 2026-10-30 |
+| content/Books/NT/MRK/01/MRK_01_21-28.md | ../currier/Studies/Nursing Home/Mark/Part4-6_handout.md | ../currier/Studies/Nursing Home/Mark/Part4-6_leader.md | 2026-10-30 |
+| content/Books/NT/MRK/01/MRK_01_29-34.md | ../currier/Studies/Nursing Home/Mark/Part4-6_handout.md | ../currier/Studies/Nursing Home/Mark/Part4-6_leader.md | 2026-10-30 |
+| content/Books/NT/MRK/01/MRK_01_35-45.md | ../currier/Studies/Nursing Home/Mark/Part4-6_handout.md | ../currier/Studies/Nursing Home/Mark/Part4-6_leader.md | 2026-10-30 |
