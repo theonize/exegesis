@@ -8,3 +8,4 @@
 | content/Books/NT/MRK/01/MRK_01_1-8.md | ../currier/Studies/Nursing Home/Mark/Part1_handout.md | ../currier/Studies/Nursing Home/Mark/Part1_leader.md | 2026-10-08 |
 | content/Books/NT/MRK/01/MRK_01_9-13.md | ../currier/Studies/Nursing Home/Mark/Part2_handout.md | ../currier/Studies/Nursing Home/Mark/Part2_leader.md | 2026-10-15 |
 | content/Books/NT/MRK/01/MRK_01_14-20.md | ../currier/Studies/Nursing Home/Mark/Part3_handout.md | ../currier/Studies/Nursing Home/Mark/Part3_leader.md | 2026-10-18 |
+| ../exegesis-mark/content/Books/NT/MRK/01/MRK_01_21-28.md | ../currier/Studies/Nursing Home/Mark/Part4_handout.md | ../currier/Studies/Nursing Home/Mark/Part4_leader.md | 2026-10-29 |
