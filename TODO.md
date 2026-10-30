@@ -2047,31 +2047,31 @@
 - [✅] MRK 06:45-52 - Jesus walks on water
 - [✅] MRK 06:53-56 - Healings at Gennesaret
 - [✅] MRK 07:1-23 - Tradition and defilement
-- [🔄] MRK 07:24-30 - Syrophoenician woman's faith
+- [✅] MRK 07:24-30 - Syrophoenician woman's faith
 - [✅] MRK 07:31-37 - Healing a deaf man
-- [🔄] MRK 08:1-10 - Feeding the four thousand
-- [🔄] MRK 08:11-13 - Pharisees demand a sign
-- [🔄] MRK 08:14-21 - Leaven of the Pharisees
-- [🔄] MRK 08:22-26 - Blind man at Bethsaida
-- [🔄] MRK 08:27-30 - Peter's confession
-- [🔄] MRK 08:31-9:1 - Jesus predicts his death
-- [🔄] MRK 09:2-13 - The transfiguration
-- [ ] MRK 09:14-29 - Healing the boy with a demon
-- [ ] MRK 09:30-32 - Second prediction of death
-- [ ] MRK 09:33-37 - Who is the greatest
-- [ ] MRK 09:38-50 - Warnings about sin
-- [ ] MRK 10:1-12 - Teaching on divorce
-- [ ] MRK 10:13-16 - Let the children come
-- [ ] MRK 10:17-31 - The rich young man
-- [ ] MRK 10:32-34 - Third prediction of death
-- [ ] MRK 10:35-45 - Request of James and John
-- [ ] MRK 10:46-52 - Blind Bartimaeus
-- [ ] MRK 11:1-11 - Triumphal entry
-- [ ] MRK 11:12-14 - Cursing the fig tree
-- [ ] MRK 11:15-19 - Cleansing the temple
-- [ ] MRK 11:20-26 - Lesson from the fig tree
-- [ ] MRK 11:27-33 - Authority questioned
-- [ ] MRK 12:1-12 - Parable of the tenants
+- [✅] MRK 08:1-10 - Feeding the four thousand
+- [✅] MRK 08:11-13 - Pharisees demand a sign
+- [✅] MRK 08:14-21 - Leaven of the Pharisees
+- [✅] MRK 08:22-26 - Blind man at Bethsaida
+- [✅] MRK 08:27-30 - Peter's confession
+- [✅] MRK 08:31-9:1 - Jesus predicts his death
+- [✅] MRK 09:2-13 - The transfiguration
+- [✅] MRK 09:14-29 - Healing the boy with a demon
+- [✅] MRK 09:30-32 - Second prediction of death
+- [✅] MRK 09:33-37 - Who is the greatest
+- [✅] MRK 09:38-50 - Warnings about sin
+- [✅] MRK 10:1-12 - Teaching on divorce
+- [✅] MRK 10:13-16 - Let the children come
+- [✅] MRK 10:17-31 - The rich young man
+- [✅] MRK 10:32-34 - Third prediction of death
+- [✅] MRK 10:35-45 - Request of James and John
+- [✅] MRK 10:46-52 - Blind Bartimaeus
+- [✅] MRK 11:1-11 - Triumphal entry
+- [✅] MRK 11:12-14 - Cursing the fig tree
+- [✅] MRK 11:15-19 - Cleansing the temple
+- [✅] MRK 11:20-26 - Lesson from the fig tree
+- [✅] MRK 11:27-33 - Authority questioned
+- [✅] MRK 12:1-12 - Parable of the tenants
 - [ ] MRK 12:13-17 - Paying taxes to Caesar
 - [ ] MRK 12:18-27 - Sadducees and resurrection
 - [ ] MRK 12:28-34 - The great commandment
