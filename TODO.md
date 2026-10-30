@@ -1420,66 +1420,66 @@
 
 ## Isaiah (ISA)
 
-- [ ] ISA 01:1-9 - A sinful nation
-- [ ] ISA 01:10-20 - Meaningless offerings
-- [ ] ISA 01:21-31 - Jerusalem's redemption
-- [ ] ISA 02:1-5 - The mountain of the Lord
-- [ ] ISA 02:6-22 - The day of the Lord
-- [ ] ISA 03:1-15 - Judgment on Judah
-- [ ] ISA 03:16-4:1 - Judgment on the women
-- [ ] ISA 04:2-6 - The Branch of the Lord
-- [ ] ISA 05:1-7 - Song of the vineyard
-- [ ] ISA 05:8-17 - Woes pronounced
-- [ ] ISA 05:18-30 - More woes
-- [ ] ISA 06:1-13 - Isaiah's vision and call
-- [ ] ISA 07:1-9 - Sign of Immanuel
-- [ ] ISA 07:10-25 - The virgin will conceive
-- [ ] ISA 08:1-10 - Maher-shalal-hash-baz
-- [ ] ISA 08:11-22 - Fear God, not man
-- [ ] ISA 09:1-7 - A child is born
-- [ ] ISA 09:8-21 - Judgment on Israel
-- [ ] ISA 10:1-19 - Woe to Assyria
-- [ ] ISA 10:20-34 - A remnant will return
-- [ ] ISA 11:1-9 - The Branch from Jesse
-- [ ] ISA 11:10-16 - The remnant gathered
-- [ ] ISA 12:1-6 - Songs of praise
-- [ ] ISA 13:1-22 - Oracle against Babylon
-- [ ] ISA 14:1-23 - Fall of the king of Babylon
-- [ ] ISA 14:24-32 - Oracles against Assyria and Philistia
-- [ ] ISA 15:1-16:14 - Oracle against Moab
-- [ ] ISA 17:1-14 - Oracle against Damascus
-- [ ] ISA 18:1-7 - Oracle against Cush
-- [ ] ISA 19:1-15 - Oracle against Egypt
-- [ ] ISA 19:16-25 - Egypt and Assyria blessed
-- [ ] ISA 20:1-6 - Sign against Egypt and Cush
-- [ ] ISA 21:1-10 - Oracle against Babylon
-- [ ] ISA 21:11-17 - Oracles against Edom and Arabia
-- [ ] ISA 22:1-14 - Oracle concerning Jerusalem
-- [ ] ISA 22:15-25 - Shebna and Eliakim
-- [ ] ISA 23:1-18 - Oracle against Tyre
-- [ ] ISA 24:1-23 - The Lord's devastation
-- [ ] ISA 25:1-12 - Praise for God's salvation
-- [ ] ISA 26:1-19 - A song of trust
-- [ ] ISA 26:20-27:13 - Israel's restoration
-- [ ] ISA 28:1-13 - Woe to Ephraim
-- [ ] ISA 28:14-29 - The cornerstone in Zion
-- [ ] ISA 29:1-14 - Woe to Jerusalem
-- [ ] ISA 29:15-24 - Woe to those who hide plans
-- [ ] ISA 30:1-18 - Woe to rebellious children
-- [ ] ISA 30:19-33 - God's grace and judgment
-- [ ] ISA 31:1-9 - Woe to those who trust Egypt
-- [ ] ISA 32:1-20 - The kingdom of righteousness
-- [ ] ISA 33:1-24 - Distress and deliverance
-- [ ] ISA 34:1-17 - Judgment on the nations
-- [ ] ISA 35:1-10 - The ransomed will return
-- [ ] ISA 36:1-22 - Sennacherib threatens Jerusalem
-- [ ] ISA 37:1-20 - Hezekiah seeks Isaiah
-- [ ] ISA 37:21-38 - Assyria's defeat
-- [ ] ISA 38:1-22 - Hezekiah's illness and recovery
-- [ ] ISA 39:1-8 - Envoys from Babylon
-- [ ] ISA 40:1-11 - Comfort my people
-- [ ] ISA 40:12-31 - The incomparable God
-- [ ] ISA 41:1-20 - God helps Israel
+- [✅] ISA 01:1-9 - A sinful nation
+- [✅] ISA 01:10-20 - Meaningless offerings
+- [✅] ISA 01:21-31 - Jerusalem's redemption
+- [✅] ISA 02:1-5 - The mountain of the Lord
+- [✅] ISA 02:6-22 - The day of the Lord
+- [✅] ISA 03:1-15 - Judgment on Judah
+- [✅] ISA 03:16-4:1 - Judgment on the women
+- [✅] ISA 04:2-6 - The Branch of the Lord
+- [✅] ISA 05:1-7 - Song of the vineyard
+- [✅] ISA 05:8-17 - Woes pronounced
+- [✅] ISA 05:18-30 - More woes
+- [✅] ISA 06:1-13 - Isaiah's vision and call
+- [✅] ISA 07:1-9 - Sign of Immanuel
+- [✅] ISA 07:10-25 - The virgin will conceive
+- [✅] ISA 08:1-10 - Maher-shalal-hash-baz
+- [✅] ISA 08:11-22 - Fear God, not man
+- [✅] ISA 09:1-7 - A child is born
+- [✅] ISA 09:8-21 - Judgment on Israel
+- [✅] ISA 10:1-19 - Woe to Assyria
+- [✅] ISA 10:20-34 - A remnant will return
+- [✅] ISA 11:1-9 - The Branch from Jesse
+- [✅] ISA 11:10-16 - The remnant gathered
+- [✅] ISA 12:1-6 - Songs of praise
+- [✅] ISA 13:1-22 - Oracle against Babylon
+- [✅] ISA 14:1-23 - Fall of the king of Babylon
+- [✅] ISA 14:24-32 - Oracles against Assyria and Philistia
+- [✅] ISA 15:1-16:14 - Oracle against Moab
+- [✅] ISA 17:1-14 - Oracle against Damascus
+- [✅] ISA 18:1-7 - Oracle against Cush
+- [✅] ISA 19:1-15 - Oracle against Egypt
+- [✅] ISA 19:16-25 - Egypt and Assyria blessed
+- [✅] ISA 20:1-6 - Sign against Egypt and Cush
+- [✅] ISA 21:1-10 - Oracle against Babylon
+- [✅] ISA 21:11-17 - Oracles against Edom and Arabia
+- [✅] ISA 22:1-14 - Oracle concerning Jerusalem
+- [✅] ISA 22:15-25 - Shebna and Eliakim
+- [✅] ISA 23:1-18 - Oracle against Tyre
+- [✅] ISA 24:1-23 - The Lord's devastation
+- [✅] ISA 25:1-12 - Praise for God's salvation
+- [✅] ISA 26:1-19 - A song of trust
+- [✅] ISA 26:20-27:13 - Israel's restoration
+- [✅] ISA 28:1-13 - Woe to Ephraim
+- [✅] ISA 28:14-29 - The cornerstone in Zion
+- [✅] ISA 29:1-14 - Woe to Jerusalem
+- [✅] ISA 29:15-24 - Woe to those who hide plans
+- [✅] ISA 30:1-18 - Woe to rebellious children
+- [✅] ISA 30:19-33 - God's grace and judgment
+- [✅] ISA 31:1-9 - Woe to those who trust Egypt
+- [✅] ISA 32:1-20 - The kingdom of righteousness
+- [✅] ISA 33:1-24 - Distress and deliverance
+- [✅] ISA 34:1-17 - Judgment on the nations
+- [✅] ISA 35:1-10 - The ransomed will return
+- [✅] ISA 36:1-22 - Sennacherib threatens Jerusalem
+- [✅] ISA 37:1-20 - Hezekiah seeks Isaiah
+- [✅] ISA 37:21-38 - Assyria's defeat
+- [✅] ISA 38:1-22 - Hezekiah's illness and recovery
+- [✅] ISA 39:1-8 - Envoys from Babylon
+- [✅] ISA 40:1-11 - Comfort my people
+- [✅] ISA 40:12-31 - The incomparable God
+- [✅] ISA 41:1-20 - God helps Israel
 - [ ] ISA 41:21-29 - Idols are nothing
 - [ ] ISA 42:1-9 - The servant of the Lord
 - [ ] ISA 42:10-17 - Sing a new song
@@ -2559,13 +2559,13 @@
 
 ## Hebrews (HEB)
 
-- [ ] HEB 01:1-4 - God has spoken by his Son
-- [ ] HEB 01:5-14 - The Son superior to angels
-- [ ] HEB 02:1-4 - Warning to pay attention
-- [ ] HEB 02:5-18 - Jesus made like his brothers
-- [ ] HEB 03:1-6 - Jesus greater than Moses
-- [ ] HEB 03:7-19 - Warning against unbelief
-- [ ] HEB 04:1-13 - The promise of rest
+- [✅] HEB 01:1-4 - God has spoken by his Son
+- [✅] HEB 01:5-14 - The Son superior to angels
+- [✅] HEB 02:1-4 - Warning to pay attention
+- [✅] HEB 02:5-18 - Jesus made like his brothers
+- [✅] HEB 03:1-6 - Jesus greater than Moses
+- [✅] HEB 03:7-19 - Warning against unbelief
+- [✅] HEB 04:1-13 - The promise of rest
 - [ ] HEB 04:14-16 - Jesus the great high priest
 - [ ] HEB 05:1-10 - The source of salvation
 - [ ] HEB 05:11-6:12 - Warning against falling away
