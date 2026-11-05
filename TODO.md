@@ -2780,7 +2780,7 @@
 - [ ] Angels
 - [✅] Wings
 - [✅] Human
-- [🔄] Toil - Anxious striving and righteous effort
+- [✅] Toil - Anxious striving and righteous effort
 
 ## Sacraments
 - [ ] Baptism
